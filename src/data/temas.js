@@ -12,20 +12,20 @@ export const ASIGNATURAS = [
           {
             t: "1 · Concepto y Ámbito de Aplicación (Art. 2)",
             s: [
-              "Definición de edificación: construcción de carácter permanente (público o privado) para uso administrativo, sanitario, residencial, docente, cultural, industrial, etc.[cite: 6]",
-              "Se consideran edificaciones las de nueva construcción (salvo construcciones sencillas de una sola planta sin carácter residencial/público)[cite: 6].",
-              "Se incluyen obras de ampliación, reforma o rehabilitación que alteren la configuración arquitectónica, volumetría o sistema estructural[cite: 6]."
+              "Definición de edificación: construcción de carácter permanente (público o privado) para uso administrativo, sanitario, residencial, docente, cultural, industrial, etc.",
+              "Se consideran edificaciones las de nueva construcción (salvo construcciones sencillas de una sola planta sin carácter residencial/público).",
+              "Se incluyen obras de ampliación, reforma o rehabilitación que alteren la configuración arquitectónica, volumetría o sistema estructural."
             ],
-            c: "Las obras menores de escasa entidad en una sola planta y sin uso residencial/público no exigen proyecto según la LOE[cite: 6]."
+            c: "Las obras menores de escasa entidad en una sola planta y sin uso residencial/público no exigen proyecto según la LOE."
           },
           {
             t: "5 · Responsabilidades y Garantías (Art. 17 y 19)",
             s: [
-              "10 años: Daños materiales por vicios o defectos que afecten a la cimentación, soportes, vigas, forjados o elementos estructurales[cite: 15, 17].",
-              "3 años: Daños por vicios o defectos en elementos constructivos o instalaciones que afecten a la habitabilidad[cite: 15, 17].",
-              "1 año: Daños por vicios o defectos de ejecución que afecten a elementos de terminación o acabado[cite: 15, 17]."
+              "10 años: Daños materiales por vicios o defectos que afecten a la cimentación, soportes, vigas, forjados o elementos estructurales.",
+              "3 años: Daños por vicios o defectos en elementos constructivos o instalaciones que afecten a la habitabilidad.",
+              "1 año: Daños por vicios o defectos de ejecución que afecten a elementos de terminación o acabado."
             ],
-            c: "El promotor responde solidariamente con los demás agentes ante los compradores por los vicios o defectos de construcción[cite: 15]."
+            c: "El promotor responde solidariamente con los demás agentes ante los compradores por los vicios o defectos de construcción."
           }
         ],
         casos: [
@@ -34,11 +34,11 @@ export const ASIGNATURAS = [
             q: "A los 4 años de entregarse un edificio aparecen grietas graves que comprometen los pilares y la estabilidad estructural. ¿Qué plazo de garantía LOE se aplica y quién responde?",
             o: ["Plazo de 3 años de habitabilidad", "Plazo de 10 años por defectos estructurales; responden los agentes implicados", "Plazo de 1 año de acabados"],
             a: 1,
-            e: "Los daños estructurales tienen una garantía y responsabilidad civil exigible durante 10 años desde la recepción de la obra (Art. 17.1.a LOE)[cite: 15, 17]."
+            e: "Los daños estructurales tienen una garantía y responsabilidad civil exigible durante 10 años desde la recepción de la obra (Art. 17.1.a LOE)."
           }
         ],
         cards: [
-          { ty: "Pregunta LOE", q: "¿Cuál es el plazo de garantía para daños estructurales según la LOE?", a: "10 años (Art. 17.1.a)[cite: 15, 17]" }
+          { ty: "Pregunta LOE", q: "¿Cuál es el plazo de garantía para daños estructurales según la LOE?", a: "10 años (Art. 17.1.a)" }
         ],
         glo: [
           ["LOE", "Ley 38/1999, de 5 de noviembre, de Ordenación de la Edificación.", "Marco legal principal del sector en España."]
@@ -53,10 +53,10 @@ export const ASIGNATURAS = [
           {
             t: "1 · Características del Solar y Estudio Geotécnico (DB-SE-C)",
             s: [
-              "El Estudio Geotécnico determina características físicas, mecánicas, composición y nivel freático[cite: 19, 20].",
-              "Clasificación de la construcción (C-0 a C-4) y grupos de terreno (T-1 favorables, T-2 intermedios, T-3 desfavorables)[cite: 21]."
+              "El Estudio Geotécnico determina características físicas, mecánicas, composición y nivel freático.",
+              "Clasificación de la construcción (C-0 a C-4) y grupos de terreno (T-1 favorables, T-2 intermedios, T-3 desfavorables)."
             ],
-            c: "El estudio geotécnico debe acometerse en la fase inicial de proyecto y antes de dimensionar totalmente la estructura[cite: 20]."
+            c: "El estudio geotécnico debe acometerse en la fase inicial de proyecto y antes de dimensionar totalmente la estructura."
           }
         ],
         casos: [
@@ -72,7 +72,7 @@ export const ASIGNATURAS = [
           { ty: "Geotecnia", q: "¿Cuál es el número mínimo de puntos de reconocimiento a realizar en un solar?", a: "Un mínimo de tres puntos." }
         ],
         glo: [
-          ["Estudio Geotécnico", "Conjunto de datos y ensayos sobre las características físicas y mecánicas del terreno para diseñar cimientos[cite: 19, 20].", "Documento obligatorio de proyecto."]
+          ["Estudio Geotécnico", "Conjunto de datos y ensayos sobre las características físicas y mecánicas del terreno para diseñar cimientos.", "Documento obligatorio de proyecto."]
         ]
       },
       {
@@ -84,10 +84,10 @@ export const ASIGNATURAS = [
           {
             t: "2 · Seguridad y Salud en Zanjas",
             s: [
-              "Entibación obligatoria/conveniente en zanjas de $h \ge 1,5\text{ m}$[cite: 57].",
-              "Zona libre de cargas: mantener al menos 2 m libres de acopios y vehículos junto al borde[cite: 57, 58]."
+              "Entibación obligatoria/conveniente en zanjas de $h \ge 1,5\text{ m}$.",
+              "Zona libre de cargas: mantener al menos 2 m libres de acopios y vehículos junto al borde."
             ],
-            c: "Tras lluvias es obligatorio revisar los taludes y achicar el agua de inmediato[cite: 57]."
+            c: "Tras lluvias es obligatorio revisar los taludes y achicar el agua de inmediato."
           }
         ],
         casos: [
@@ -96,14 +96,14 @@ export const ASIGNATURAS = [
             q: "¿A partir de qué profundidad en zanjas se establece la conveniencia de disponer entibación?",
             o: ["0,5 metros", "Igual o superior a 1,5 metros", "5 metros"],
             a: 1,
-            e: "A partir de 1,5 m de profundidad es conveniente entibar o proteger adecuadamente la zanja[cite: 57]."
+            e: "A partir de 1,5 m de profundidad es conveniente entibar o proteger adecuadamente la zanja."
           }
         ],
         cards: [
-          { ty: "Seguridad", q: "¿Qué distancia libre de cargas se debe mantener junto al borde de una zanja?", a: "Una zona de unos 2 metros[cite: 57]." }
+          { ty: "Seguridad", q: "¿Qué distancia libre de cargas se debe mantener junto al borde de una zanja?", a: "Una zona de unos 2 metros." }
         ],
         glo: [
-          ["Entibación", "Sistema de contención temporal de paredes en zanjas[cite: 57, 58].", "Necesaria si $h \ge 1,5\text{ m}$[cite: 57]."]
+          ["Entibación", "Sistema de contención temporal de paredes en zanjas.", "Necesaria si $h \ge 1,5\text{ m}$."]
         ]
       },
       {
@@ -115,10 +115,10 @@ export const ASIGNATURAS = [
           {
             t: "2 · Rigidez y Control",
             s: [
-              "Rigidez estructural: Rígidas si el vuelo $v \le 2h$; flexibles si $v > 2h$[cite: 66].",
-              "Nivelación obligatoria: En edificios C-3 y C-4 es obligatorio un sistema de nivelación (precisión 0,1 mm, mín. 4 referencias)[cite: 86]."
+              "Rigidez estructural: Rígidas si el vuelo $v \le 2h$; flexibles si $v > 2h$.",
+              "Nivelación obligatoria: En edificios C-3 y C-4 es obligatorio un sistema de nivelación (precisión 0,1 mm, mín. 4 referencias)."
             ],
-            c: "El espesor mínimo de la solera de asiento u hormigón de limpieza es de 10 cm[cite: 78, 82]."
+            c: "El espesor mínimo de la solera de asiento u hormigón de limpieza es de 10 cm."
           }
         ],
         casos: [
@@ -127,14 +127,14 @@ export const ASIGNATURAS = [
             q: "Una zapata aislada tiene un vuelo de 80 cm y un canto de 50 cm. ¿Cómo se clasifica estructuralmente según el DB-SE-C?",
             o: ["Zapata flexible", "Zapata rígida, ya que el vuelo ($80\text{ cm}$) es $\le 2 \times \text{canto}$ ($100\text{ cm}$)", "Zapata combinada"],
             a: 1,
-            e: "Se consideran estructuralmente rígidas las zapatas cuyo vuelo es menor o igual que dos veces el canto ($v \le 2h$)[cite: 66]."
+            e: "Se consideran estructuralmente rígidas las zapatas cuyo vuelo es menor o igual que dos veces el canto ($v \le 2h$)."
           }
         ],
         cards: [
-          { ty: "Hormigón de limpieza", q: "¿Cuál es el espesor mínimo reglamentario de la solera de asiento bajo zapatas?", a: "Un espesor mínimo de 10 cm[cite: 78, 82]." }
+          { ty: "Hormigón de limpieza", q: "¿Cuál es el espesor mínimo reglamentario de la solera de asiento bajo zapatas?", a: "Un espesor mínimo de 10 cm." }
         ],
         glo: [
-          ["Zapata rígida", "Aquella cuyo vuelo es menor o igual que dos veces su canto ($v \le 2h$)[cite: 66].", "Prescripciones EHE[cite: 66]."]
+          ["Zapata rígida", "Aquella cuyo vuelo es menor o igual que dos veces su canto ($v \le 2h$).", "Prescripciones EHE."]
         ]
       },
       {
@@ -146,10 +146,10 @@ export const ASIGNATURAS = [
           {
             t: "1 · Definición y Tipos de Cimentaciones Profundas",
             s: [
-              "Definición: Cimentación cuyo extremo inferior en el terreno está a una profundidad superior a 8 veces su diámetro o ancho ($> 8D$)[cite: 88].",
-              "Tipos de pilotes: Por fuste ('flotantes') y por punta ('columna')[cite: 88]."
+              "Definición: Cimentación cuyo extremo inferior en el terreno está a una profundidad superior a 8 veces su diámetro o ancho ($> 8D$).",
+              "Tipos de pilotes: Por fuste ('flotantes') y por punta ('columna')."
             ],
-            c: "Se recurre a cimentaciones profundas cuando las superficiales no son técnicamente viables[cite: 88]."
+            c: "Se recurre a cimentaciones profundas cuando las superficiales no son técnicamente viables."
           }
         ],
         casos: [
@@ -158,14 +158,14 @@ export const ASIGNATURAS = [
             q: "¿A partir de qué profundidad relativa se considera formalmente que una cimentación es profunda según el CTE?",
             o: ["Cuando su profundidad es superior a 2 veces su diámetro", "Cuando su extremo inferior está a una profundidad superior a 8 veces su diámetro o ancho ($>8D$)", "Exclusivamente a partir de 15 metros"],
             a: 1,
-            e: "Se considera cimentación profunda si su extremo inferior en el terreno se encuentra a una profundidad superior a 8 veces su diámetro o ancho ($>8D$)[cite: 88]."
+            e: "Se considera cimentación profunda si su extremo inferior en el terreno se encuentra a una profundidad superior a 8 veces su diámetro o ancho ($>8D$)."
           }
         ],
         cards: [
-          { ty: "Definición", q: "¿Cuál es el límite geométrico que define una cimentación profunda frente a una superficial?", a: "Profundidad superior a 8 veces su diámetro o ancho ($>8D$)[cite: 88]." }
+          { ty: "Definición", q: "¿Cuál es el límite geométrico que define una cimentación profunda frente a una superficial?", a: "Profundidad superior a 8 veces su diámetro o ancho ($>8D$)." }
         ],
         glo: [
-          ["Pilote", "Elemento prismático de cimentación profunda cuya longitud es mucho mayor que su sección transversal[cite: 88, 89].", "Puede ser prefabricado o in situ[cite: 89, 90]."]
+          ["Pilote", "Elemento prismático de cimentación profunda cuya longitud es mucho mayor que su sección transversal.", "Puede ser prefabricado o in situ."]
         ]
       },
       {
@@ -177,10 +177,10 @@ export const ASIGNATURAS = [
           {
             t: "1 · Definición y Tipologías de Muros",
             s: [
-              "Definición: Elemento estructural destinado a contener tierras; trabaja fundamentalmente a flexión (como un voladizo empotrado en el cimiento)[cite: 108].",
-              "Muros de gravedad: Soportan empujes con su propio peso; sin armar, trabajan a compresión[cite: 109]."
+              "Definición: Elemento estructural destinado a contener tierras; trabaja fundamentalmente a flexión (como un voladizo empotrado en el cimiento).",
+              "Muros de gravedad: Soportan empujes con su propio peso; sin armar, trabajan a compresión."
             ],
-            c: "El talón no debe invadir propiedades ajenas y el tacón se prescinde si no hay problemas de deslizamiento[cite: 108]."
+            c: "El talón no debe invadir propiedades ajenas y el tacón se prescinde si no hay problemas de deslizamiento."
           }
         ],
         casos: [
@@ -189,14 +189,14 @@ export const ASIGNATURAS = [
             q: "¿Cómo se denominan los muros de contención que no llevan armadura y soportan los empujes con su propio peso?",
             o: ["Muros en ménsula", "Muros de gravedad", "Muros pantalla"],
             a: 1,
-            e: "Los muros de gravedad carecen de armadura y equilibran el empuje de las tierras mediante su propio peso[cite: 109]."
+            e: "Los muros de gravedad carecen de armadura y equilibran el empuje de las tierras mediante su propio peso."
           }
         ],
         cards: [
-          { ty: "Tipos de Muros", q: "¿Cuál es la diferencia principal de trabajo estructural entre un muro de gravedad y un muro en ménsula?", a: "El de gravedad trabaja a compresión por su propio peso; el en ménsula trabaja a flexión y requiere armadura[cite: 109]." }
+          { ty: "Tipos de Muros", q: "¿Cuál es la diferencia principal de trabajo estructural entre un muro de gravedad y un muro en ménsula?", a: "El de gravedad trabaja a compresión por su propio peso; el en ménsula trabaja a flexión y requiere armadura." }
         ],
         glo: [
-          ["Muro de contención", "Elemento estructural que sirve de contención a un terreno, trabajando a flexión como voladizo empotrado[cite: 108].", "Regulado por el CTE DB-SE-C[cite: 132]."]
+          ["Muro de contención", "Elemento estructural que sirve de contención a un terreno, trabajando a flexión como voladizo empotrado.", "Regulado por el CTE DB-SE-C."]
         ]
       },
       {
@@ -208,28 +208,28 @@ export const ASIGNATURAS = [
           {
             t: "1 · Definición y Elementos Componentes",
             s: [
-              "Estructura: Conjunto de elementos portantes capaces de soportar cargas y transmitirlas, junto a su peso propio, hasta los cimientos[cite: 135].",
-              "Elementos verticales: Pilares y muros; reciben cargas de plantas superiores y trabajan fundamentalmente a compresión[cite: 136]."
+              "Estructura: Conjunto de elementos portantes capaces de soportar cargas y transmitirlas, junto a su peso propio, hasta los cimientos.",
+              "Elementos verticales: Pilares y muros; reciben cargas de plantas superiores y trabajan fundamentalmente a compresión."
             ],
-            c: "Los zunchos y brochales son elementos horizontales que transmiten cargas a vigas o pilares, o sirven de atado y formación de huecos[cite: 137]."
+            c: "Los zunchos y brochales son elementos horizontales que transmiten cargas a vigas o pilares, o sirven de atado y formación de huecos."
           },
           {
             t: "3 · Clasificación de las Acciones",
             s: [
-              "Acciones permanentes (G): Actúan en todo instante con magnitud constante o variación monótona (peso propio, terreno)[cite: 140].",
-              "Acciones variables (Q): Actúan o no según el uso o condiciones climáticas[cite: 140].",
-              "Acciones accidentales (A): Pequeña probabilidad de ocurrencia pero gran importancia (sismo, incendio, impacto)[cite: 140]."
+              "Acciones permanentes (G): Actúan en todo instante con magnitud constante o variación monótona (peso propio, terreno).",
+              "Acciones variables (Q): Actúan o no según el uso o condiciones climáticas.",
+              "Acciones accidentales (A): Pequeña probabilidad de ocurrencia pero gran importancia (sismo, incendio, impacto)."
             ],
-            c: "Las acciones se clasifican también por su variación en el tiempo, naturaleza (directas/indirectas) y respuesta estructural (estáticas/dinámicas)[cite: 141]."
+            c: "Las acciones se clasifican también por su variación en el tiempo, naturaleza (directas/indirectas) y respuesta estructural (estáticas/dinámicas)."
           },
           {
             t: "4 · Aptitud al Servicio: Flechas y Desplazamientos",
             s: [
-              "Flecha relativa con tabiques frágiles: menor que $1/500$[cite: 141].",
-              "Flecha relativa con tabiques ordinarios: menor que $1/400$; resto de casos: menor que $1/300$[cite: 141].",
-              "Desplazamiento horizontal (desplome total): menor que $1/500$ de la altura total del edificio; desplome local: menor que $1/250$ de la altura de planta[cite: 142]."
+              "Flecha relativa con tabiques frágiles: menor que $1/500$.",
+              "Flecha relativa con tabiques ordinarios: menor que $1/400$; resto de casos: menor que $1/300$.",
+              "Desplazamiento horizontal (desplome total): menor que $1/500$ de la altura total del edificio; desplome local: menor que $1/250$ de la altura de planta."
             ],
-            c: "Las limitaciones de deformación evitan fisuraciones y daños en elementos constructivos no estructurales[cite: 141, 142]."
+            c: "Las limitaciones de deformación evitan fisuraciones y daños en elementos constructivos no estructurales."
           }
         ],
         casos: [
@@ -238,14 +238,14 @@ export const ASIGNATURAS = [
             q: "Según el CTE DB-SE, ¿cómo se clasifican las acciones debidas al sismo, el incendio o una explosión por su probabilidad de ocurrencia y efectos?",
             o: ["Acciones permanentes (G)", "Acciones variables (Q)", "Acciones accidentales (A)"],
             a: 2,
-            e: "Las acciones accidentales (A) son aquellas cuya probabilidad de ocurrencia es pequeña pero de gran importancia, como el sismo o el incendio[cite: 140]."
+            e: "Las acciones accidentales (A) son aquellas cuya probabilidad de ocurrencia es pequeña pero de gran importancia, como el sismo o el incendio."
           }
         ],
         cards: [
-          { ty: "Acciones", q: "¿Qué diferencia existe entre una acción permanente (G) y una variable (Q)?", a: "La permanente actúa en todo instante con valor constante o de variación monótona; la variable puede actuar o no (uso, clima)[cite: 140]." }
+          { ty: "Acciones", q: "¿Qué diferencia existe entre una acción permanente (G) y una variable (Q)?", a: "La permanente actúa en todo instante con valor constante o de variación monótona; la variable puede actuar o no (uso, clima)." }
         ],
         glo: [
-          ["Acción permanente", "Acción cuya variación en magnitud con el tiempo es despreciable o monótona[cite: 140, 145].", "Ej: peso propio[cite: 140]."]
+          ["Acción permanente", "Acción cuya variación en magnitud con el tiempo es despreciable o monótona.", "Ej: peso propio."]
         ]
       },
       {
@@ -257,30 +257,30 @@ export const ASIGNATURAS = [
           {
             t: "1 · Definición y Elementos Constituyentes",
             s: [
-              "Forjados unidireccionales: Constituidos por elementos prefabricados y hormigón vertido in situ[cite: 148].",
-              "Vigueta: Elemento longitudinal resistente prefabricado (armado o pretensado)[cite: 148].",
-              "Losa alveolar pretensada: Elemento superficial plano aligerado mediante alvéolos longitudinales, con juntas laterales preparadas para transmitir cortantes[cite: 148].",
-              "Pieza de entrevigado: Elemento aligerante o colaborante (cerámica, hormigón, poliestireno expandido)[cite: 148].",
-              "Losa superior de hormigón: Vertida en obra con armadura para repartir cargas y dotar de acción diafragma y arriostramiento[cite: 148]."
+              "Forjados unidireccionales: Constituidos por elementos prefabricados y hormigón vertido in situ.",
+              "Vigueta: Elemento longitudinal resistente prefabricado (armado o pretensado).",
+              "Losa alveolar pretensada: Elemento superficial plano aligerado mediante alvéolos longitudinales, con juntas laterales preparadas para transmitir cortantes.",
+              "Pieza de entrevigado: Elemento aligerante o colaborante (cerámica, hormigón, poliestireno expandido).",
+              "Losa superior de hormigón: Vertida en obra con armadura para repartir cargas y dotar de acción diafragma y arriostramiento."
             ],
-            c: "Las piezas colaborantes participan en la sección resistente y su resistencia a compresión no será menor que la del hormigón vertido[cite: 158]."
+            c: "Las piezas colaborantes participan en la sección resistente y su resistencia a compresión no será menor que la del hormigón vertido."
           },
           {
             t: "3 · Hormigón en Obra y Condiciones Geométricas",
             s: [
-              "Tipificación del hormigón: $T-R/C/TM/A$ (ej. HA-25/B/20/...) con resistencia característica mínima de $25\text{ N/mm}^2$[cite: 158].",
-              "Espesor mínimo de la losa superior ($h_0$): 40 mm sobre viguetas, piezas cerámicas/hormigón y losas alveolares; 50 mm sobre otros materiales o zonas sísmicas ($a_c > 0,16g$)[cite: 159]."
+              "Tipificación del hormigón: $T-R/C/TM/A$ (ej. HA-25/B/20/...) con resistencia característica mínima de $25\text{ N/mm}^2$.",
+              "Espesor mínimo de la losa superior ($h_0$): 40 mm sobre viguetas, piezas cerámicas/hormigón y losas alveolares; 50 mm sobre otros materiales o zonas sísmicas ($a_c > 0,16g$)."
             ],
-            c: "El tamaño máximo del árido ($TM$) será menor que $0,4$ veces el espesor mínimo de la losa superior y no superará los 20 mm[cite: 158]."
+            c: "El tamaño máximo del árido ($TM$) será menor que $0,4$ veces el espesor mínimo de la losa superior y no superará los 20 mm."
           },
           {
             t: "4 · Ejecución, Acopio y Desapuntalado",
             s: [
-              "Acopio: Apilados limpios sobre durmientes alineados en vertical, con vuelos máximos de $0,50\text{ m}$ y altura de pilas $\le 1,50\text{ m}$[cite: 161].",
-              "Apuntalado: Puntales arriostrados en dos direcciones; estudio detallado si el peso propio es $>3\text{ kN/m}^2$ o altura $>4\text{ m}$[cite: 161].",
-              "Desapuntalado: Según artículo 75 de la EHE; retirada desde el centro del vano hacia los extremos y sin golpes bruscos[cite: 163]."
+              "Acopio: Apilados limpios sobre durmientes alineados en vertical, con vuelos máximos de $0,50\text{ m}$ y altura de pilas $\le 1,50\text{ m}$.",
+              "Apuntalado: Puntales arriostrados en dos direcciones; estudio detallado si el peso propio es $>3\text{ kN/m}^2$ o altura $>4\text{ m}$.",
+              "Desapuntalado: Según artículo 75 de la EHE; retirada desde el centro del vano hacia los extremos y sin golpes bruscos."
             ],
-            c: "Si alguna vigueta o losa alveolar resulta dañada afectando a su capacidad portante, deberá ser desechada antes de su colocación[cite: 161]."
+            c: "Si alguna vigueta o losa alveolar resulta dañada afectando a su capacidad portante, deberá ser desechada antes de su colocación."
           }
         ],
         casos: [
@@ -289,14 +289,14 @@ export const ASIGNATURAS = [
             q: "En un forjado unidireccional con viguetas y bovedillas cerámicas situado en una zona sin riesgo sísmico especial, ¿cuál es el espesor mínimo reglamentario ($h_0$) de la losa superior de hormigón?",
             o: ["20 mm", "30 mm", "40 mm"],
             a: 2,
-            e: "El espesor mínimo de la losa superior es de 40 mm sobre viguetas y piezas de entrevigado cerámicas o de hormigón[cite: 159]."
+            e: "El espesor mínimo de la losa superior es de 40 mm sobre viguetas y piezas de entrevigado cerámicas o de hormigón."
           }
         ],
         cards: [
-          { ty: "Elementos", q: "¿Qué diferencia principal existe entre una pieza de entrevigado aligerante y una colaborante?", a: "La aligerante solo actúa como relleno o peso muerto; la colaborante participa como parte de la sección resistente del forjado[cite: 158]." }
+          { ty: "Elementos", q: "¿Qué diferencia principal existe entre una pieza de entrevigado aligerante y una colaborante?", a: "La aligerante solo actúa como relleno o peso muerto; la colaborante participa como parte de la sección resistente del forjado." }
         ],
         glo: [
-          ["Vigueta", "Elemento longitudinal resistente prefabricado (armado o pretensado) para forjados[cite: 148].", "Instalado junto a piezas de entrevigado[cite: 148]."]
+          ["Vigueta", "Elemento longitudinal resistente prefabricado (armado o pretensado) para forjados.", "Instalado junto a piezas de entrevigado."]
         ]
       },
       {
@@ -308,30 +308,30 @@ export const ASIGNATURAS = [
           {
             t: "1 · Objeto, Ámbito y Vida Útil (EHE-08)",
             s: [
-              "Objeto: Establecer las exigencias para que las estructuras de hormigón satisfagan la seguridad estructural, contra incendios y protección medioambiental[cite: 165].",
-              "Ámbito de aplicación: Estructuras de hormigón en masa, armado o pretensado[cite: 165].",
-              "Vida útil nominal: Edificios de viviendas u oficinas: 50 años; edificios monumentales o puentes importantes: 100 años; estructuras temporales: entre 3 y 10 años[cite: 166]."
+              "Objeto: Establecer las exigencias para que las estructuras de hormigón satisfagan la seguridad estructural, contra incendios y protección medioambiental.",
+              "Ámbito de aplicación: Estructuras de hormigón en masa, armado o pretensado.",
+              "Vida útil nominal: Edificios de viviendas u oficinas: 50 años; edificios monumentales o puentes importantes: 100 años; estructuras temporales: entre 3 y 10 años."
             ],
-            c: "La Propiedad debe fijar la vida útil nominal antes del inicio del proyecto[cite: 166]."
+            c: "La Propiedad debe fijar la vida útil nominal antes del inicio del proyecto."
           },
           {
             t: "3 · Materiales: Hormigón, Aceros y Aditivos",
             s: [
-              "Resistencia mínima: La resistencia característica de proyecto ($f_{ck}$) no será inferior a $20\text{ N/mm}^2$ en hormigón en masa, ni a $25\text{ N/mm}^2$ en armado o pretensado[cite: 179].",
-              "Consistencia: Se valora mediante el cono de Abrams (seca, plástica, blanda $6-9\text{ cm}$, fluida $10-15\text{ cm}$, líquida)[cite: 179].",
-              "Aceros pasivos: Se emplean aceros corrugados soldables (B 400 S, B 500 S) y con características especiales de ductilidad (B 400 SD, B 500 SD)[cite: 181]."
+              "Resistencia mínima: La resistencia característica de proyecto ($f_{ck}$) no será inferior a $20\text{ N/mm}^2$ en hormigón en masa, ni a $25\text{ N/mm}^2$ en armado o pretensado.",
+              "Consistencia: Se valora mediante el cono de Abrams (seca, plástica, blanda $6-9\text{ cm}$, fluida $10-15\text{ cm}$, líquida).",
+              "Aceros pasivos: Se emplean aceros corrugados soldables (B 400 S, B 500 S) y con características especiales de ductilidad (B 400 SD, B 500 SD)."
             ],
-            c: "Tipificación del hormigón estructural: $T-R/C/TM/A$ (ej. HA-25/B/20/IIa)[cite: 194]."
+            c: "Tipificación del hormigón estructural: $T-R/C/TM/A$ (ej. HA-25/B/20/IIa)."
           },
           {
             t: "4 · Ejecución: Cimbras, Encofrados y Puesta en Obra",
             s: [
-              "Cimbras y apuntalamientos: El constructor dispondrá de proyecto de cimbra y certificado de cumplimiento; arriostramiento en dos direcciones resistiendo al menos el 2% de las cargas verticales[cite: 195, 196].",
-              "Productos desencofrantes: Se prohíbe expresamente el empleo de gasóleo, grasa corriente o análogos[cite: 198].",
-              "Transporte y suministro: El tiempo máximo desde el amasado hasta la colocación es de 1h 30 min[cite: 202].",
+              "Cimbras y apuntalamientos: El constructor dispondrá de proyecto de cimbra y certificado de cumplimiento; arriostramiento en dos direcciones resistiendo al menos el 2% de las cargas verticales.",
+              "Productos desencofrantes: Se prohíbe expresamente el empleo de gasóleo, grasa corriente o análogos.",
+              "Transporte y suministro: El tiempo máximo desde el amasado hasta la colocación es de 1h 30 min.",
               "Curado: Obligatorio mantener la humedad mediante riego u otros tratamientos durante el fraguado y primer endurecimiento."
             ],
-            c: "No podrá procederse a la puesta en obra del hormigón sin disponer de los resultados de conformidad[cite: 204]."
+            c: "No podrá procederse a la puesta en obra del hormigón sin disponer de los resultados de conformidad."
           }
         ],
         casos: [
@@ -340,14 +340,14 @@ export const ASIGNATURAS = [
             q: "Según la Instrucción EHE-08, ¿cuál es el valor mínimo reglamentario de la resistencia característica a compresión ($f_{ck}$) exigido para elementos de hormigón armado?",
             o: ["15 N/mm²", "20 N/mm²", "25 N/mm²"],
             a: 2,
-            e: "La resistencia de proyecto $f_{ck}$ no será inferior a $20\text{ N/mm}^2$ en hormigones en masa, ni a $25\text{ N/mm}^2$ en hormigones armados o pretensados[cite: 179]."
+            e: "La resistencia de proyecto $f_{ck}$ no será inferior a $20\text{ N/mm}^2$ en hormigones en masa, ni a $25\text{ N/mm}^2$ en hormigones armados o pretensados."
           }
         ],
         cards: [
-          { ty: "Vida Útil", q: "¿Cuál es la vida útil nominal estándar establecida por la EHE-08 para edificios de viviendas u oficinas?", a: "50 años[cite: 166]." }
+          { ty: "Vida Útil", q: "¿Cuál es la vida útil nominal estándar establecida por la EHE-08 para edificios de viviendas u oficinas?", a: "50 años." }
         ],
         glo: [
-          ["EHE-08", "Instrucción de Hormigón Estructural en España.", "Regula seguridad, durabilidad y ejecución de estructuras de hormigón[cite: 165]."]
+          ["EHE-08", "Instrucción de Hormigón Estructural en España.", "Regula seguridad, durabilidad y ejecución de estructuras de hormigón."]
         ]
       },
       {
@@ -359,38 +359,38 @@ export const ASIGNATURAS = [
           {
             t: "1 · Definición y Elementos de las Escaleras",
             s: [
-              "Definición: Elementos estructurales inclinados para salvar desniveles mediante peldaños, construidos sobre correas (hormigón/cerámica) o zancas (vigas metálicas)[cite: 194].",
-              "Partes del peldaño: Huella o pisa (parte horizontal) y contrahuella o tabica (parte vertical)[cite: 194].",
-              "Tipos de escaleras: Rectas de un solo tramo, de dos tramos con meseta, de cuarto de vuelta, imperiales, en abanico, de caracol, etc.[cite: 195, 196]."
+              "Definición: Elementos estructurales inclinados para salvar desniveles mediante peldaños, construidos sobre correas (hormigón/cerámica) o zancas (vigas metálicas).",
+              "Partes del peldaño: Huella o pisa (parte horizontal) y contrahuella o tabica (parte vertical).",
+              "Tipos de escaleras: Rectas de un solo tramo, de dos tramos con meseta, de cuarto de vuelta, imperiales, en abanico, de caracol, etc."
             ],
-            c: "Cada tramo tendrá un mínimo de 3 peldaños y no podrá salvar una altura mayor de 3,20 m en uso general (2,50 m en sanitario y 2,10 m en escuelas infantiles o residencias de ancianos)[cite: 197]."
+            c: "Cada tramo tendrá un mínimo de 3 peldaños y no podrá salvar una altura mayor de 3,20 m en uso general (2,50 m en sanitario y 2,10 m en escuelas infantiles o residencias de ancianos)."
           },
           {
             t: "2 · Diseño y Relación de Peldaños (DB-SU 1)",
             s: [
-              "Relación de Blondel: Se cumplirá siempre a lo largo de toda la escalera $54\text{ cm} \le 2C + H \le 70\text{ cm}$ (o $540\text{ mm} \le 2C + H \le 700\text{ mm}$)[cite: 197, 199].",
-              "Escaleras de uso general: Huella $H \ge 280\text{ mm}$, contrahuella $130\text{ mm} \le C \le 185\text{ mm}$ (máx. 170 mm en escuelas y centros de ancianos)[cite: 199, 200].",
-              "Escaleras de uso restringido: Anchura mínima 800 mm, contrahuella máx. 200 mm y huella mín. 220 mm[cite: 199]."
+              "Relación de Blondel: Se cumplirá siempre a lo largo de toda la escalera $54\text{ cm} \le 2C + H \le 70\text{ cm}$ (o $540\text{ mm} \le 2C + H \le 700\text{ mm}$).",
+              "Escaleras de uso general: Huella $H \ge 280\text{ mm}$, contrahuella $130\text{ mm} \le C \le 185\text{ mm}$ (máx. 170 mm en escuelas y centros de ancianos).",
+              "Escaleras de uso restringido: Anchura mínima 800 mm, contrahuella máx. 200 mm y huella mín. 220 mm."
             ],
-            c: "Las tabicas serán verticales o inclinadas formando un ángulo máximo de $15^\circ$ con la vertical; no se admiten escalones sin tabica ni bocel en evacuación ascendente o uso infantil/ancianos[cite: 200]."
+            c: "Las tabicas serán verticales o inclinadas formando un ángulo máximo de $15^\circ$ con la vertical; no se admiten escalones sin tabica ni bocel en evacuación ascendente o uso infantil/ancianos."
           },
           {
             t: "3 · Pasamanos y Barreras de Protección",
             s: [
-              "Pasamanos: Obligatorios al menos en un lado, y en ambos si la anchura libre es $\ge 1,20\text{ m}$ (intermedios si la anchura supera los $2,40\text{ m}$)[cite: 197].",
-              "Altura de barandillas: Mínimo 900 mm (si el desnivel $\le 6\text{ m}$) o 1100 mm (si el desnivel $> 6\text{ m}$)[cite: 198].",
-              "Seguridad infantil: Sin puntos de apoyo escalables entre 200 mm y 700 mm de altura, y aberturas que no permitan el paso de una esfera de 100 mm[cite: 198]."
+              "Pasamanos: Obligatorios al menos en un lado, y en ambos si la anchura libre es $\ge 1,20\text{ m}$ (intermedios si la anchura supera los $2,40\text{ m}$).",
+              "Altura de barandillas: Mínimo 900 mm (si el desnivel $\le 6\text{ m}$) o 1100 mm (si el desnivel $> 6\text{ m}$).",
+              "Seguridad infantil: Sin puntos de apoyo escalables entre 200 mm y 700 mm de altura, y aberturas que no permitan el paso de una esfera de 100 mm."
             ],
-            c: "El espacio libre inferior entre la barrera y la línea de inclinación de la escalera no excederá de 50 mm[cite: 198]."
+            c: "El espacio libre inferior entre la barrera y la línea de inclinación de la escalera no excederá de 50 mm."
           },
           {
             t: "4 · Rampas y Escalas Fijas",
             s: [
-              "Rampas: Pendiente máxima del 12% (10% para sillas de ruedas si longitud $<3\text{ m}$, 8% si $<6\text{ m}$, 6% en el resto)[cite: 202].",
-              "Escalas fijas: Anchura entre 400 y 800 mm, distancia entre peldaños máx. 300 mm[cite: 204].",
-              "Protección en escalas: Protección circundante obligatoria a partir de 4 m de altura, y plataformas de descanso cada 9 m si superan dicha altura[cite: 204]."
+              "Rampas: Pendiente máxima del 12% (10% para sillas de ruedas si longitud $<3\text{ m}$, 8% si $<6\text{ m}$, 6% en el resto).",
+              "Escalas fijas: Anchura entre 400 y 800 mm, distancia entre peldaños máx. 300 mm.",
+              "Protección en escalas: Protección circundante obligatoria a partir de 4 m de altura, y plataformas de descanso cada 9 m si superan dicha altura."
             ],
-            c: "Las rampas con un desnivel superior a 550 mm dispondrán de pasamanos continuo al menos en un lado[cite: 203]."
+            c: "Las rampas con un desnivel superior a 550 mm dispondrán de pasamanos continuo al menos en un lado."
           }
         ],
         casos: [
@@ -399,26 +399,90 @@ export const ASIGNATURAS = [
             q: "En una escalera de un edificio de viviendas de uso general, se diseña un peldaño con una contrahuella de 17 cm y una huella de 30 cm. ¿Cumple la relación establecida por el DB-SU 1?",
             o: ["No, porque la huella es demasiado grande", "Sí, ya que $2(17) + 30 = 64\text{ cm}$, cumpliendo el intervalo de $54\text{ cm} \le 2C + H \le 70\text{ cm}$", "No, la contrahuella excede el máximo permitido"],
             a: 1,
-            e: "La relación de peldaños $540\text{ mm} \le 2C + H \le 700\text{ mm}$ se cumple perfectamente ($640\text{ mm}$), y la huella de 30 cm es mayor al mínimo exigido de 280 mm[cite: 197, 199]."
-          },
-          {
-            k: "Altura de Barandillas",
-            q: "¿Qué altura mínima reglamentaria deben tener las barreras de protección en escaleras cuando la diferencia de cota (desnivel) que protegen supera los 6 metros?",
-            o: ["900 mm", "1000 mm", "1100 mm"],
-            a: 2,
-            e: "Las barreras de protección tendrán un mínimo de 900 mm si el desnivel no excede de 6 m, y de 1100 mm en el resto de los casos[cite: 198]."
+            e: "La relación de peldaños $540\text{ mm} \le 2C + H \le 700\text{ mm}$ se cumple perfectamente ($640\text{ mm}$), y la huella de 30 cm es mayor al mínimo exigido de 280 mm."
           }
         ],
         cards: [
-          { ty: "Peldaños", q: "¿Cuál es el valor mínimo de la huella ($H$) exigido en tramos rectos para escaleras de uso general según el DB-SU 1?", a: "280 mm (28 cm)[cite: 199]." },
-          { ty: "Pasamanos", q: "¿A partir de qué anchura libre es obligatorio disponer pasamanos en ambos lados de una escalera?", a: "Cuando la anchura libre sea igual o mayor que 1,20 m[cite: 197]." },
-          { ty: "Escalas", q: "¿A partir de qué altura es obligatorio disponer protección circundante en las escalas fijas?", a: "A partir de 4 metros de altura[cite: 204]." }
+          { ty: "Peldaños", q: "¿Cuál es el valor mínimo de la huella ($H$) exigido en tramos rectos para escaleras de uso general según el DB-SU 1?", a: "280 mm (28 cm)." }
         ],
         glo: [
-          ["Huella (Pisa)", "Superficie horizontal de un peldaño sobre la que se apoya el pie[cite: 194].", "Mínimo 280 mm en uso general[cite: 199]."],
-          ["Contrahuella (Tabica)", "Superficie vertical de un peldaño que define la altura entre dos huellas[cite: 194].", "Entre 130 y 185 mm en uso general[cite: 199]."],
-          ["Relación de Blondel", "Fórmula empírica de diseño de escaleras: $54\text{ cm} \le 2C + H \le 70\text{ cm}$[cite: 197, 199].", "Garantiza la comodidad y ergonomía en la marcha."],
-          ["Zanca", "Elemento estructural inclinado (habitualmente metálico) sobre el que se apoyan los peldaños de una escalera[cite: 194]."]
+          ["Huella (Pisa)", "Superficie horizontal de un peldaño sobre la que se apoya el pie.", "Mínimo 280 mm en uso general."]
+        ]
+      },
+      {
+        id: "tema-11-estructuras-metalicas",
+        ruta: "Tema 11 › Estructuras Metálicas (CTE DB-SE-A)",
+        titulo: "Estructuras Metálicas: Aceros, Uniones y Ejecución (DB-SE-A)",
+        fuente: "TEMA 11  ESTRUCTURAS METALICAS.pdf",
+        proc: [
+          {
+            t: "1 · Ámbito de Aplicación y Materiales (UNE EN 10025)",
+            s: [
+              "Ámbito: Verificación de seguridad estructural de elementos metálicos de acero en edificación (excluye puentes, silos, antenas o resistencia al fuego).",
+              "Tipos de acero estructural: S235 ($f_y = 235\text{ N/mm}^2$), S275 ($f_y = 275\text{ N/mm}^2$), S355 ($f_y = 355\text{ N/mm}^2$) y S450 ($f_y = 450\text{ N/mm}^2$) para espesores $t \le 16\text{ mm}$.",
+              "Grados de resiliencia (ensayo Charpy): JR ($20^\circ\text{C}$), J0 ($0^\circ\text{C}$), J2 ($-20^\circ\text{C}$) y K2 ($-20^\circ\text{C}$ con energía mínima de 40 J).",
+              "Constantes físicas comunes: Módulo de elasticidad $E = 210.000\text{ N/mm}^2$, coeficiente de Poisson $\nu = 0,3$, densidad $\rho = 7.850\text{ kg/m}^3$."
+            ],
+            c: "Los espesores mayores de chapa reducen ligeramente el límite elástico mínimo garantizado (ej. S275 pasa a 265 N/mm² si $16 < t \le 40\text{ mm}$)."
+          },
+          {
+            t: "2 · Uniones Soldadas y Estructurales",
+            s: [
+              "Soldadura en ángulo: Aplicable en elementos de al menos 4 mm cuyas caras forman un ángulo $\alpha$ entre $60^\circ$ y $120^\circ$ (si $\alpha > 120^\circ$ no transmite esfuerzos).",
+              "Longitud efectiva mínima: No se considerarán cordones cuya longitud sea inferior a 40 mm o a 6 veces el ancho de garganta ($a$).",
+              "Soldadura a tope: De penetración total (fusión en todo el espesor) o penetración parcial; el sobreespesor no superará $t/10$.",
+              "Tipología de nudos: Uniones articuladas (doble casquillo, soldadura de alma) y uniones rígidas/semirrígidas (chapa frontal prolongada o a tope, con o sin rigidizadores)."
+            ],
+            c: "No se utilizará nunca un solo cordón de soldadura en ángulo para transmitir esfuerzos de tracción perpendiculares a su eje longitudinal."
+          },
+          {
+            t: "3 · Ejecución en Taller y Montaje",
+            s: [
+              "Identificación y acopio: Marcas duraderas (prohibidas entalladuras cinceladas); almacenamiento apilado sin contacto con el terreno y evitando agua.",
+              "Corte y conformado: Corte por sierra, cizalla u oxicorte automático; conformado en frío permitido sin martillazos y respetando radios mínimos de acuerdo.",
+              "Perforación: Preferentemente taladrado; punzonado admitido hasta espesores de 25 mm siempre que el espesor no supere el diámetro del agujero.",
+              "Soldadores: Deben estar certificados según norma UNE-EN 287-1; precalentamiento extendido 75 mm en cada componente si se requiere."
+            ],
+            c: "En ángulos entrantes y entallas debe garantizarse un acabado redondeado con un radio mínimo de 5 mm."
+          },
+          {
+            t: "4 · Uniones Atornilladas, Protección y Control de Calidad",
+            s: [
+              "Tornillos: Diámetro nominal mínimo de 12 mm; tras el apriete deben sobresalir al menos 4 filetes de rosca completos en pretensados (1 en sin pretensar).",
+              "Métodos de apriete (pretensados): Control del par torsor (llave dinamométrica), método del giro de tuerca, indicador directo de tensión y método combinado.",
+              "Tratamientos de protección: Limpieza por chorro abrasivo; galvanización (UNE-EN-ISO 1461) o pintura; no pintar superficies que vayan en contacto con hormigón.",
+              "Control de calidad (END): Inspección visual del 100% de soldaduras; ensayos no destructivos (partículas magnéticas, líquidos penetrantes, ultrasonidos o radiografías) tras 16 h (40 h si $t > 40\text{ mm}$)."
+            ],
+            c: "Si un tornillo pretensado se aprieta hasta el pretensado mínimo y luego se afloja, debe ser retirado y descartado."
+          }
+        ],
+        casos: [
+          {
+            k: "Soldadura en Ángulo",
+            q: "En una unión soldada en ángulo entre dos chapas de acero estructural, ¿entre qué valores debe estar comprendido el ángulo $\alpha$ que forman las caras de fusión para que la soldadura sea válida según el DB-SE-A?",
+            o: ["Entre 30° y 90°", "Entre 60° y 120°", "Entre 45° y 135°"],
+            a: 1,
+            e: "La soldadura en ángulo se utiliza cuando las caras de fusión forman un ángulo $\alpha$ comprendido entre $60^\circ$ y $120^\circ$. Si $\alpha > 120^\circ$ no se considera que pueda transmitir esfuerzos."
+          },
+          {
+            k: "Tornillos Pretensados",
+            q: "Durante el montaje de una estructura metálica con tornillos pretensados de alta resistencia, un operario aprieta un conjunto hasta el pretensado mínimo y posteriormente lo afloja para reajustar una chapa. ¿Qué establece el DB-SE-A?",
+            o: ["Se puede volver a apretar aplicando un 10% más de par", "Debe ser retirado y descartar su utilización (salvo que lo admita expresamente el pliego)", "Se puede reutilizar cambiando únicamente la arandela"],
+            a: 1,
+            e: "Si un conjunto tornillo, tuerca y arandela se ha apretado hasta el pretensado mínimo y luego aflojado, debe ser retirado y descartar su utilización."
+          }
+        ],
+        cards: [
+          { ty: "Acero Estructural", q: "¿Cuál es el módulo de elasticidad ($E$) y la densidad ($\rho$) comunes a todos los aceros estructurales según el DB-SE-A?", a: "$E = 210.000\text{ N/mm}^2$ y $\rho = 7.850\text{ kg/m}^3$." },
+          { ty: "Tornillería", q: "¿Cuál es el diámetro nominal mínimo establecido para los tornillos en uniones estructurales según el DB-SE-A?", a: "12 mm (salvo que se especifique otra cosa en proyecto)." },
+          { ty: "Soldadura", q: "¿Cuál es la longitud efectiva mínima para considerar válido un cordón de soldadura en ángulo?", a: "No inferior a 40 mm ni a 6 veces el ancho de garganta." },
+          { ty: "Control de Calidad", q: "¿Cuánto tiempo debe esperarse tras realizar una soldadura para ejecutar la inspección final mediante ensayos no destructivos?", a: "16 horas (40 horas en soldaduras a tope con espesores mayores de 40 mm)." }
+        ],
+        glo: [
+          ["Límite elástico ($f_y$)", "Tensión máxima que un acero soporta sin sufrir deformaciones permanentes.", "Ej: $275\text{ N/mm}^2$ en acero S275."],
+          ["Espesor de garganta ($a$)", "Altura del máximo triángulo isósceles inscrito en la sección transversal de un cordón de soldadura en ángulo.", "Determina la capacidad resistente del cordón."],
+          ["Desgarro laminar", "Fisuración escalonada en el metal base paralela a la superficie de laminación debida a tensiones de tracción perpendiculares.", "Se evita diseñando adecuadamente el detalle de soldadura."],
+          ["Método del giro de tuerca", "Procedimiento de apriete de tornillos pretensados consistente en llevar a 'apretado a tope' y aplicar un ángulo de giro adicional según espesor.", "Regulado en la tabla 11.12 del DB-SE-A."]
         ]
       }
     ]
