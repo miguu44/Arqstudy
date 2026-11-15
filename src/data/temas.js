@@ -309,27 +309,17 @@ export const ASIGNATURAS = [
             t: "1 · Objeto, Ámbito y Vida Útil (EHE-08)",
             s: [
               "Objeto: Establecer las exigencias para que las estructuras de hormigón satisfagan la seguridad estructural, contra incendios y protección medioambiental[cite: 165].",
-              "Ámbito de aplicación: Estructuras de hormigón en masa, armado o pretensado (se excluyen estructuras mixtas principales, presas y temperaturas $>70^\circ\text{C}$)[cite: 165].",
+              "Ámbito de aplicación: Estructuras de hormigón en masa, armado o pretensado[cite: 165].",
               "Vida útil nominal: Edificios de viviendas u oficinas: 50 años; edificios monumentales o puentes importantes: 100 años; estructuras temporales: entre 3 y 10 años[cite: 166]."
             ],
-            c: "La Propiedad debe fijar la vida útil nominal antes del inicio del proyecto, no pudiendo ser inferior a lo reglamentado[cite: 166]."
-          },
-          {
-            t: "2 · Durabilidad y Clases de Exposición",
-            s: [
-              "Clases generales de exposición (corrosión de armaduras): I (no agresiva), IIa/IIb (humedad), IIIa/IIIb/IIIc (marina) y IV (cloruros de otro origen)[cite: 168, 169].",
-              "Clases específicas de exposición: Qa, Qb, Qc (ataque químico), H (heladas sin sales), F (sales fundentes) y E (erosión/abrasión)[cite: 170].",
-              "Recubrimiento nominal ($r_{nom}$): $r_{nom} = r_{min} + \Delta r$ (siendo $\Delta r$ el margen de ejecución, generalmente 10 mm in situ sin control especial o 5 mm con control intenso)[cite: 190]."
-            ],
-            c: "En piezas hormigonadas contra el terreno, el recubrimiento mínimo será de 70 mm, salvo que se disponga un hormigón de limpieza[cite: 191]."
+            c: "La Propiedad debe fijar la vida útil nominal antes del inicio del proyecto[cite: 166]."
           },
           {
             t: "3 · Materiales: Hormigón, Aceros y Aditivos",
             s: [
               "Resistencia mínima: La resistencia característica de proyecto ($f_{ck}$) no será inferior a $20\text{ N/mm}^2$ en hormigón en masa, ni a $25\text{ N/mm}^2$ en armado o pretensado[cite: 179].",
-              "Consistencia: Se valora mediante el cono de Abrams (seca, plástica, blanda $6-9\text{ cm}$, fluida $10-15\text{ cm}$, líquida)[cite: 179]. Se prohíbe la líquida salvo superplastificantes.",
-              "Aceros pasivos: Se emplean aceros corrugados soldables (B 400 S, B 500 S) y con características especiales de ductilidad (B 400 SD, B 500 SD)[cite: 181].",
-              "Aditivos: Reductores de agua, superplastificantes, aceleradores/retardadores e inclusores de aire; se prohíbe estrictamente el cloruro cálcico en armadas/pretensadas[cite: 177]."
+              "Consistencia: Se valora mediante el cono de Abrams (seca, plástica, blanda $6-9\text{ cm}$, fluida $10-15\text{ cm}$, líquida)[cite: 179].",
+              "Aceros pasivos: Se emplean aceros corrugados soldables (B 400 S, B 500 S) y con características especiales de ductilidad (B 400 SD, B 500 SD)[cite: 181]."
             ],
             c: "Tipificación del hormigón estructural: $T-R/C/TM/A$ (ej. HA-25/B/20/IIa)[cite: 194]."
           },
@@ -338,11 +328,10 @@ export const ASIGNATURAS = [
             s: [
               "Cimbras y apuntalamientos: El constructor dispondrá de proyecto de cimbra y certificado de cumplimiento; arriostramiento en dos direcciones resistiendo al menos el 2% de las cargas verticales[cite: 195, 196].",
               "Productos desencofrantes: Se prohíbe expresamente el empleo de gasóleo, grasa corriente o análogos[cite: 198].",
-              "Transporte y suministro: El tiempo máximo desde el amasado hasta la colocación es de 1h 30 min (salvo retardadores); prohibido añadir agua en obra[cite: 202, 203].",
-              "Hormigonado en tiempo frío y caluroso: Temperatura de masa $\ge 5^\circ\text{C}$; prohibido verter sobre elementos $<0^\circ\text{C}$ o si se prevén heladas en 48 horas. En tiempo caluroso (>40°C o viento excesivo) se suspende salvo autorización[cite: 204, 205].",
-              "Curado: Obligatorio mantener la humedad mediante riego u otros tratamientos durante el fraguado y primer endurecimiento[cite: 206]."
+              "Transporte y suministro: El tiempo máximo desde el amasado hasta la colocación es de 1h 30 min[cite: 202].",
+              "Curado: Obligatorio mantener la humedad mediante riego u otros tratamientos durante el fraguado y primer endurecimiento."
             ],
-            c: "No podrá procederse a la puesta en obra del hormigón sin disponer de los resultados de conformidad, salvo armaduras con distintivo de calidad y control intenso[cite: 204]."
+            c: "No podrá procederse a la puesta en obra del hormigón sin disponer de los resultados de conformidad[cite: 204]."
           }
         ],
         casos: [
@@ -352,25 +341,84 @@ export const ASIGNATURAS = [
             o: ["15 N/mm²", "20 N/mm²", "25 N/mm²"],
             a: 2,
             e: "La resistencia de proyecto $f_{ck}$ no será inferior a $20\text{ N/mm}^2$ en hormigones en masa, ni a $25\text{ N/mm}^2$ en hormigones armados o pretensados[cite: 179]."
-          },
-          {
-            k: "Productos Desencofrantes",
-            q: "Durante la ejecución de una estructura de hormigón, ¿está permitido el uso de gasóleo o grasa corriente como producto desencofrante?",
-            o: ["Sí, siempre que sea en pequeña cantidad", "No, se prohíbe expresamente el empleo de gasóleo, grasa corriente o productos análogos", "Sí, si se mezcla con agua"],
-            a: 1,
-            e: "No se permitirá la aplicación de gasóleo, grasa corriente o cualquier otro producto análogo como desencofrante por ser perjudiciales[cite: 197, 198]."
           }
         ],
         cards: [
-          { ty: "Vida Útil", q: "¿Cuál es la vida útil nominal estándar establecida por la EHE-08 para edificios de viviendas u oficinas?", a: "50 años[cite: 166]." },
-          { ty: "Transporte", q: "¿Cuál es el tiempo máximo general establecido entre la adición de agua/cemento y la colocación del hormigón?", a: "No mayor de hora y media (1h 30 min), salvo aditivos retardadores[cite: 202]." },
-          { ty: "Tiempo Frío", q: "¿Qué temperatura mínima debe tener la masa de hormigón en el momento de verterla en obra?", a: "No será inferior a 5 °C[cite: 204]." }
+          { ty: "Vida Útil", q: "¿Cuál es la vida útil nominal estándar establecida por la EHE-08 para edificios de viviendas u oficinas?", a: "50 años[cite: 166]." }
         ],
         glo: [
-          ["EHE-08", "Instrucción de Hormigón Estructural en España.", "Regula seguridad, durabilidad y ejecución de estructuras de hormigón[cite: 165]."],
-          ["Vida útil nominal", "Período de tiempo previsto en proyecto en el que la estructura debe cumplir su función con mantenimiento adecuado[cite: 166].", "50 años en edificación residencial[cite: 166]."],
-          ["Recubrimiento nominal", "Distancia entre la superficie exterior de la armadura y la del hormigón fijada en plano ($r_{nom} = r_{min} + \Delta r$)[cite: 190].", "Garantizado con separadores[cite: 201]."],
-          ["Curado", "Proceso para mantener la humedad y temperatura del hormigón durante su endurecimiento inicial[cite: 206].", "Fundamental para evitar fisuración y pérdida de resistencia[cite: 206]."]
+          ["EHE-08", "Instrucción de Hormigón Estructural en España.", "Regula seguridad, durabilidad y ejecución de estructuras de hormigón[cite: 165]."]
+        ]
+      },
+      {
+        id: "tema-10-escaleras",
+        ruta: "Tema 10 › Escaleras, Rampas y Escalas (DB-SU 1)",
+        titulo: "Escaleras, Rampas y Elementos de Circulación Vertical",
+        fuente: "TEMA 10  ESCALERAS. (Rev. abril 2020).pdf",
+        proc: [
+          {
+            t: "1 · Definición y Elementos de las Escaleras",
+            s: [
+              "Definición: Elementos estructurales inclinados para salvar desniveles mediante peldaños, construidos sobre correas (hormigón/cerámica) o zancas (vigas metálicas)[cite: 194].",
+              "Partes del peldaño: Huella o pisa (parte horizontal) y contrahuella o tabica (parte vertical)[cite: 194].",
+              "Tipos de escaleras: Rectas de un solo tramo, de dos tramos con meseta, de cuarto de vuelta, imperiales, en abanico, de caracol, etc.[cite: 195, 196]."
+            ],
+            c: "Cada tramo tendrá un mínimo de 3 peldaños y no podrá salvar una altura mayor de 3,20 m en uso general (2,50 m en sanitario y 2,10 m en escuelas infantiles o residencias de ancianos)[cite: 197]."
+          },
+          {
+            t: "2 · Diseño y Relación de Peldaños (DB-SU 1)",
+            s: [
+              "Relación de Blondel: Se cumplirá siempre a lo largo de toda la escalera $54\text{ cm} \le 2C + H \le 70\text{ cm}$ (o $540\text{ mm} \le 2C + H \le 700\text{ mm}$)[cite: 197, 199].",
+              "Escaleras de uso general: Huella $H \ge 280\text{ mm}$, contrahuella $130\text{ mm} \le C \le 185\text{ mm}$ (máx. 170 mm en escuelas y centros de ancianos)[cite: 199, 200].",
+              "Escaleras de uso restringido: Anchura mínima 800 mm, contrahuella máx. 200 mm y huella mín. 220 mm[cite: 199]."
+            ],
+            c: "Las tabicas serán verticales o inclinadas formando un ángulo máximo de $15^\circ$ con la vertical; no se admiten escalones sin tabica ni bocel en evacuación ascendente o uso infantil/ancianos[cite: 200]."
+          },
+          {
+            t: "3 · Pasamanos y Barreras de Protección",
+            s: [
+              "Pasamanos: Obligatorios al menos en un lado, y en ambos si la anchura libre es $\ge 1,20\text{ m}$ (intermedios si la anchura supera los $2,40\text{ m}$)[cite: 197].",
+              "Altura de barandillas: Mínimo 900 mm (si el desnivel $\le 6\text{ m}$) o 1100 mm (si el desnivel $> 6\text{ m}$)[cite: 198].",
+              "Seguridad infantil: Sin puntos de apoyo escalables entre 200 mm y 700 mm de altura, y aberturas que no permitan el paso de una esfera de 100 mm[cite: 198]."
+            ],
+            c: "El espacio libre inferior entre la barrera y la línea de inclinación de la escalera no excederá de 50 mm[cite: 198]."
+          },
+          {
+            t: "4 · Rampas y Escalas Fijas",
+            s: [
+              "Rampas: Pendiente máxima del 12% (10% para sillas de ruedas si longitud $<3\text{ m}$, 8% si $<6\text{ m}$, 6% en el resto)[cite: 202].",
+              "Escalas fijas: Anchura entre 400 y 800 mm, distancia entre peldaños máx. 300 mm[cite: 204].",
+              "Protección en escalas: Protección circundante obligatoria a partir de 4 m de altura, y plataformas de descanso cada 9 m si superan dicha altura[cite: 204]."
+            ],
+            c: "Las rampas con un desnivel superior a 550 mm dispondrán de pasamanos continuo al menos en un lado[cite: 203]."
+          }
+        ],
+        casos: [
+          {
+            k: "Relación de Peldaños",
+            q: "En una escalera de un edificio de viviendas de uso general, se diseña un peldaño con una contrahuella de 17 cm y una huella de 30 cm. ¿Cumple la relación establecida por el DB-SU 1?",
+            o: ["No, porque la huella es demasiado grande", "Sí, ya que $2(17) + 30 = 64\text{ cm}$, cumpliendo el intervalo de $54\text{ cm} \le 2C + H \le 70\text{ cm}$", "No, la contrahuella excede el máximo permitido"],
+            a: 1,
+            e: "La relación de peldaños $540\text{ mm} \le 2C + H \le 700\text{ mm}$ se cumple perfectamente ($640\text{ mm}$), y la huella de 30 cm es mayor al mínimo exigido de 280 mm[cite: 197, 199]."
+          },
+          {
+            k: "Altura de Barandillas",
+            q: "¿Qué altura mínima reglamentaria deben tener las barreras de protección en escaleras cuando la diferencia de cota (desnivel) que protegen supera los 6 metros?",
+            o: ["900 mm", "1000 mm", "1100 mm"],
+            a: 2,
+            e: "Las barreras de protección tendrán un mínimo de 900 mm si el desnivel no excede de 6 m, y de 1100 mm en el resto de los casos[cite: 198]."
+          }
+        ],
+        cards: [
+          { ty: "Peldaños", q: "¿Cuál es el valor mínimo de la huella ($H$) exigido en tramos rectos para escaleras de uso general según el DB-SU 1?", a: "280 mm (28 cm)[cite: 199]." },
+          { ty: "Pasamanos", q: "¿A partir de qué anchura libre es obligatorio disponer pasamanos en ambos lados de una escalera?", a: "Cuando la anchura libre sea igual o mayor que 1,20 m[cite: 197]." },
+          { ty: "Escalas", q: "¿A partir de qué altura es obligatorio disponer protección circundante en las escalas fijas?", a: "A partir de 4 metros de altura[cite: 204]." }
+        ],
+        glo: [
+          ["Huella (Pisa)", "Superficie horizontal de un peldaño sobre la que se apoya el pie[cite: 194].", "Mínimo 280 mm en uso general[cite: 199]."],
+          ["Contrahuella (Tabica)", "Superficie vertical de un peldaño que define la altura entre dos huellas[cite: 194].", "Entre 130 y 185 mm en uso general[cite: 199]."],
+          ["Relación de Blondel", "Fórmula empírica de diseño de escaleras: $54\text{ cm} \le 2C + H \le 70\text{ cm}$[cite: 197, 199].", "Garantiza la comodidad y ergonomía en la marcha."],
+          ["Zanca", "Elemento estructural inclinado (habitualmente metálico) sobre el que se apoyan los peldaños de una escalera[cite: 194]."]
         ]
       }
     ]
