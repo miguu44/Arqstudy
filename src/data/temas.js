@@ -423,37 +423,16 @@ export const ASIGNATURAS = [
               "Grados de resiliencia (ensayo Charpy): JR ($20^\circ\text{C}$), J0 ($0^\circ\text{C}$), J2 ($-20^\circ\text{C}$) y K2 ($-20^\circ\text{C}$ con energía mínima de 40 J).",
               "Constantes físicas comunes: Módulo de elasticidad $E = 210.000\text{ N/mm}^2$, coeficiente de Poisson $\nu = 0,3$, densidad $\rho = 7.850\text{ kg/m}^3$."
             ],
-            c: "Los espesores mayores de chapa reducen ligeramente el límite elástico mínimo garantizado (ej. S275 pasa a 265 N/mm² si $16 < t \le 40\text{ mm}$)."
+            c: "Los espesores mayores de chapa reducen ligeramente el límite elástico mínimo garantizado."
           },
           {
             t: "2 · Uniones Soldadas y Estructurales",
             s: [
-              "Soldadura en ángulo: Aplicable en elementos de al menos 4 mm cuyas caras forman un ángulo $\alpha$ entre $60^\circ$ y $120^\circ$ (si $\alpha > 120^\circ$ no transmite esfuerzos).",
+              "Soldadura en ángulo: Aplicable en elementos de al menos 4 mm cuyas caras forman un ángulo $\alpha$ entre $60^\circ$ y $120^\circ$.",
               "Longitud efectiva mínima: No se considerarán cordones cuya longitud sea inferior a 40 mm o a 6 veces el ancho de garganta ($a$).",
-              "Soldadura a tope: De penetración total (fusión en todo el espesor) o penetración parcial; el sobreespesor no superará $t/10$.",
-              "Tipología de nudos: Uniones articuladas (doble casquillo, soldadura de alma) y uniones rígidas/semirrígidas (chapa frontal prolongada o a tope, con o sin rigidizadores)."
+              "Soldadura a tope: De penetración total o parcial; el sobreespesor no superará $t/10$."
             ],
             c: "No se utilizará nunca un solo cordón de soldadura en ángulo para transmitir esfuerzos de tracción perpendiculares a su eje longitudinal."
-          },
-          {
-            t: "3 · Ejecución en Taller y Montaje",
-            s: [
-              "Identificación y acopio: Marcas duraderas (prohibidas entalladuras cinceladas); almacenamiento apilado sin contacto con el terreno y evitando agua.",
-              "Corte y conformado: Corte por sierra, cizalla u oxicorte automático; conformado en frío permitido sin martillazos y respetando radios mínimos de acuerdo.",
-              "Perforación: Preferentemente taladrado; punzonado admitido hasta espesores de 25 mm siempre que el espesor no supere el diámetro del agujero.",
-              "Soldadores: Deben estar certificados según norma UNE-EN 287-1; precalentamiento extendido 75 mm en cada componente si se requiere."
-            ],
-            c: "En ángulos entrantes y entallas debe garantizarse un acabado redondeado con un radio mínimo de 5 mm."
-          },
-          {
-            t: "4 · Uniones Atornilladas, Protección y Control de Calidad",
-            s: [
-              "Tornillos: Diámetro nominal mínimo de 12 mm; tras el apriete deben sobresalir al menos 4 filetes de rosca completos en pretensados (1 en sin pretensar).",
-              "Métodos de apriete (pretensados): Control del par torsor (llave dinamométrica), método del giro de tuerca, indicador directo de tensión y método combinado.",
-              "Tratamientos de protección: Limpieza por chorro abrasivo; galvanización (UNE-EN-ISO 1461) o pintura; no pintar superficies que vayan en contacto con hormigón.",
-              "Control de calidad (END): Inspección visual del 100% de soldaduras; ensayos no destructivos (partículas magnéticas, líquidos penetrantes, ultrasonidos o radiografías) tras 16 h (40 h si $t > 40\text{ mm}$)."
-            ],
-            c: "Si un tornillo pretensado se aprieta hasta el pretensado mínimo y luego se afloja, debe ser retirado y descartado."
           }
         ],
         casos: [
@@ -462,27 +441,87 @@ export const ASIGNATURAS = [
             q: "En una unión soldada en ángulo entre dos chapas de acero estructural, ¿entre qué valores debe estar comprendido el ángulo $\alpha$ que forman las caras de fusión para que la soldadura sea válida según el DB-SE-A?",
             o: ["Entre 30° y 90°", "Entre 60° y 120°", "Entre 45° y 135°"],
             a: 1,
-            e: "La soldadura en ángulo se utiliza cuando las caras de fusión forman un ángulo $\alpha$ comprendido entre $60^\circ$ y $120^\circ$. Si $\alpha > 120^\circ$ no se considera que pueda transmitir esfuerzos."
-          },
-          {
-            k: "Tornillos Pretensados",
-            q: "Durante el montaje de una estructura metálica con tornillos pretensados de alta resistencia, un operario aprieta un conjunto hasta el pretensado mínimo y posteriormente lo afloja para reajustar una chapa. ¿Qué establece el DB-SE-A?",
-            o: ["Se puede volver a apretar aplicando un 10% más de par", "Debe ser retirado y descartar su utilización (salvo que lo admita expresamente el pliego)", "Se puede reutilizar cambiando únicamente la arandela"],
-            a: 1,
-            e: "Si un conjunto tornillo, tuerca y arandela se ha apretado hasta el pretensado mínimo y luego aflojado, debe ser retirado y descartar su utilización."
+            e: "La soldadura en ángulo se utiliza cuando las caras de fusión forman un ángulo $\alpha$ comprendido entre $60^\circ$ y $120^\circ$."
           }
         ],
         cards: [
-          { ty: "Acero Estructural", q: "¿Cuál es el módulo de elasticidad ($E$) y la densidad ($\rho$) comunes a todos los aceros estructurales según el DB-SE-A?", a: "$E = 210.000\text{ N/mm}^2$ y $\rho = 7.850\text{ kg/m}^3$." },
-          { ty: "Tornillería", q: "¿Cuál es el diámetro nominal mínimo establecido para los tornillos en uniones estructurales según el DB-SE-A?", a: "12 mm (salvo que se especifique otra cosa en proyecto)." },
-          { ty: "Soldadura", q: "¿Cuál es la longitud efectiva mínima para considerar válido un cordón de soldadura en ángulo?", a: "No inferior a 40 mm ni a 6 veces el ancho de garganta." },
-          { ty: "Control de Calidad", q: "¿Cuánto tiempo debe esperarse tras realizar una soldadura para ejecutar la inspección final mediante ensayos no destructivos?", a: "16 horas (40 horas en soldaduras a tope con espesores mayores de 40 mm)." }
+          { ty: "Acero Estructural", q: "¿Cuál es el módulo de elasticidad ($E$) y la densidad ($\rho$) comunes a todos los aceros estructurales según el DB-SE-A?", a: "$E = 210.000\text{ N/mm}^2$ y $\rho = 7.850\text{ kg/m}^3$." }
         ],
         glo: [
-          ["Límite elástico ($f_y$)", "Tensión máxima que un acero soporta sin sufrir deformaciones permanentes.", "Ej: $275\text{ N/mm}^2$ en acero S275."],
-          ["Espesor de garganta ($a$)", "Altura del máximo triángulo isósceles inscrito en la sección transversal de un cordón de soldadura en ángulo.", "Determina la capacidad resistente del cordón."],
-          ["Desgarro laminar", "Fisuración escalonada en el metal base paralela a la superficie de laminación debida a tensiones de tracción perpendiculares.", "Se evita diseñando adecuadamente el detalle de soldadura."],
-          ["Método del giro de tuerca", "Procedimiento de apriete de tornillos pretensados consistente en llevar a 'apretado a tope' y aplicar un ángulo de giro adicional según espesor.", "Regulado en la tabla 11.12 del DB-SE-A."]
+          ["Límite elástico ($f_y$)", "Tensión máxima que un acero soporta sin sufrir deformaciones permanentes.", "Ej: $275\text{ N/mm}^2$ en acero S275."]
+        ]
+      },
+      {
+        id: "tema-12-estructuras-madera",
+        ruta: "Tema 12 › Estructuras de Madera (CTE DB-SE-M)",
+        titulo: "Estructuras de Madera: Materiales, Uniones y Ejecución (DB-SE-M)",
+        fuente: "TEMA 12  ESTRUCTURAS DE MADERA.pdf",
+        proc: [
+          {
+            t: "1 · Ámbito de Aplicación y Materiales (DB-SE-M)",
+            s: [
+              "Ámbito: Verificación de la seguridad estructural de elementos de madera maciza (aserrada y rollizo), madera laminada encolada, microlaminada y tableros estructurales.",
+              "Clases resistentes (madera maciza): Para coníferas y chopo: C14, C16, C18, C20, C22, C24, C27, C30, C35, C40, C45 y C50; para frondosas: D30, D35, D40, D50, D60 y D70 (el número indica $f_{m,k}$ en $\text{N/mm}^2$).",
+              "Clases resistentes (madera laminada encolada): Homogénea (GL24h, GL28h, GL32h, GL36h) y combinada (GL24c, GL28c, GL32c, GL36c).",
+              "Aditivos y adhesivos: Clasificados según su idoneidad para clases de servicio 1, 2 o 3 (ej. resorcinoles, fenoles y poliuretanos aptos para exterior/clase 3; urea-formaldehído no apta para clase 3)."
+            ],
+            c: "El encolado de piezas de madera de especies diferentes requiere conocimiento específico debido a sus distintos coeficientes de contracción."
+          },
+          {
+            t: "2 · Uniones: Tradicionales y Mecánicas",
+            s: [
+              "Uniones tradicionales: Transmiten fuerzas mediante tensiones de compresión localizada y cortante (ej. embarbillados simples o dobles, con profundidad $t \le h/4$ o $h/6$).",
+              "Elementos mecánicos de fijación (tipo clavija): Clavos con/sin pretaladro, tirafondos, pernos sin holgura, pasadores y grapas.",
+              "Conectores: De anillo, de placa, dentados de una o doble cara (norma UNE EN 912)."
+            ],
+            c: "En embarbillados simples con $\beta \le 50^\circ$, la profundidad de la barbilla será $t \le h/4$; si $\beta \ge 60^\circ$, $t \le h/6$."
+          },
+          {
+            t: "3 · Ejecución y Detalles Constructivos",
+            s: [
+              "Variaciones dimensionales higrotérmicas (coníferas): $0,01\%$ en dirección longitudinal y $0,2\%$ en dirección transversal (tangencial; radial $0,1\%$) por cada $1\%$ de variación de humedad.",
+              "Protección y durabilidad: Evitar contacto directo con el terreno (distancia mínima de 20 cm con barrera antihumedad), no embeber arranques de soportes en hormigón, y ventilar los encuentros en muros manteniendo $\ge 15\text{ mm}$ de separación.",
+              "Restricción de movimientos: En piezas de canto superior a 80 cm no deben utilizarse empalmes ni nudos rígidos con placas de acero y pernos que coarten el movimiento de la madera por contracción/hinchazón."
+            ],
+            c: "Las testas de los elementos estructurales expuestas al agua de lluvia deben ocultarse o protegerse con piezas de remate que permitan la aireación."
+          },
+          {
+            t: "4 · Control: Suministro, Recepción y No-Aceptación",
+            s: [
+              "Identificación en albarán: Empresa suministradora, especie botánica, clase resistente, dimensiones nominales y marcado (ej. UNE EN 386 para laminada).",
+              "Humedad en recepción: Salvo especificación en contra, el contenido de humedad de la madera aserrada debe ser $\le 20\%$ (normas UNE 56529 / UNE 56530).",
+              "Criterio de no-aceptación: El incumplimiento de cualquier especificación (resistencias o durabilidad) es condición suficiente para el rechazo del producto o partida."
+            ],
+            c: "La identificación anatómica de la especie botánica en madera aserrada se realizará en laboratorio especializado cuando sea necesario."
+          }
+        ],
+        casos: [
+          {
+            k: "Clases Resistentes de Madera",
+            q: "En una estructura de madera aserrada de coníferas se especifica una clase resistente C24. ¿Qué significa exactamente el número 24?",
+            o: ["El módulo de elasticidad medio en kN/mm²", "El valor de la resistencia característica a flexión ($f_{m,k}$) expresada en N/mm²", "La densidad característica en g/cm³"],
+            a: 1,
+            e: "En las clases resistentes de madera aserrada (como C24), los números indican el valor de la resistencia característica a flexión ($f_{m,k}$) expresada en $\text{N/mm}^2$."
+          },
+          {
+            k: "Detalles Constructivos y Humedad",
+            q: "Según el DB-SE-M, al apoyar una viga de madera en un hueco practicado en un muro de fábrica, ¿qué separación mínima debe mantenerse entre la superficie de la madera y el material del muro para asegurar una correcta ventilación?",
+            o: ["Al menos 5 mm", "Al menos 15 mm", "Al menos 50 mm"],
+            a: 1,
+            e: "Se deben ventilar los encuentros de vigas en muros, manteniendo una separación mínima de 15 mm entre la superficie de la madera y el material del muro."
+          }
+        ],
+        cards: [
+          { ty: "Clases Resistentes", q: "¿Qué letras designan las clases resistentes de madera maciza para coníferas y frondosas respectivamente?", a: "Letra 'C' para coníferas/chopo (ej. C24) y letra 'D' para frondosas (ej. D30)." },
+          { ty: "Durabilidad", q: "¿Cuál es la distancia vertical mínima recomendada para evitar el contacto directo de la madera con el terreno?", a: "Una distancia mínima de 20 cm disponiendo una barrera antihumedad." },
+          { ty: "Humedad en Obra", q: "¿Cuál es el contenido máximo de humedad exigido por defecto para la madera aserrada a su recepción en obra?", a: "Menor o igual al 20% ($\le 20\%$). Muestreo según normas UNE 56529 / UNE 56530." },
+          { ty: "Uniones Rígidas", q: "¿A partir de qué canto de pieza se desaconseja el uso de nudos rígidos con placas metálicas y pernos que coarten el movimiento?", a: "En piezas de canto superior a 80 cm." }
+        ],
+        glo: [
+          ["Clase resistente", "Designación normalizada que agrupa a la madera según sus propiedades mecánicas (resistencia, rigidez y densidad).", "Ej: C24 para aserrada, GL24h para laminada."],
+          ["Embarbillado", "Unión tradicional de carpintería para estructuras de madera inclinadas (como cerchas) donde un elemento se entalla en otro.", "Puede ser simple o doble."],
+          ["Clase de servicio", "Categoría que define las condiciones ambientales (temperatura y humedad relativa) a las que estará expuesta la estructura durante su vida útil.", "Existen 3 clases de servicio en el DB-SE-M."],
+          ["Humedad de equilibrio", "Contenido de humedad que alcanza la madera en el aire del entorno bajo unas condiciones constantes de temperatura y humedad relativa."]
         ]
       }
     ]
