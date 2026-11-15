@@ -84,7 +84,7 @@ export const ASIGNATURAS = [
           {
             t: "2 · Seguridad y Salud en Zanjas",
             s: [
-              "Entibación obligatoria/conveniente en zanjas de h ≥ 1,5 m[cite: 57].",
+              "Entibación obligatoria/conveniente en zanjas de $h \ge 1,5\text{ m}$[cite: 57].",
               "Zona libre de cargas: mantener al menos 2 m libres de acopios y vehículos junto al borde[cite: 57, 58]."
             ],
             c: "Tras lluvias es obligatorio revisar los taludes y achicar el agua de inmediato[cite: 57]."
@@ -103,7 +103,7 @@ export const ASIGNATURAS = [
           { ty: "Seguridad", q: "¿Qué distancia libre de cargas se debe mantener junto al borde de una zanja?", a: "Una zona de unos 2 metros[cite: 57]." }
         ],
         glo: [
-          ["Entibación", "Sistema de contención temporal de paredes en zanjas[cite: 57, 58].", "Necesaria si h ≥ 1,5 m[cite: 57]."]
+          ["Entibación", "Sistema de contención temporal de paredes en zanjas[cite: 57, 58].", "Necesaria si $h \ge 1,5\text{ m}$[cite: 57]."]
         ]
       },
       {
@@ -214,13 +214,6 @@ export const ASIGNATURAS = [
             c: "Los zunchos y brochales son elementos horizontales que transmiten cargas a vigas o pilares, o sirven de atado y formación de huecos[cite: 137]."
           },
           {
-            t: "2 · Documentación de Proyecto (DB-SE Anejo I)",
-            s: [
-              "Memoria: Programa de necesidades, bases de cálculo, período de servicio (por defecto 50 años), modelos de cálculo y acciones consideradas[cite: 138]."
-            ],
-            c: "Los planos y el pliego de condiciones deben definir con precisión las características, uniones, tolerancias y control de calidad[cite: 139]."
-          },
-          {
             t: "3 · Clasificación de las Acciones",
             s: [
               "Acciones permanentes (G): Actúan en todo instante con magnitud constante o variación monótona (peso propio, terreno)[cite: 140].",
@@ -246,25 +239,86 @@ export const ASIGNATURAS = [
             o: ["Acciones permanentes (G)", "Acciones variables (Q)", "Acciones accidentales (A)"],
             a: 2,
             e: "Las acciones accidentales (A) son aquellas cuya probabilidad de ocurrencia es pequeña pero de gran importancia, como el sismo o el incendio[cite: 140]."
-          },
-          {
-            k: "Límites de Flecha",
-            q: "Para una estructura horizontal de un piso en la que se considera la integridad de tabiques frágiles (gran formato, rasillones), ¿cuál es el límite máximo de flecha relativa admisible?",
-            o: ["1/300", "1/400", "1/500"],
-            a: 2,
-            e: "Se admite que la estructura es suficientemente rígida si la flecha relativa es menor que 1/500 en pisos con tabiques frágiles[cite: 141]."
           }
         ],
         cards: [
-          { ty: "Acciones", q: "¿Qué diferencia existe entre una acción permanente (G) y una variable (Q)?", a: "La permanente actúa en todo instante con valor constante o de variación monótona; la variable puede actuar o no (uso, clima)[cite: 140]." },
-          { ty: "Flechas", q: "¿Cuál es el límite de flecha relativa exigido para verificar el confort de los usuarios ante acciones de corta duración?", a: "Menor que 1/350[cite: 141]." },
-          { ty: "Desplomes", q: "¿Cuál es el límite máximo de desplome total de un edificio frente a elementos constructivos susceptibles de daño?", a: "1/500 de la altura total del edificio[cite: 142]." }
+          { ty: "Acciones", q: "¿Qué diferencia existe entre una acción permanente (G) y una variable (Q)?", a: "La permanente actúa en todo instante con valor constante o de variación monótona; la variable puede actuar o no (uso, clima)[cite: 140]." }
         ],
         glo: [
-          ["Acción permanente", "Acción cuya variación en magnitud con el tiempo es despreciable o monótona[cite: 140, 145].", "Ej: peso propio[cite: 140]."],
-          ["Acción variable", "Acción cuya variación en el tiempo no es monótona ni despreciable[cite: 140, 145].", "Ej: sobrecarga de uso[cite: 140]."],
-          ["Acción accidental", "Acción de pequeña probabilidad de ocurrencia y gran importancia[cite: 140, 145].", "Ej: sismo o incendio[cite: 140]."],
-          ["Flecha relativa", "Descenso máximo de vano respecto al extremo dividido por la luz del tramo[cite: 145].", "Limitada por el CTE DB-SE[cite: 141]."]
+          ["Acción permanente", "Acción cuya variación en magnitud con el tiempo es despreciable o monótona[cite: 140, 145].", "Ej: peso propio[cite: 140]."]
+        ]
+      },
+      {
+        id: "tema-8-forjados",
+        ruta: "Tema 8 › Forjados Unidireccionales y Losas Alveolares",
+        titulo: "Forjados: Elementos, Apoyos y Ejecución",
+        fuente: "TEMA 8   FORJADOS.pdf",
+        proc: [
+          {
+            t: "1 · Definición y Elementos Constituyentes",
+            s: [
+              "Forjados unidireccionales: Constituidos por elementos prefabricados y hormigón vertido in situ[cite: 148].",
+              "Vigueta: Elemento longitudinal resistente prefabricado (armado o pretensado)[cite: 148].",
+              "Losa alveolar pretensada: Elemento superficial plano aligerado mediante alvéolos longitudinales, con juntas laterales preparadas para transmitir cortantes[cite: 148].",
+              "Pieza de entrevigado: Elemento aligerante o colaborante (cerámica, hormigón, poliestireno expandido)[cite: 148].",
+              "Losa superior de hormigón: Vertida en obra con armadura para repartir cargas y dotar de acción diafragma y arriostramiento[cite: 148]."
+            ],
+            c: "Las piezas colaborantes participan en la sección resistente y su resistencia a compresión no será menor que la del hormigón vertido[cite: 158]."
+          },
+          {
+            t: "2 · Apoyos de Forjados y Placas Alveolares",
+            s: [
+              "Apoyos directos: Enlazan a cadenas de atado de muros o vigas de canto[cite: 150].",
+              "Apoyos indirectos: Enlazan a vigas planas, mixtas o brochales[cite: 150].",
+              "Entrega mínima en placas alveolares (apoyo directo): 50 mm nominales (tolerancia 10 mm, mínimo real 40 mm) si la sobrecarga es $\le 4\text{ kN/m}^2$, canto $\le 30\text{ cm}$ y $V_d \le V_{u2}/2$[cite: 153]."
+            ],
+            c: "Es obligatorio hormigonar en todo el canto del forjado las juntas en los extremos de las losas y disponer armadura pasiva transversal y longitudinal[cite: 154]."
+          },
+          {
+            t: "3 · Hormigón en Obra y Condiciones Geométricas",
+            s: [
+              "Tipificación del hormigón: $T-R/C/TM/A$ (ej. HA-25/B/20/...) con resistencia característica mínima de $25\text{ N/mm}^2$[cite: 158].",
+              "Espesor mínimo de la losa superior ($h_0$): 40 mm sobre viguetas, piezas cerámicas/hormigón y losas alveolares; 50 mm sobre otros materiales o zonas sísmicas ($a_c > 0,16g$)[cite: 159]."
+            ],
+            c: "El tamaño máximo del árido ($TM$) será menor que $0,4$ veces el espesor mínimo de la losa superior y no superará los 20 mm[cite: 158]."
+          },
+          {
+            t: "4 · Ejecución, Acopio y Desapuntalado",
+            s: [
+              "Acopio: Apilados limpios sobre durmientes alineados en vertical, con vuelos máximos de $0,50\text{ m}$ y altura de pilas $\le 1,50\text{ m}$[cite: 161].",
+              "Apuntalado: Puntales arriostrados en dos direcciones; estudio detallado si el peso propio es $>3\text{ kN/m}^2$ o altura $>4\text{ m}$[cite: 161].",
+              "Hormigonado y curado: Simultáneo en nervios y losa superior, con superficies limpias y húmedas; curado según EHE[cite: 162].",
+              "Desapuntalado: Según artículo 75 de la EHE; retirada desde el centro del vano hacia los extremos y sin golpes bruscos[cite: 163]."
+            ],
+            c: "Si alguna vigueta o losa alveolar resulta dañada afectando a su capacidad portante, deberá ser desechada antes de su colocación[cite: 161]."
+          }
+        ],
+        casos: [
+          {
+            k: "Espesor de Losa Superior",
+            q: "En un forjado unidireccional con viguetas y bovedillas cerámicas situado en una zona sin riesgo sísmico especial, ¿cuál es el espesor mínimo reglamentario ($h_0$) de la losa superior de hormigón?",
+            o: ["20 mm", "30 mm", "40 mm"],
+            a: 2,
+            e: "El espesor mínimo de la losa superior es de 40 mm sobre viguetas y piezas de entrevigado cerámicas o de hormigón[cite: 159]."
+          },
+          {
+            k: "Normas de Acopio",
+            q: "A la hora de realizar el acopio en obra de viguetas y losas alveolares pretensadas, ¿cuál es el límite máximo reglamentario para los vuelos sobre los durmientes?",
+            o: ["No mayores que 0,50 metros", "No mayores que 1,50 metros", "Exactamente 1,00 metro"],
+            a: 0,
+            e: "Las viguetas y losas alveolares se apilarán con vuelos no mayores que 0,50 m ni alturas de pila superiores a 1,50 m[cite: 161]."
+          }
+        ],
+        cards: [
+          { ty: "Elementos", q: "¿Qué diferencia principal existe entre una pieza de entrevigado aligerante y una colaborante?", a: "La aligerante solo actúa como relleno o peso muerto; la colaborante participa como parte de la sección resistente del forjado[cite: 158]." },
+          { ty: "Apoyos", q: "¿Cuál es la entrega nominal mínima exigida para una placa alveolar en apoyo directo bajo condiciones estándar?", a: "50 mm nominales (con tolerancia de 10 mm, mínimo real de 40 mm)[cite: 153]." },
+          { ty: "Desapuntalado", q: "¿Cuál debe ser el orden correcto para la retirada de los puntales en un forjado?", a: "Desde el centro del vano hacia los extremos, y en voladizos desde el extremo libre hacia el arranque[cite: 163]." }
+        ],
+        glo: [
+          ["Vigueta", "Elemento longitudinal resistente prefabricado (armado o pretensado) para forjados[cite: 148].", "Instalado junto a piezas de entrevigado[cite: 148]."],
+          ["Losa alveolar", "Elemento superficial plano de hormigón pretensado aligerado mediante alvéolos longitudinales[cite: 148].", "Transmite cortantes por sus juntas laterales[cite: 148]."],
+          ["Pieza colaborante", "Pieza de entrevigado que forma parte de la sección resistente con resistencia $\ge$ al hormigón vertido[cite: 158].", "Cerámica u hormigón[cite: 158]."],
+          ["Acción diafragma", "Capacidad de la losa superior de hormigón para repartir cargas horizontales y arriostrar la estructura[cite: 148].", "Fundamental ante sismo o viento."]
         ]
       }
     ]
