@@ -107,49 +107,46 @@ export const ASIGNATURAS = [
           {
             t: "1 · Características del Solar y Estudio Geotécnico (DB-SE-C)",
             s: [
-              "Características físicas externas (dimensiones, niveles, vecinas, pendientes) e internas (servicios, restos, cimentaciones previas)[cite: 19].",
-              "El Estudio Geotécnico determina características físicas, mecánicas, composición y nivel freático para diseñar la cimentación[cite: 19, 20].",
-              "Clasificación de la construcción (C-0 a C-4 según plantas y superficie) y grupos de terreno (T-1 favorables, T-2 intermedios, T-3 desfavorables)[cite: 21].",
-              "Profundidad y densidad de reconocimientos: mínimo 3 puntos, controlando que el incremento neto de tensión sea inferior al 10% de la efectiva vertical[cite: 22, 23]."
+              "Características físicas externas e internas del solar[cite: 19].",
+              "El Estudio Geotécnico determina características físicas, mecánicas, composición y nivel freático[cite: 19, 20].",
+              "Clasificación de la construcción (C-0 a C-4) y grupos de terreno (T-1 favorables, T-2 intermedios, T-3 desfavorables)[cite: 21].",
+              "Profundidad y densidad de reconocimientos: mínimo 3 puntos[cite: 22, 23]."
             ],
             c: "El estudio geotécnico debe acometerse en la fase inicial de proyecto y antes de dimensionar totalmente la estructura[cite: 20]."
           },
           {
             t: "2 · Técnicas de Prospección del Terreno",
             s: [
-              "Calicatas: Excavaciones para observación directa (profundidad < 4m, terrenos cohesivos, sin nivel freático)[cite: 25].",
-              "Sondeos mecánicos: Perforaciones rotativas o a percusión para extraer testigos, medir nivel freático y ensayo SPT[cite: 25, 26].",
-              "Pruebas continuas de penetración: Medida indirecta estática o dinámica de la resistencia[cite: 26].",
-              "Técnicas geofísicas: Sísmica de refracción, resistividad eléctrica o georradar como complemento a grandes superficies (no exclusivas)[cite: 27]."
+              "Calicatas: excavaciones para observación directa (<4m, sin nivel freático)[cite: 25].",
+              "Sondeos mecánicos: perforaciones para extraer testigos y ensayos SPT[cite: 25, 26].",
+              "Pruebas continuas de penetración y técnicas geofísicas complementarias[cite: 26, 27]."
             ],
-            c: "En calicatas de más de 1,5 m de profundidad es obligatorio entibar o retaluzar para acceder[cite: 25]."
+            c: "En calicatas de más de 1,5 m de profundidad es obligatorio entibar o retaluzar[cite: 25]."
           },
           {
             t: "3 · Clasificación Granulométrica y Límites de Atterberg",
             s: [
-              "Bolos (>60mm), Grava (2-60mm), Arena (0,06-2mm), Limo (0,002-0,06mm) y Arcillas (<0,002mm)[cite: 28].",
-              "Gravas y arenas: Terrenos compresibles, inelásticos y sin cohesión apreciable (rozamiento interno)[cite: 28].",
-              "Arcillas: Terrenos coherentes y elásticos cuyo comportamiento depende de la humedad[cite: 29].",
-              "Límites de Atterberg: Límite líquido ($L_l$) y límite plástico ($L_p$) para calcular el índice de plasticidad ($I_p$) y consistencia ($I_c$)[cite: 29]."
+              "Bolos, gravas, arenas, limos y arcillas[cite: 28].",
+              "Gravas y arenas: rozamiento interno, compresibles y sin cohesión[cite: 28].",
+              "Arcillas: terrenos coherentes y elásticos; límites de Atterberg ($L_l$, $L_p$, $I_p$, $I_c$)[cite: 29]."
             ],
-            c: "El comportamiento mecánico depende de la granulometría y del estado hídrico del terreno[cite: 28, 29]."
+            c: "El comportamiento mecánico depende de la granulometría y del estado hídrico[cite: 28, 29]."
           },
           {
             t: "4 · Presiones de Hundimiento y Admisibles (DB-SE-C)",
             s: [
-              "Presión total bruta ($q_b$) y presión total neta ($q_{neta}$), que descuenta la sobrecarga existente al nivel de la base[cite: 30].",
-              "Área equivalente de un cimiento ($B^*$, $L^*$) para corregir excentricidades de carga mediante la formulación $B - 2e_B$[cite: 31].",
-              "Comprobación del Estado Límite Último de hundimiento mediante tablas analíticas o ensayos in situ (SPT, cross-hole)[cite: 30, 31]."
+              "Presión total bruta ($q_b$) y neta ($q_{neta}$)[cite: 30].",
+              "Área equivalente de un cimiento ($B^*$, $L^*$) para excentricidades[cite: 31].",
+              "Comprobación del Estado Límite Último de hundimiento mediante tablas analíticas o ensayos in situ[cite: 30, 31]."
             ],
-            c: "Las excentricidades superiores a 1/20 del lado exigen el uso de la sección equivalente[cite: 31]."
+            c: "Excentricidades superiores a 1/20 del lado exigen el uso de la sección equivalente[cite: 31]."
           },
           {
             t: "5 · Resumen de Acciones en la Edificación (DB-SE-AE)",
             s: [
-              "Acciones permanentes: Peso propio de estructura, cerramientos, tabiquería (aprox. 1,0 kN/m² en viviendas) y equipos fijos[cite: 34].",
-              "Sobrecargas de uso: Valores uniformes según categoría (residencial A: 2 kN/m², oficinas B: 2 kN/m², comerciales D: 5 kN/m²)[cite: 35].",
-              "Viento ($q_e$): Función de presión dinámica, coeficiente de exposición y coeficiente eólico/presión[cite: 37].",
-              "Nieve y Acciones térmicas: Carga en función de altitud y zona, y juntas de dilatación cada 40 m en estructuras de hormigón/acero[cite: 40, 41]."
+              "Acciones permanentes: peso propio, tabiquería (aprox. 1,0 kN/m² en viviendas)[cite: 34].",
+              "Sobrecargas de uso según categoría (residencial 2 kN/m², comerciales 5 kN/m²)[cite: 35].",
+              "Viento, nieve y acciones térmicas (juntas de dilatación cada 40 m)[cite: 37, 40, 41]."
             ],
             c: "Los edificios ordinarios no son sensibles a efectos dinámicos del viento salvo esbeltez superior a 6[cite: 37]."
           }
@@ -157,40 +154,30 @@ export const ASIGNATURAS = [
         casos: [
           {
             k: "Estudio Geotécnico",
-            q: "Se proyecta un edificio residencial de 5 plantas (Tipo C-2) en un terreno con rellenos antrópicos y arcillas expansivas (Grupo T-3). ¿Qué condiciona el estudio geotécnico?",
-            o: ["No requiere sondeos si el solar es pequeño", "Se deben programar sondeos mecánicos y profundidades adaptadas al grupo T-3 y tipo C-2", "Basta con una calicata manual de 1 metro"],
+            q: "Se proyecta un edificio de 5 plantas en un terreno desfavorable con arcillas expansivas (Grupo T-3). ¿Qué tipo de reconocimiento se requiere?",
+            o: ["Ninguno", "Sondeos mecánicos y profundidades adaptadas al grupo T-3 y tipo C-2", "Una calicata manual de 50 cm"],
             a: 1,
-            e: "Los terrenos desfavorables (T-3) y edificios C-2 exigen una campaña rigurosa con sondeos mecánicos y profundidades orientativas mayores según las tablas del DB-SE-C."
+            e: "Los terrenos desfavorables (T-3) exigen campañas rigurosas con sondeos mecánicos según el DB-SE-C."
           },
           {
             k: "Clasificación de Suelos",
-            q: "Un suelo está compuesto mayoritariamente por partículas inferiores a 0,002 mm, es coherente y su consistencia varía notablemente con la humedad y los límites de Atterberg. ¿De qué suelo se trata?",
-            o: ["Arena limpia", "Arcilla", "Bolos y gravas detríticas"],
-            a: 1,
-            e: "Las partículas menores de 0,002 mm corresponden a arcillas, caracterizadas por su cohesión y dependencia de los límites de Atterberg y contenido hídrico."
-          },
-          {
-            k: "Acciones en la Edificación",
-            q: "Para el cálculo de la estructura de un edificio de viviendas convencional, ¿qué valor de carga equivalente por peso propio de tabiquería ordinaria se puede adoptar habitualmente?",
-            o: ["1,0 kN por cada m² de superficie construida", "5,0 kN/m² obligatorios", "No se tiene en cuenta la tabiquería"],
+            q: "¿Cómo se comportan fundamentalmente las arcillas frente a las cargas comparadas con las gravas?",
+            o: ["Las arcillas son coherentes y su consistencia depende de la humedad; las gravas resisten por rozamiento interno", "Tienen el mismo comportamiento", "Las gravas no son compresibles jamás"],
             a: 0,
-            e: "Según el DB-SE-AE, en viviendas bastará considerar como peso propio de la tabiquería una carga de 1,0 kN por cada m² de superficie construida."
+            e: "Las arcillas dependen de la cohesión y humedad (límites de Atterberg), mientras que las gravas y arenas lo hacen por rozamiento interno[cite: 28, 29]."
           }
         ],
         cards: [
-          { ty: "Concepto Geotecnia", q: "¿Qué diferencia hay fundamentalmente entre gravas/arenas y limos/arcillas ante las cargas?", a: "Las gravas y arenas resisten por rozamiento interno y son compresibles sin cohesión; las arcillas son coherentes y su comportamiento depende de la humedad." },
-          { ty: "DB-SE-C", q: "¿Cuál es el número mínimo de puntos a reconocer en un solar con carácter general?", a: "Un mínimo de tres puntos de reconocimiento." },
-          { ty: "DB-SE-AE", q: "¿Cuál es el valor característico de la sobrecarga de uso en viviendas (categoría A1)?", a: "2 kN/m²." },
-          { ty: "Normativa", q: "¿Qué distancia máxima sin juntas de dilatación se permite habitualmente en estructuras de hormigón o acero?", a: "40 metros." },
-          { ty: "Geotecnia", q: "¿Qué mide el ensayo del cono de Abrams y en qué tipo de material se aplica?", a: "Mide la docilidad o consistencia del hormigón fresco." }
+          { ty: "Geotecnia", q: "¿Cuál es el número mínimo de puntos de reconocimiento a realizar en un solar con carácter general?", a: "Un mínimo de tres puntos." },
+          { ty: "DB-SE-AE", q: "¿Cuál es el valor característico de la sobrecarga de uso en viviendas (categoría A1)?", a: "2 kN/m²[cite: 35]." },
+          { ty: "Normativa", q: "¿Qué distancia máxima sin juntas de dilatación se permite habitualmente en estructuras de hormigón o acero?", a: "40 metros[cite: 41]." }
         ],
         glo: [
           ["Estudio Geotécnico", "Conjunto de datos y ensayos sobre las características físicas y mecánicas del terreno para diseñar cimientos[cite: 19, 20].", "Documento obligatorio de proyecto."],
           ["Calicata", "Excavación a cielo abierto (<4m) que permite inspección directa y toma de muestras[cite: 25].", "No válida con nivel freático alto."],
-          ["Sondeo mecánico", "Perforación profunda para extraer testigos y realizar ensayos in situ como SPT[cite: 25, 26].", "Imprescindible bajo nivel freático."],
+          ["Sondeo mecánico", "Perforación profunda para extraer testigos y realizar ensayos in situ[cite: 25, 26].", "Imprescindible bajo nivel freático."],
           ["Límites de Atterberg", "Límite líquido y plástico que definen la plasticidad y consistencia de las arcillas[cite: 29].", "Parámetros geotécnicos clave."],
-          ["Presión admisible", "Valor de cálculo de la resistencia del terreno frente al hundimiento y asientos[cite: 30].", "Límite para dimensionar cimientos."],
-          ["DB-SE-AE", "Documento Básico del CTE relativo a las Acciones en la Edificación (peso propio, viento, nieve, uso)[cite: 33, 34, 35, 37, 40].", "Normativa de cálculo de cargas."]
+          ["DB-SE-AE", "Documento Básico del CTE relativo a las Acciones en la Edificación[cite: 33].", "Normativa de cálculo de cargas."]
         ]
       },
       {
@@ -202,184 +189,167 @@ export const ASIGNATURAS = [
           {
             t: "1 · Preparación del Solar y Replanteo",
             s: [
-              "Desbroce y limpieza mecánica: retirada de capa superficial, vegetación espontánea y posibles restos de escombros[cite: 45].",
-              "Replanteo: operación de trasladar y dibujar sobre el terreno los ejes de la estructura, cimentación y perímetros (sótanos)[cite: 45].",
-              "Instrumentos de medición: cinta métrica, nivel de burbuja/agua, escuadra, plomada y aparatos topográficos (taquímetros)[cite: 45, 49, 50].",
-              "Elementos de marcaje: estacas, camillas de madera, jalones, cordel, tiralíneas de azulete y varillas[cite: 49, 50, 51]."
+              "Desbroce y limpieza mecánica: retirada de capa superficial y restos[cite: 45].",
+              "Replanteo: trasladar y dibujar sobre el terreno ejes y perímetros[cite: 45].",
+              "Instrumentos: cinta métrica, niveles, escuadras, plomadas y taquímetros[cite: 45, 49, 50].",
+              "Elementos de marcaje: estacas, camillas de madera, jalones y cordel[cite: 49, 50, 51]."
             ],
-            c: "Es imprescindible verificar las mediciones dos o tres veces y comprobar distancias a referencias exteriores fijas (aceras, solares colindantes)[cite: 49]."
+            c: "Es imprescindible verificar las mediciones dos o tres veces y contrastarlas con referencias exteriores fijas[cite: 49]."
           },
           {
             t: "2 · Movimiento de Tierras: Desmontes y Excavaciones",
             s: [
-              "Desmontes: excavación o rebaje del terreno (zanjas, pozos para cimentación, vaciados para sótanos y desmontes a cielo abierto)[cite: 52].",
-              "Toda extracción lleva implícita la carga sobre camión y el transporte a vertedero autorizado[cite: 52].",
-              "Recomendación en arcillas: dejar sin excavar un recubrimiento de unos 30 cm hasta el mismo día de la cimentación para proteger el fondo[cite: 53].",
-              "Uso de taludes perimetrales, bermas y técnica de bataches en excavaciones profundas junto a edificios medianeros[cite: 52]."
+              "Desmontes y vaciados: excavación o rebaje del terreno para sótanos o zanjas[cite: 52].",
+              "Transporte a vertedero autorizado[cite: 52].",
+              "Recomendación en arcillas: dejar un recubrimiento de 30 cm sin excavar hasta el día de la cimentación[cite: 53]."
             ],
-            c: "Se debe evitar alterar la estructura del suelo de apoyo de los cimientos durante la excavación[cite: 52]."
+            c: "Evitar alterar la estructura del suelo de apoyo durante la excavación[cite: 52]."
           },
           {
             t: "3 · Terraplenados y Compactación",
             s: [
-              "Terraplenado: aporte de tierras (de la propia obra o de préstamo) para regularizar o alcanzar una cota determinada[cite: 53, 54].",
-              "Compactación: realizada mediante rodillos vibrantes (remolcados o autopropulsados) y mesas vibrantes[cite: 53, 54].",
-              "Tongadas: el material se vierte en capas sucesivas de 25 a 30 cm de espesor y se compacta capa por capa[cite: 54]."
+              "Terraplenado: aporte de tierras para regularizar o alcanzar cotas[cite: 53, 54].",
+              "Compactación mediante rodillos vibrantes y mesas vibrantes[cite: 53, 54].",
+              "Tongadas: capas sucesivas de 25 a 30 cm compactadas capa por capa[cite: 54]."
             ],
-            c: "Un terraplén mal compactado genera asientos posteriores indeseados bajo soleras o pavimentos."
+            c: "Un terraplén mal compactado provoca asientos posteriores bajo soleras y pavimentos."
           },
           {
             t: "4 · Taludes, Esponjamiento y Asentamiento",
             s: [
-              "Talud: inclinación del corte o terraplén respecto a la horizontal, dependiendo de la cohesión del terreno y si está seco o inmerso (Tabla 3.1)[cite: 54, 55].",
-              "Esponjamiento ($C_e$): aumento de volumen que experimenta el terreno al ser excavado y perder su compacidad natural (clave para transporte y acopio)[cite: 55, 56].",
-              "Asentamiento ($C_a$): pérdida de volumen que sufre el material de relleno al ser compactado en terraplenes[cite: 56]."
+              "Talud: inclinación del corte o terraplén según la cohesión del terreno[cite: 54, 55].",
+              "Esponjamiento ($C_e$): aumento de volumen del terreno al excavarlo (clave para transporte)[cite: 55, 56].",
+              "Asentamiento ($C_a$): pérdida de volumen del material de relleno al compactarlo[cite: 56]."
             ],
-            c: "Los suelos cohesivos admiten ángulos de talud mayores que los suelos granulares o arenas finas[cite: 54, 55]."
+            c: "Los suelos cohesivos admiten ángulos de talud mayores que los granulares[cite: 54, 55]."
           },
           {
-            t: "5 · Seguridad y Salud en Zanjas y Vaciados",
+            t: "5 · Seguridad y Salud en Zanjas",
             s: [
-              "Entibación obligatoria y conveniente en zanjas de profundidad igual o superior a 1,5 m (o respetar ángulos de talud)[cite: 57].",
-              "Zona libre de cargas: mantener una franja de al menos 2 m libre de acopios y circulación de vehículos junto al borde[cite: 57, 58].",
-              "Protección perimetral: barandilla reglamentaria en zanjas de profundidad igual o superior a 2 m[cite: 57].",
-              "Medios de acceso: al menos una escalera portátil por equipo de trabajo que sobresalga 1 m del borde[cite: 57]."
+              "Entibación obligatoria/conveniente en zanjas de h ≥ 1,5 m[cite: 57].",
+              "Zona libre de cargas: mantener al menos 2 m libres de acopios y vehículos junto al borde[cite: 57, 58].",
+              "Protección perimetral con barandilla en zanjas de h ≥ 2 m[cite: 57]."
             ],
-            c: "Tras lluvias o encharcamientos, es imprescindible revisar minuciosamente los taludes y achicar el agua de forma inmediata[cite: 57]."
+            c: "Tras lluvias es obligatorio revisar los taludes y achicar el agua de inmediato[cite: 57]."
           }
         ],
         casos: [
           {
             k: "Seguridad en Zanjas",
-            q: "¿A partir de qué profundidad en zanjas se establece la conveniencia de disponer entibación según los apuntes de seguridad?",
-            o: ["A partir de 0,5 metros", "Igual o superior a 1,5 metros", "Exclusivamente a partir de 5 metros de profundidad"],
+            q: "¿A partir de qué profundidad en zanjas se establece la conveniencia de disponer entibación?",
+            o: ["0,5 metros", "Igual o superior a 1,5 metros", "5 metros"],
             a: 1,
-            e: "Cuando la profundidad de una zanja sea igual o superior a 1,5 m es conveniente entibarla para evitar desprendimientos (o respetar los taludes de la tabla)[cite: 57]."
+            e: "A partir de 1,5 m de profundidad es conveniente entibar o proteger adecuadamente la zanja[cite: 57]."
           },
           {
-            k: "Fenómenos en Tierras",
-            q: "¿Cómo se denomina el incremento de volumen que sufre un terreno al ser excavado debido a la pérdida de su compacidad y cohesión original?",
-            o: ["Asentamiento", "Esponjamiento", "Consolidación diferida"],
+            k: "Esponjamiento",
+            q: "¿Cómo se denomina el aumento de volumen que sufre el terreno al ser excavado?",
+            o: ["Asentamiento", "Esponjamiento", "Consolidación"],
             a: 1,
-            e: "El esponjamiento ($C_e$) es el aumento de volumen del terreno suelto frente al hueco excavado, un factor clave para calcular camiones y vertedero[cite: 55, 56]."
-          },
-          {
-            k: "Ejecución de Terraplenes",
-            q: "Durante los trabajos de terraplenado, ¿de qué espesor máximo orientativo deben ser las capas sucesivas de aporte de tierra para garantizar una correcta compactación?",
-            o: ["De 25 a 30 cm (tongadas)", "De 1,5 a 2 metros", "De 5 a 10 metros"],
-            a: 0,
-            e: "El relleno o terraplenado se ejecuta vertiendo la tierra por capas de 25 o 30 cm denominadas tongadas, compactándolas sucesivamente[cite: 54]."
+            e: "El esponjamiento ($C_e$) mide el incremento de volumen frente al hueco excavado[cite: 55, 56]."
           }
         ],
         cards: [
-          { ty: "Seguridad", q: "¿Qué distancia libre de cargas y vehículos se debe mantener como norma general junto al borde de una zanja?", a: "Una zona de unos 2 metros libre de acopios y circulación[cite: 57]." },
-          { ty: "Definición", q: "¿Qué diferencia hay entre desmonte y terraplenado?", a: "El desmonte es excavar o rebajar terreno; el terraplenado es aportar y compactar tierras[cite: 52, 53]." },
-          { ty: "Seguridad", q: "¿Cuánto debe sobresalir como mínimo la escalera de mano en el interior de una zanja para garantizar un acceso seguro?", a: "Debe sobresalir al menos 1 metro por encima del borde de la zanja[cite: 57]." },
-          { ty: "Replanteo", q: "¿Para qué sirven las camillas en el replanteo de cimentación?", a: "Son soportes de madera con cordeles que permiten materializar y conservar los ejes y alineaciones del edificio[cite: 49, 51]." }
+          { ty: "Seguridad", q: "¿Qué distancia libre de cargas se debe mantener junto al borde de una zanja?", a: "Una zona de unos 2 metros[cite: 57]." },
+          { ty: "Ejecución", q: "¿De qué espesor máximo deben ser las tongadas en un terraplenado?", a: "De 25 a 30 cm[cite: 54]." }
         ],
         glo: [
-          ["Replanteo", "Operación de trasladar los planos al terreno marcando ejes y perímetros[cite: 45].", "Uso de camillas, cintas y taquímetros[cite: 45, 49, 50, 51]."],
-          ["Desmonte", "Excavación o rebaje masivo o en zanjas/pozos del terreno[cite: 52].", "Requiere carga y transporte a vertedero[cite: 52]."],
-          ["Terraplenado", "Relleno y aporte de tierras para alcanzar una cota proyectada[cite: 53, 54].", "Se ejecuta en tongadas de 25-30 cm compactadas[cite: 54]."],
-          ["Esponjamiento", "Aumento de volumen del terreno al excavarlo y perder compacidad[cite: 55, 56].", "Afecta al dimensionado de camiones y transporte[cite: 55, 56]."],
-          ["Entibación", "Sistema de contención temporal de paredes en zanjas para evitar derrumbes[cite: 57, 58].", "Obligatoria/conveniente si h ≥ 1,5 m[cite: 57]."],
-          ["Tongada", "Capa de suelo de 25-30 cm destinada a recibir compactación en terraplenes[cite: 54].", "Compactada capa a capa[cite: 54]."]
+          ["Replanteo", "Operación de trasladar los planos al terreno marcando ejes[cite: 45].", "Uso de camillas y taquímetros[cite: 45, 49, 50, 51]."],
+          ["Desmonte", "Excavación o rebaje del terreno[cite: 52].", "Requiere carga y transporte a vertedero[cite: 52]."],
+          ["Esponjamiento", "Aumento de volumen del terreno al excavarlo[cite: 55, 56].", "Afecta al cálculo de camiones[cite: 55, 56]."],
+          ["Entibación", "Sistema de contención temporal de paredes en zanjas[cite: 57, 58].", "Necesaria si h ≥ 1,5 m[cite: 57]."]
         ]
       },
       {
-        id: "zapatas-aisladas",
-        ruta: "Bloque 3: Cimentaciones › Tema 7",
-        titulo: "Zapatas aisladas",
-        fuente: "tema7_cimentaciones.pdf",
+        id: "tema-4-cimientos",
+        ruta: "Tema 4 › Cimientos y Cimentaciones Directas (DB-SE-C)",
+        titulo: "Cimientos y Cimentaciones Directas",
+        fuente: "TEMA 4 CIMIENTOS.pdf",
         proc: [
           {
-            t: "1 · Actuaciones previas y replanteo",
+            t: "1 · Tipologías de Cimentaciones Directas",
             s: [
-              "Revisar planos de cimentación y estudio geotécnico (tensión admisible del terreno).",
-              "Replanteo de ejes y cotas con estación total; marcar con camillas y cuerdas.",
-              "Comprobar servicios afectados y medianeras antes de excavar."
+              "Definición: Elementos estructurales enterrados que transmiten cargas de la estructura al terreno (DB-SE-C)[cite: 64].",
+              "Cimentaciones directas (superficiales): Reparten cargas en un plano de apoyo horizontal (pilares, muros, sótanos)[cite: 64].",
+              "Tipos principales (Tabla 4.1): Zapata aislada (pilares aislados), combinada (dos o más pilares), corrida (alineaciones de pilares o muros), pozo de cimentación, emparrillado y losa[cite: 65, 66]."
             ],
-            c: "Error de replanteo de ejes: la zapata queda excéntrica respecto al pilar."
+            c: "Se emplearán cimentaciones directas siempre que las condiciones del terreno y la capacidad portante lo permitan[cite: 64]."
           },
           {
-            t: "2 · Materiales y medios auxiliares",
+            t: "2 · Zapatas Aisladas, Combinadas y Corridas",
             s: [
-              "Hormigón de limpieza HL-150/B/20, espesor 10 cm.",
-              "Hormigón estructural HA-25 (o según proyecto), acero B500S, separadores homologados.",
-              "Medios: retroexcavadora, vibrador de aguja, bomba o canaleta, bombeo de agua si hay nivel freático."
+              "Zapatas aisladas: Planta cuadrada (interiores) o rectangular (medianeras y esquinas)[cite: 66].",
+              "Rigidez estructural: Rígidas si el vuelo $v \le 2h$; flexibles si $v > 2h$[cite: 66].",
+              "Vigas de atado y centradoras: Las vigas de atado evitan desplazamientos laterales (clave en sismo); las centradoras equilibran zapatas excéntricas (medianeras/esquinas)[cite: 67]."
             ],
-            c: null
+            c: "No se aconseja el apoyo directo de las vigas de unión sobre terrenos expansivos o colapsables[cite: 67]."
           },
           {
-            t: "3 · Fases de ejecución",
+            t: "3 · Pozos, Emparrillados y Losas de Cimentación",
             s: [
-              "Excavación hasta cota de proyecto, sin sobreexcavar; refino manual del fondo.",
-              "Validación del terreno por la dirección facultativa (comparar con geotécnico).",
-              "Vertido y nivelado del hormigón de limpieza.",
-              "Colocación de armadura inferior con separadores y esperas del pilar.",
-              "Hormigonado por tongadas y vibrado.",
-              "Curado mínimo 7 días en climas normales."
+              "Pozos de cimentación: Relleno de hormigón pobre bajo la zapata o bajada de cota con plinto para alcanzar terreno firme[cite: 69, 70].",
+              "Emparrillados: Zapatas corridas entrecruzadas en malla ortogonal para terrenos de baja capacidad o alta deformabilidad[cite: 70, 71].",
+              "Losas de cimentación: Cubren toda el área (continua, aligerada, nervada, cajón); ideales en terrenos heterogéneos o bajo el nivel freático (evitan subpresiones)[cite: 71, 72].",
+              "Cimentación compensada: Situación donde el peso de las tierras excavadas iguala al peso del edificio, anulando asientos netos[cite: 72]."
             ],
-            c: "Falta de separadores o recubrimiento insuficiente: corrosión prematura de la armadura."
+            c: "Las losas integran las heterogeneidades del terreno a cambio de una distribución irregular de presiones[cite: 72]."
           },
           {
-            t: "4 · Control de calidad y recepción",
+            t: "4 · Estados Límite y Criterios Básicos (DB-SE-C)",
             s: [
-              "Docilidad: cono de Abrams en cada amasada controlada.",
-              "Resistencia: probetas para ensayo a 28 días.",
-              "Comprobar dimensiones, cantos y diámetros de armadura antes de hormigonar.",
-              "Rechazo: fondo con terreno blando no previsto o armadura sin recubrimiento."
+              "Estados Límite Últimos (ELU): Hundimiento, deslizamiento, vuelco, estabilidad global y capacidad estructural[cite: 74, 75, 76].",
+              "Estados Límite de Servicio (ELS): Comprobación de asientos admisibles y movimientos inducidos en edificios colindantes[cite: 76, 77].",
+              "Comprobaciones adicionales: Cambios de humedad en arcillas expansivas, colapso de rellenos, agresividad del agua o erosión interna[cite: 77, 78]."
             ],
-            c: null
+            c: "El hundimiento se alcanza cuando la presión total bruta supera la resistencia característica del terreno[cite: 75, 76]."
           },
           {
-            t: "5 · Seguridad y salud básica",
+            t: "5 · Condiciones Constructivas, Ejecución y Control",
             s: [
-              "Taludes estables o entibación en zanjas profundas.",
-              "Barandillas o protección perimetral en el borde de excavación.",
-              "Prohibido trabajar bajo cargas suspendidas; señalista en maniobras."
+              "Solera de asiento / Hormigón de limpieza: Espesor mínimo de 10 cm para crear una superficie plana y evitar pérdidas de lechada[cite: 78].",
+              "Excavación: Realizar justo antes de hormigonar; dejar 10-15 cm extra en arcillas si hay retraso para refinar el fondo[cite: 79].",
+              "Control en obra: Comprobación del estudio geotécnico, replanteo, recubrimientos EHE y control de agua (agotamiento y drenajes)[cite: 80, 84, 85].",
+              "Nivelación obligatoria: En edificios C-3 y C-4 es obligatorio un sistema de nivelación (precisión 0,1 mm, mín. 4 referencias y 10% de pilares)[cite: 86]."
             ],
-            c: null
+            c: "Prohibido circular sobre hormigón fresco o realizar perforaciones y excavaciones posteriores que comprometan la cimentación[cite: 81, 83]."
           }
         ],
         casos: [
           {
-            k: "Elección técnica",
-            q: "Terreno de arcillas blandas con tensión admisible muy baja (0,05 MPa) y cargas elevadas en pilares. ¿Qué solución es más adecuada?",
-            o: ["Zapatas aisladas arriostradas", "Losa de cimentación o cimentación profunda", "Zapatas corridas bajo muros únicamente"],
+            k: "Rigidez de Zapatas",
+            q: "Una zapata aislada tiene un vuelo de 80 cm en su dirección principal y un canto de 50 cm. Según el DB-SE-C, ¿cómo se clasifica estructuralmente?",
+            o: ["Zapata flexible, ya que el vuelo es mayor que el canto", "Zapata rígida, ya que el vuelo ($80\text{ cm}$) es menor o igual que $2 \times \text{canto}$ ($2 \times 50 = 100\text{ cm}$)", "Zapata combinada"],
             a: 1,
-            e: "Con baja capacidad portante las zapatas aisladas necesitarían superficies enormes y se solaparían; conviene repartir cargas con losa o pasar a pilotes."
+            e: "Se consideran estructuralmente rígidas las zapatas cuyo vuelo es menor o igual que dos veces el canto ($v \le 2h$)[cite: 66]."
           },
           {
-            k: "Diagnóstico de patología",
-            q: "Aparecen fisuras inclinadas a 45° en un muro de fachada cerca de un pilar y el pilar ha descendido unos milímetros. ¿Causa más probable?",
-            o: ["Retracción hidráulica del mortero", "Asiento diferencial de la zapata", "Dilatación térmica del cerramiento"],
+            k: "Cimentación Compensada",
+            q: "¿Cómo se denomina la situación constructiva en un edificio con sótanos donde el peso de las tierras excavadas es aproximadamente igual al peso total del edificio transmitido al terreno?",
+            o: ["Cimentación profunda por fricción", "Cimentación compensada", "Emparrillado rígido"],
             a: 1,
-            e: "Las fisuras inclinadas junto con descenso del apoyo indican asiento diferencial: terreno heterogéneo o zapata infradimensionada."
+            e: "En la cimentación compensada la presión neta transmitida al terreno es casi nula, reduciendo drásticamente los asientos[cite: 72]."
           },
           {
-            k: "Detección de errores",
-            q: "En obra se hormigona la zapata directamente sobre el terreno, sin hormigón de limpieza, con recubrimiento de 30 mm. ¿Qué se incumple?",
-            o: ["Recubrimiento mínimo frente al terreno y ausencia de capa de limpieza", "Nada, es una práctica admitida", "Solo el curado del hormigón"],
-            a: 0,
-            e: "Hay que usar hormigón de limpieza y mantener recubrimiento nominal suficiente (50 mm con limpieza, 70 mm contra el terreno)."
+            k: "Control en Edificios Singulares",
+            q: "Para edificios catalogados como C-3 o C-4, ¿qué requisito de control de asientos es de obligado cumplimiento durante la ejecución?",
+            o: ["No se requiere ningún control especial", "Establecer un sistema de nivelación con al menos 4 referencias y precisión de 0,1 mm", "Realizar una prueba de carga al 200% en todos los pilares"],
+            a: 1,
+            e: "En edificios C-3 y C-4 es obligatorio el establecimiento de un sistema de nivelación con precisión de 0,1 mm y al menos 4 referencias[cite: 86]."
           }
         ],
         cards: [
-          { ty: "Pregunta/Respuesta", q: "¿Para qué sirve el hormigón de limpieza bajo una zapata?", a: "Crea una superficie plana y limpia, evita la contaminación del hormigón estructural por el terreno y apoya las armaduras." },
-          { ty: "Completar hueco", q: "El hormigón de limpieza suele tener un espesor mínimo de ____ cm.", a: "10 cm" },
-          { ty: "Causa-Efecto", q: "Falta de separadores en la armadura inferior → ¿efecto?", a: "Recubrimiento insuficiente, corrosión de armaduras y pérdida de durabilidad." },
-          { ty: "Pregunta/Respuesta", q: "¿Qué ensayo mide la docilidad del hormigón fresco?", a: "El cono de Abrams (asiento en cm)." }
+          { ty: "Hormigón de limpieza", q: "¿Cuál es el espesor mínimo reglamentario de la solera de asiento u hormigón de limpieza bajo zapatas o losas?", a: "Un espesor mínimo de 10 cm[cite: 78, 82]." },
+          { ty: "Rigidez", q: "¿Cuál es la condición matemática para considerar que una zapata es estructuralmente rígida?", a: "Que el vuelo $v$ sea menor o igual que dos veces el canto $h$ ($v \le 2h$)[cite: 66]." },
+          { ty: "Tipologías", q: "¿Cuándo se recomienda el uso de un emparrillado de cimentación?", a: "Cuando el terreno presente baja capacidad de carga, elevada deformabilidad o importantes heterogeneidades[cite: 70, 71]." },
+          { ty: "Impermeabilización", q: "¿Cómo se debe proteger un sótano situado por debajo del nivel freático frente a filtraciones?", a: "Conforme a lo indicado en el CTE DB-HS Sección 1[cite: 82]." }
         ],
         glo: [
-          ["Zapata aislada", "Elemento de cimentación superficial que transmite al terreno la carga de un único pilar.", "Se dimensiona con la tensión admisible del terreno."],
-          ["Hormigón de limpieza", "Capa delgada de hormigón pobre que regulariza el fondo de excavación.", "Se vierte antes de colocar la armadura."],
-          ["Encepado", "Elemento de hormigón armado que solidariza la cabeza de varios pilotes.", "Cimentaciones profundas."],
-          ["Coquera", "Defecto superficial por huecos o falta de mortero al hormigonar.", "Vibrado insuficiente o armadura muy densa."],
-          ["Separador", "Pieza que garantiza el recubrimiento de las armaduras.", "Se coloca antes de hormigonar."],
-          ["Asiento diferencial", "Diferencia de descenso entre dos puntos de la cimentación.", "Genera fisuras en cerramientos."],
-          ["Camilla", "Soporte de madera con cuerda que materializa ejes y cotas.", "Fase de replanteo."],
-          ["Tensión admisible", "Presión máxima que el terreno puede soportar con seguridad.", "Dato del estudio geotécnico."]
+          ["Cimiento", "Conjunto de elementos estructurales enterrados que transmiten cargas al terreno[cite: 64].", "Regulado por el CTE DB-SE-C[cite: 64]."],
+          ["Zapata rígida", "Aquella cuyo vuelo es menor o igual que dos veces su canto ($v \le 2h$)[cite: 66].", "Prescripciones EHE[cite: 66]."],
+          ["Viga centradora", "Elemento estructural que une zapatas para resistir momentos o redistribuir presiones[cite: 67].", "Habitual en medianeras y esquinas[cite: 67]."],
+          ["Pozo de cimentación", "Relleno de hormigón pobre o descenso de cota con plinto para alcanzar terreno competente[cite: 69, 70].", "Cimentación semiprofunda."],
+          ["Losa de cimentación", "Cimentación continua que cubre toda o gran parte de la superficie en planta[cite: 71, 72].", "Reduce asientos diferenciales en terrenos heterogéneos[cite: 72]."],
+          ["Solera de asiento", "Capa de hormigón de limpieza (mín. 10 cm) que regulariza el fondo de excavación[cite: 78].", "Evita la pérdida de lechada[cite: 78]."]
         ]
       }
     ]
