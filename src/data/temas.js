@@ -266,15 +266,6 @@ export const ASIGNATURAS = [
             c: "Las piezas colaborantes participan en la sección resistente y su resistencia a compresión no será menor que la del hormigón vertido[cite: 158]."
           },
           {
-            t: "2 · Apoyos de Forjados y Placas Alveolares",
-            s: [
-              "Apoyos directos: Enlazan a cadenas de atado de muros o vigas de canto[cite: 150].",
-              "Apoyos indirectos: Enlazan a vigas planas, mixtas o brochales[cite: 150].",
-              "Entrega mínima en placas alveolares (apoyo directo): 50 mm nominales (tolerancia 10 mm, mínimo real 40 mm) si la sobrecarga es $\le 4\text{ kN/m}^2$, canto $\le 30\text{ cm}$ y $V_d \le V_{u2}/2$[cite: 153]."
-            ],
-            c: "Es obligatorio hormigonar en todo el canto del forjado las juntas en los extremos de las losas y disponer armadura pasiva transversal y longitudinal[cite: 154]."
-          },
-          {
             t: "3 · Hormigón en Obra y Condiciones Geométricas",
             s: [
               "Tipificación del hormigón: $T-R/C/TM/A$ (ej. HA-25/B/20/...) con resistencia característica mínima de $25\text{ N/mm}^2$[cite: 158].",
@@ -287,7 +278,6 @@ export const ASIGNATURAS = [
             s: [
               "Acopio: Apilados limpios sobre durmientes alineados en vertical, con vuelos máximos de $0,50\text{ m}$ y altura de pilas $\le 1,50\text{ m}$[cite: 161].",
               "Apuntalado: Puntales arriostrados en dos direcciones; estudio detallado si el peso propio es $>3\text{ kN/m}^2$ o altura $>4\text{ m}$[cite: 161].",
-              "Hormigonado y curado: Simultáneo en nervios y losa superior, con superficies limpias y húmedas; curado según EHE[cite: 162].",
               "Desapuntalado: Según artículo 75 de la EHE; retirada desde el centro del vano hacia los extremos y sin golpes bruscos[cite: 163]."
             ],
             c: "Si alguna vigueta o losa alveolar resulta dañada afectando a su capacidad portante, deberá ser desechada antes de su colocación[cite: 161]."
@@ -300,49 +290,40 @@ export const ASIGNATURAS = [
             o: ["20 mm", "30 mm", "40 mm"],
             a: 2,
             e: "El espesor mínimo de la losa superior es de 40 mm sobre viguetas y piezas de entrevigado cerámicas o de hormigón[cite: 159]."
-          },
-          {
-            k: "Normas de Acopio",
-            q: "A la hora de realizar el acopio en obra de viguetas y losas alveolares pretensadas, ¿cuál es el límite máximo reglamentario para los vuelos sobre los durmientes?",
-            o: ["No mayores que 0,50 metros", "No mayores que 1,50 metros", "Exactamente 1,00 metro"],
-            a: 0,
-            e: "Las viguetas y losas alveolares se apilarán con vuelos no mayores que 0,50 m ni alturas de pila superiores a 1,50 m[cite: 161]."
           }
         ],
         cards: [
-          { ty: "Elementos", q: "¿Qué diferencia principal existe entre una pieza de entrevigado aligerante y una colaborante?", a: "La aligerante solo actúa como relleno o peso muerto; la colaborante participa como parte de la sección resistente del forjado[cite: 158]." },
-          { ty: "Apoyos", q: "¿Cuál es la entrega nominal mínima exigida para una placa alveolar en apoyo directo bajo condiciones estándar?", a: "50 mm nominales (con tolerancia de 10 mm, mínimo real de 40 mm)[cite: 153]." },
-          { ty: "Desapuntalado", q: "¿Cuál debe ser el orden correcto para la retirada de los puntales en un forjado?", a: "Desde el centro del vano hacia los extremos, y en voladizos desde el extremo libre hacia el arranque[cite: 163]." }
+          { ty: "Elementos", q: "¿Qué diferencia principal existe entre una pieza de entrevigado aligerante y una colaborante?", a: "La aligerante solo actúa como relleno o peso muerto; la colaborante participa como parte de la sección resistente del forjado[cite: 158]." }
         ],
         glo: [
-          ["Vigueta", "Elemento longitudinal resistente prefabricado (armado o pretensado) para forjados[cite: 148].", "Instalado junto a piezas de entrevigado[cite: 148]."],
-          ["Losa alveolar", "Elemento superficial plano de hormigón pretensado aligerado mediante alvéolos longitudinales[cite: 148].", "Transmite cortantes por sus juntas laterales[cite: 148]."],
-          ["Pieza colaborante", "Pieza de entrevigado que forma parte de la sección resistente con resistencia $\ge$ al hormigón vertido[cite: 158].", "Cerámica u hormigón[cite: 158]."],
-          ["Acción diafragma", "Capacidad de la losa superior de hormigón para repartir cargas horizontales y arriostrar la estructura[cite: 148].", "Fundamental ante sismo o viento."]
+          ["Vigueta", "Elemento longitudinal resistente prefabricado (armado o pretensado) para forjados[cite: 148].", "Instalado junto a piezas de entrevigado[cite: 148]."]
         ]
-      }
-    ]
-  },
-  {
-    id: "construccion-2",
-    nombre: "Construcción II",
-    temas: [
+      },
       {
-        id: "tema-ejemplo-c2",
-        ruta: "Bloque 1 › Tema 1",
-        titulo: "Próximo tema de Construcción II",
-        fuente: "apuntes.pdf",
+        id: "tema-9-estructuras-hormigon",
+        ruta: "Tema 9 › Estructuras de Hormigón (Instrucción EHE-08)",
+        titulo: "Estructuras de Hormigón: Materiales, Durabilidad y Ejecución (EHE-08)",
+        fuente: "TEMA 9 ESTRUCTURAS DE HORMIGON.pdf",
         proc: [
           {
-            t: "1 · Introducción",
-            s: ["Tema preparado para recibir nuevos apuntes."],
-            c: null
-          }
-        ],
-        casos: [],
-        cards: [],
-        glo: []
-      }
-    ]
-  }
-];
+            t: "1 · Objeto, Ámbito y Vida Útil (EHE-08)",
+            s: [
+              "Objeto: Establecer las exigencias para que las estructuras de hormigón satisfagan la seguridad estructural, contra incendios y protección medioambiental[cite: 165].",
+              "Ámbito de aplicación: Estructuras de hormigón en masa, armado o pretensado (se excluyen estructuras mixtas principales, presas y temperaturas $>70^\circ\text{C}$)[cite: 165].",
+              "Vida útil nominal: Edificios de viviendas u oficinas: 50 años; edificios monumentales o puentes importantes: 100 años; estructuras temporales: entre 3 y 10 años[cite: 166]."
+            ],
+            c: "La Propiedad debe fijar la vida útil nominal antes del inicio del proyecto, no pudiendo ser inferior a lo reglamentado[cite: 166]."
+          },
+          {
+            t: "2 · Durabilidad y Clases de Exposición",
+            s: [
+              "Clases generales de exposición (corrosión de armaduras): I (no agresiva), IIa/IIb (humedad), IIIa/IIIb/IIIc (marina) y IV (cloruros de otro origen)[cite: 168, 169].",
+              "Clases específicas de exposición: Qa, Qb, Qc (ataque químico), H (heladas sin sales), F (sales fundentes) y E (erosión/abrasión)[cite: 170].",
+              "Recubrimiento nominal ($r_{nom}$): $r_{nom} = r_{min} + \Delta r$ (siendo $\Delta r$ el margen de ejecución, generalmente 10 mm in situ sin control especial o 5 mm con control intenso)[cite: 190]."
+            ],
+            c: "En piezas hormigonadas contra el terreno, el recubrimiento mínimo será de 70 mm, salvo que se disponga un hormigón de limpieza[cite: 191]."
+          },
+          {
+            t: "3 · Materiales: Hormigón, Aceros y Aditivos",
+            s: [
+              "Resistencia
