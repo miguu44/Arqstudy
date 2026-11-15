@@ -326,4 +326,75 @@ export const ASIGNATURAS = [
           {
             t: "3 · Materiales: Hormigón, Aceros y Aditivos",
             s: [
-              "Resistencia
+              "Resistencia mínima: La resistencia característica de proyecto ($f_{ck}$) no será inferior a $20\text{ N/mm}^2$ en hormigón en masa, ni a $25\text{ N/mm}^2$ en armado o pretensado[cite: 179].",
+              "Consistencia: Se valora mediante el cono de Abrams (seca, plástica, blanda $6-9\text{ cm}$, fluida $10-15\text{ cm}$, líquida)[cite: 179]. Se prohíbe la líquida salvo superplastificantes.",
+              "Aceros pasivos: Se emplean aceros corrugados soldables (B 400 S, B 500 S) y con características especiales de ductilidad (B 400 SD, B 500 SD)[cite: 181].",
+              "Aditivos: Reductores de agua, superplastificantes, aceleradores/retardadores e inclusores de aire; se prohíbe estrictamente el cloruro cálcico en armadas/pretensadas[cite: 177]."
+            ],
+            c: "Tipificación del hormigón estructural: $T-R/C/TM/A$ (ej. HA-25/B/20/IIa)[cite: 194]."
+          },
+          {
+            t: "4 · Ejecución: Cimbras, Encofrados y Puesta en Obra",
+            s: [
+              "Cimbras y apuntalamientos: El constructor dispondrá de proyecto de cimbra y certificado de cumplimiento; arriostramiento en dos direcciones resistiendo al menos el 2% de las cargas verticales[cite: 195, 196].",
+              "Productos desencofrantes: Se prohíbe expresamente el empleo de gasóleo, grasa corriente o análogos[cite: 198].",
+              "Transporte y suministro: El tiempo máximo desde el amasado hasta la colocación es de 1h 30 min (salvo retardadores); prohibido añadir agua en obra[cite: 202, 203].",
+              "Hormigonado en tiempo frío y caluroso: Temperatura de masa $\ge 5^\circ\text{C}$; prohibido verter sobre elementos $<0^\circ\text{C}$ o si se prevén heladas en 48 horas. En tiempo caluroso (>40°C o viento excesivo) se suspende salvo autorización[cite: 204, 205].",
+              "Curado: Obligatorio mantener la humedad mediante riego u otros tratamientos durante el fraguado y primer endurecimiento[cite: 206]."
+            ],
+            c: "No podrá procederse a la puesta en obra del hormigón sin disponer de los resultados de conformidad, salvo armaduras con distintivo de calidad y control intenso[cite: 204]."
+          }
+        ],
+        casos: [
+          {
+            k: "Resistencia Mínima EHE-08",
+            q: "Según la Instrucción EHE-08, ¿cuál es el valor mínimo reglamentario de la resistencia característica a compresión ($f_{ck}$) exigido para elementos de hormigón armado?",
+            o: ["15 N/mm²", "20 N/mm²", "25 N/mm²"],
+            a: 2,
+            e: "La resistencia de proyecto $f_{ck}$ no será inferior a $20\text{ N/mm}^2$ en hormigones en masa, ni a $25\text{ N/mm}^2$ en hormigones armados o pretensados[cite: 179]."
+          },
+          {
+            k: "Productos Desencofrantes",
+            q: "Durante la ejecución de una estructura de hormigón, ¿está permitido el uso de gasóleo o grasa corriente como producto desencofrante?",
+            o: ["Sí, siempre que sea en pequeña cantidad", "No, se prohíbe expresamente el empleo de gasóleo, grasa corriente o productos análogos", "Sí, si se mezcla con agua"],
+            a: 1,
+            e: "No se permitirá la aplicación de gasóleo, grasa corriente o cualquier otro producto análogo como desencofrante por ser perjudiciales[cite: 197, 198]."
+          }
+        ],
+        cards: [
+          { ty: "Vida Útil", q: "¿Cuál es la vida útil nominal estándar establecida por la EHE-08 para edificios de viviendas u oficinas?", a: "50 años[cite: 166]." },
+          { ty: "Transporte", q: "¿Cuál es el tiempo máximo general establecido entre la adición de agua/cemento y la colocación del hormigón?", a: "No mayor de hora y media (1h 30 min), salvo aditivos retardadores[cite: 202]." },
+          { ty: "Tiempo Frío", q: "¿Qué temperatura mínima debe tener la masa de hormigón en el momento de verterla en obra?", a: "No será inferior a 5 °C[cite: 204]." }
+        ],
+        glo: [
+          ["EHE-08", "Instrucción de Hormigón Estructural en España.", "Regula seguridad, durabilidad y ejecución de estructuras de hormigón[cite: 165]."],
+          ["Vida útil nominal", "Período de tiempo previsto en proyecto en el que la estructura debe cumplir su función con mantenimiento adecuado[cite: 166].", "50 años en edificación residencial[cite: 166]."],
+          ["Recubrimiento nominal", "Distancia entre la superficie exterior de la armadura y la del hormigón fijada en plano ($r_{nom} = r_{min} + \Delta r$)[cite: 190].", "Garantizado con separadores[cite: 201]."],
+          ["Curado", "Proceso para mantener la humedad y temperatura del hormigón durante su endurecimiento inicial[cite: 206].", "Fundamental para evitar fisuración y pérdida de resistencia[cite: 206]."]
+        ]
+      }
+    ]
+  },
+  {
+    id: "construccion-2",
+    nombre: "Construcción II",
+    temas: [
+      {
+        id: "tema-ejemplo-c2",
+        ruta: "Bloque 1 › Tema 1",
+        titulo: "Próximo tema de Construcción II",
+        fuente: "apuntes.pdf",
+        proc: [
+          {
+            t: "1 · Introducción",
+            s: ["Tema preparado para recibir nuevos apuntes."],
+            c: null
+          }
+        ],
+        casos: [],
+        cards: [],
+        glo: []
+      }
+    ]
+  }
+];
