@@ -194,6 +194,99 @@ export const ASIGNATURAS = [
         ]
       },
       {
+        id: "tema-3-replanteo-movimiento-tierras",
+        ruta: "Tema 3 › Replanteos y Movimiento de Tierras",
+        titulo: "Replanteos y Movimiento de Tierras",
+        fuente: "TEMA 3 REPLANTEO Y MOVIMIENTO DE TIERRAS.pdf",
+        proc: [
+          {
+            t: "1 · Preparación del Solar y Replanteo",
+            s: [
+              "Desbroce y limpieza mecánica: retirada de capa superficial, vegetación espontánea y posibles restos de escombros[cite: 45].",
+              "Replanteo: operación de trasladar y dibujar sobre el terreno los ejes de la estructura, cimentación y perímetros (sótanos)[cite: 45].",
+              "Instrumentos de medición: cinta métrica, nivel de burbuja/agua, escuadra, plomada y aparatos topográficos (taquímetros)[cite: 45, 49, 50].",
+              "Elementos de marcaje: estacas, camillas de madera, jalones, cordel, tiralíneas de azulete y varillas[cite: 49, 50, 51]."
+            ],
+            c: "Es imprescindible verificar las mediciones dos o tres veces y comprobar distancias a referencias exteriores fijas (aceras, solares colindantes)[cite: 49]."
+          },
+          {
+            t: "2 · Movimiento de Tierras: Desmontes y Excavaciones",
+            s: [
+              "Desmontes: excavación o rebaje del terreno (zanjas, pozos para cimentación, vaciados para sótanos y desmontes a cielo abierto)[cite: 52].",
+              "Toda extracción lleva implícita la carga sobre camión y el transporte a vertedero autorizado[cite: 52].",
+              "Recomendación en arcillas: dejar sin excavar un recubrimiento de unos 30 cm hasta el mismo día de la cimentación para proteger el fondo[cite: 53].",
+              "Uso de taludes perimetrales, bermas y técnica de bataches en excavaciones profundas junto a edificios medianeros[cite: 52]."
+            ],
+            c: "Se debe evitar alterar la estructura del suelo de apoyo de los cimientos durante la excavación[cite: 52]."
+          },
+          {
+            t: "3 · Terraplenados y Compactación",
+            s: [
+              "Terraplenado: aporte de tierras (de la propia obra o de préstamo) para regularizar o alcanzar una cota determinada[cite: 53, 54].",
+              "Compactación: realizada mediante rodillos vibrantes (remolcados o autopropulsados) y mesas vibrantes[cite: 53, 54].",
+              "Tongadas: el material se vierte en capas sucesivas de 25 a 30 cm de espesor y se compacta capa por capa[cite: 54]."
+            ],
+            c: "Un terraplén mal compactado genera asientos posteriores indeseados bajo soleras o pavimentos."
+          },
+          {
+            t: "4 · Taludes, Esponjamiento y Asentamiento",
+            s: [
+              "Talud: inclinación del corte o terraplén respecto a la horizontal, dependiendo de la cohesión del terreno y si está seco o inmerso (Tabla 3.1)[cite: 54, 55].",
+              "Esponjamiento ($C_e$): aumento de volumen que experimenta el terreno al ser excavado y perder su compacidad natural (clave para transporte y acopio)[cite: 55, 56].",
+              "Asentamiento ($C_a$): pérdida de volumen que sufre el material de relleno al ser compactado en terraplenes[cite: 56]."
+            ],
+            c: "Los suelos cohesivos admiten ángulos de talud mayores que los suelos granulares o arenas finas[cite: 54, 55]."
+          },
+          {
+            t: "5 · Seguridad y Salud en Zanjas y Vaciados",
+            s: [
+              "Entibación obligatoria y conveniente en zanjas de profundidad igual o superior a 1,5 m (o respetar ángulos de talud)[cite: 57].",
+              "Zona libre de cargas: mantener una franja de al menos 2 m libre de acopios y circulación de vehículos junto al borde[cite: 57, 58].",
+              "Protección perimetral: barandilla reglamentaria en zanjas de profundidad igual o superior a 2 m[cite: 57].",
+              "Medios de acceso: al menos una escalera portátil por equipo de trabajo que sobresalga 1 m del borde[cite: 57]."
+            ],
+            c: "Tras lluvias o encharcamientos, es imprescindible revisar minuciosamente los taludes y achicar el agua de forma inmediata[cite: 57]."
+          }
+        ],
+        casos: [
+          {
+            k: "Seguridad en Zanjas",
+            q: "¿A partir de qué profundidad en zanjas se establece la conveniencia de disponer entibación según los apuntes de seguridad?",
+            o: ["A partir de 0,5 metros", "Igual o superior a 1,5 metros", "Exclusivamente a partir de 5 metros de profundidad"],
+            a: 1,
+            e: "Cuando la profundidad de una zanja sea igual o superior a 1,5 m es conveniente entibarla para evitar desprendimientos (o respetar los taludes de la tabla)[cite: 57]."
+          },
+          {
+            k: "Fenómenos en Tierras",
+            q: "¿Cómo se denomina el incremento de volumen que sufre un terreno al ser excavado debido a la pérdida de su compacidad y cohesión original?",
+            o: ["Asentamiento", "Esponjamiento", "Consolidación diferida"],
+            a: 1,
+            e: "El esponjamiento ($C_e$) es el aumento de volumen del terreno suelto frente al hueco excavado, un factor clave para calcular camiones y vertedero[cite: 55, 56]."
+          },
+          {
+            k: "Ejecución de Terraplenes",
+            q: "Durante los trabajos de terraplenado, ¿de qué espesor máximo orientativo deben ser las capas sucesivas de aporte de tierra para garantizar una correcta compactación?",
+            o: ["De 25 a 30 cm (tongadas)", "De 1,5 a 2 metros", "De 5 a 10 metros"],
+            a: 0,
+            e: "El relleno o terraplenado se ejecuta vertiendo la tierra por capas de 25 o 30 cm denominadas tongadas, compactándolas sucesivamente[cite: 54]."
+          }
+        ],
+        cards: [
+          { ty: "Seguridad", q: "¿Qué distancia libre de cargas y vehículos se debe mantener como norma general junto al borde de una zanja?", a: "Una zona de unos 2 metros libre de acopios y circulación[cite: 57]." },
+          { ty: "Definición", q: "¿Qué diferencia hay entre desmonte y terraplenado?", a: "El desmonte es excavar o rebajar terreno; el terraplenado es aportar y compactar tierras[cite: 52, 53]." },
+          { ty: "Seguridad", q: "¿Cuánto debe sobresalir como mínimo la escalera de mano en el interior de una zanja para garantizar un acceso seguro?", a: "Debe sobresalir al menos 1 metro por encima del borde de la zanja[cite: 57]." },
+          { ty: "Replanteo", q: "¿Para qué sirven las camillas en el replanteo de cimentación?", a: "Son soportes de madera con cordeles que permiten materializar y conservar los ejes y alineaciones del edificio[cite: 49, 51]." }
+        ],
+        glo: [
+          ["Replanteo", "Operación de trasladar los planos al terreno marcando ejes y perímetros[cite: 45].", "Uso de camillas, cintas y taquímetros[cite: 45, 49, 50, 51]."],
+          ["Desmonte", "Excavación o rebaje masivo o en zanjas/pozos del terreno[cite: 52].", "Requiere carga y transporte a vertedero[cite: 52]."],
+          ["Terraplenado", "Relleno y aporte de tierras para alcanzar una cota proyectada[cite: 53, 54].", "Se ejecuta en tongadas de 25-30 cm compactadas[cite: 54]."],
+          ["Esponjamiento", "Aumento de volumen del terreno al excavarlo y perder compacidad[cite: 55, 56].", "Afecta al dimensionado de camiones y transporte[cite: 55, 56]."],
+          ["Entibación", "Sistema de contención temporal de paredes en zanjas para evitar derrumbes[cite: 57, 58].", "Obligatoria/conveniente si h ≥ 1,5 m[cite: 57]."],
+          ["Tongada", "Capa de suelo de 25-30 cm destinada a recibir compactación en terraplenes[cite: 54].", "Compactada capa a capa[cite: 54]."]
+        ]
+      },
+      {
         id: "zapatas-aisladas",
         ruta: "Bloque 3: Cimentaciones › Tema 7",
         titulo: "Zapatas aisladas",
