@@ -1,7 +1,7 @@
 export const ASIGNATURAS = [
   {
-    id: "construccion-2",
-    nombre: "Construcción II",
+    id: "edificacion-1",
+    nombre: "Edificación I",
     temas: [
       {
         id: "zapatas-aisladas",
@@ -98,6 +98,28 @@ export const ASIGNATURAS = [
           ["Camilla", "Soporte de madera con cuerda que materializa ejes y cotas.", "Fase de replanteo."],
           ["Tensión admisible", "Presión máxima que el terreno puede soportar con seguridad.", "Dato del estudio geotécnico."]
         ]
+      }
+    ]
+  },
+  {
+    id: "construccion-2",
+    nombre: "Construcción II",
+    temas: [
+      {
+        id: "tema-ejemplo-c2",
+        ruta: "Bloque 1 › Tema 1",
+        titulo: "Próximo tema de Construcción II",
+        fuente: "apuntes.pdf",
+        proc: [
+          {
+            t: "1 · Introducción",
+            s: ["Tema preparado para recibir nuevos apuntes."],
+            c: null
+          }
+        ],
+        casos: [],
+        cards: [],
+        glo: []
       }
     ]
   }
