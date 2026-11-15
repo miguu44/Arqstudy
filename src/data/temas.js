@@ -66,24 +66,13 @@ export const ASIGNATURAS = [
             o: ["Plazo de 3 años de habitabilidad; responde solo el constructor", "Plazo de 10 años por defectos estructurales; responden los agentes implicados (calculista, DO, DEO, constructor)", "Ya ha expirado el plazo de garantía de 1 año"],
             a: 1,
             e: "Los daños estructurales tienen una garantía y responsabilidad civil exigible durante 10 años desde la recepción de la obra (Art. 17.1.a LOE)[cite: 15, 17]."
-          },
-          {
-            k: "Agentes de la Edificación",
-            q: "¿Quién asume la función técnica de dirigir la ejecución material de la obra y controlar la calidad de lo edificado según la LOE?",
-            o: ["El Promotor", "El Director de Obra (Arquitecto)", "El Director de la Ejecución de la Obra (Arquitecto Técnico)"],
-            a: 2,
-            e: "El Director de la Ejecución de la Obra (usualmente Arquitecto Técnico) asume el control cuantitativo y cualitativo de la construcción material[cite: 13]."
           }
         ],
         cards: [
-          { ty: "Pregunta LOE", q: "¿Cuál es el plazo de garantía para daños estructurales según la LOE?", a: "10 años (Art. 17.1.a)[cite: 15, 17]" },
-          { ty: "Pregunta LOE", q: "¿Cuál es el plazo de garantía por defectos de habitabilidad?", a: "3 años (Art. 17.1.b)[cite: 15, 17]" },
-          { ty: "Pregunta LOE", q: "¿Qué documento obligatorio se entrega a los usuarios finales al finalizar la obra?", a: "El Libro del Edificio[cite: 9]" }
+          { ty: "Pregunta LOE", q: "¿Cuál es el plazo de garantía para daños estructurales según la LOE?", a: "10 años (Art. 17.1.a)[cite: 15, 17]" }
         ],
         glo: [
-          ["LOE", "Ley 38/1999, de 5 de noviembre, de Ordenación de la Edificación.", "Marco legal principal del sector en España."],
-          ["Promotor", "Persona física o jurídica que decide, impulsa, programa y financia las obras.", "Responsable solidario ante los compradores[cite: 15]."],
-          ["Director de Ejecución", "Técnico que dirige la ejecución material y controla la calidad de lo edificado.", "Controla los ensayos y materiales en obra[cite: 13]."]
+          ["LOE", "Ley 38/1999, de 5 de noviembre, de Ordenación de la Edificación.", "Marco legal principal del sector en España."]
         ]
       },
       {
@@ -106,55 +95,25 @@ export const ASIGNATURAS = [
             t: "2 · Técnicas de Prospección del Terreno",
             s: [
               "Calicatas: excavaciones para observación directa (<4m, sin nivel freático)[cite: 25].",
-              "Sondeos mecánicos: perforaciones para extraer testigos y ensayos SPT[cite: 25, 26].",
-              "Pruebas continuas de penetración y técnicas geofísicas complementarias[cite: 26, 27]."
+              "Sondeos mecánicos: perforaciones para extraer testigos y ensayos SPT[cite: 25, 26]."
             ],
             c: "En calicatas de más de 1,5 m de profundidad es obligatorio entibar o retaluzar[cite: 25]."
-          },
-          {
-            t: "3 · Clasificación Granulométrica y Límites de Atterberg",
-            s: [
-              "Bolos, gravas, arenas, limos y arcillas[cite: 28].",
-              "Gravas y arenas: rozamiento interno, compresibles y sin cohesión[cite: 28].",
-              "Arcillas: terrenos coherentes y elásticos; límites de Atterberg ($L_l$, $L_p$, $I_p$, $I_c$)[cite: 29]."
-            ],
-            c: "El comportamiento mecánico depende de la granulometría y del estado hídrico[cite: 28, 29]."
-          },
-          {
-            t: "4 · Presiones de Hundimiento y Admisibles (DB-SE-C)",
-            s: [
-              "Presión total bruta ($q_b$) y neta ($q_{neta}$)[cite: 30].",
-              "Área equivalente de un cimiento ($B^*$, $L^*$) para excentricidades[cite: 31].",
-              "Comprobación del Estado Límite Último de hundimiento mediante tablas analíticas o ensayos in situ[cite: 30, 31]."
-            ],
-            c: "Excentricidades superiores a 1/20 del lado exigen el uso de la sección equivalente[cite: 31]."
-          },
-          {
-            t: "5 · Resumen de Acciones en la Edificación (DB-SE-AE)",
-            s: [
-              "Acciones permanentes: peso propio, tabiquería (aprox. 1,0 kN/m² en viviendas)[cite: 34].",
-              "Sobrecargas de uso según categoría (residencial 2 kN/m², comerciales 5 kN/m²)[cite: 35].",
-              "Viento, nieve y acciones térmicas (juntas de dilatación cada 40 m)[cite: 37, 40, 41]."
-            ],
-            c: "Los edificios ordinarios no son sensibles a efectos dinámicos del viento salvo esbeltez superior a 6[cite: 37]."
           }
         ],
         casos: [
           {
             k: "Estudio Geotécnico",
-            q: "Se proyecta un edificio de 5 plantas en un terreno desfavorable con arcillas expansivas (Grupo T-3). ¿Qué tipo de reconocimiento se requiere?",
-            o: ["Ninguno", "Sondeos mecánicos y profundidades adaptadas al grupo T-3 y tipo C-2", "Una calicata manual de 50 cm"],
+            q: "Se proyecta un edificio en terreno desfavorable con arcillas expansivas (Grupo T-3). ¿Qué tipo de reconocimiento se requiere?",
+            o: ["Ninguno", "Sondeos mecánicos y profundidades adaptadas al grupo T-3", "Una calicata manual de 50 cm"],
             a: 1,
             e: "Los terrenos desfavorables (T-3) exigen campañas rigurosas con sondeos mecánicos según el DB-SE-C."
           }
         ],
         cards: [
-          { ty: "Geotecnia", q: "¿Cuál es el número mínimo de puntos de reconocimiento a realizar en un solar?", a: "Un mínimo de tres puntos." },
-          { ty: "DB-SE-AE", q: "¿Cuál es el valor característico de la sobrecarga de uso en viviendas (categoría A1)?", a: "2 kN/m²[cite: 35]." }
+          { ty: "Geotecnia", q: "¿Cuál es el número mínimo de puntos de reconocimiento a realizar en un solar?", a: "Un mínimo de tres puntos." }
         ],
         glo: [
-          ["Estudio Geotécnico", "Conjunto de datos y ensayos sobre las características físicas y mecánicas del terreno para diseñar cimientos[cite: 19, 20].", "Documento obligatorio de proyecto."],
-          ["Calicata", "Excavación a cielo abierto (<4m) que permite inspección directa y toma de muestras[cite: 25].", "No válida con nivel freático alto."]
+          ["Estudio Geotécnico", "Conjunto de datos y ensayos sobre las características físicas y mecánicas del terreno para diseñar cimientos[cite: 19, 20].", "Documento obligatorio de proyecto."]
         ]
       },
       {
@@ -167,45 +126,15 @@ export const ASIGNATURAS = [
             t: "1 · Preparación del Solar y Replanteo",
             s: [
               "Desbroce y limpieza mecánica: retirada de capa superficial y restos[cite: 45].",
-              "Replanteo: trasladar y dibujar sobre el terreno ejes y perímetros[cite: 45].",
-              "Instrumentos: cinta métrica, niveles, escuadras, plomadas y taquímetros[cite: 45, 49, 50].",
-              "Elementos de marcaje: estacas, camillas de madera, jalones y cordel[cite: 49, 50, 51]."
+              "Replanteo: trasladar y dibujar sobre el terreno ejes y perímetros[cite: 45]."
             ],
             c: "Es imprescindible verificar las mediciones dos o tres veces y contrastarlas con referencias exteriores fijas[cite: 49]."
           },
           {
-            t: "2 · Movimiento de Tierras: Desmontes y Excavaciones",
-            s: [
-              "Desmontes y vaciados: excavación o rebaje del terreno para sótanos o zanjas[cite: 52].",
-              "Transporte a vertedero autorizado[cite: 52].",
-              "Recomendación en arcillas: dejar un recubrimiento de 30 cm sin excavar hasta el día de la cimentación[cite: 53]."
-            ],
-            c: "Evitar alterar la estructura del suelo de apoyo durante la excavación[cite: 52]."
-          },
-          {
-            t: "3 · Terraplenados y Compactación",
-            s: [
-              "Terraplenado: aporte de tierras para regularizar o alcanzar cotas[cite: 53, 54].",
-              "Compactación mediante rodillos vibrantes y mesas vibrantes[cite: 53, 54].",
-              "Tongadas: capas sucesivas de 25 a 30 cm compactadas capa por capa[cite: 54]."
-            ],
-            c: "Un terraplén mal compactado provoca asientos posteriores bajo soleras y pavimentos."
-          },
-          {
-            t: "4 · Taludes, Esponjamiento y Asentamiento",
-            s: [
-              "Talud: inclinación del corte o terraplén según la cohesión del terreno[cite: 54, 55].",
-              "Esponjamiento ($C_e$): aumento de volumen del terreno al excavarlo (clave para transporte)[cite: 55, 56].",
-              "Asentamiento ($C_a$): pérdida de volumen del material de relleno al compactarlo[cite: 56]."
-            ],
-            c: "Los suelos cohesivos admiten ángulos de talud mayores que los granulares[cite: 54, 55]."
-          },
-          {
-            t: "5 · Seguridad y Salud en Zanjas",
+            t: "2 · Seguridad y Salud en Zanjas",
             s: [
               "Entibación obligatoria/conveniente en zanjas de h ≥ 1,5 m[cite: 57].",
-              "Zona libre de cargas: mantener al menos 2 m libres de acopios y vehículos junto al borde[cite: 57, 58].",
-              "Protección perimetral con barandilla en zanjas de h ≥ 2 m[cite: 57]."
+              "Zona libre de cargas: mantener al menos 2 m libres de acopios y vehículos junto al borde[cite: 57, 58]."
             ],
             c: "Tras lluvias es obligatorio revisar los taludes y achicar el agua de inmediato[cite: 57]."
           }
@@ -220,11 +149,9 @@ export const ASIGNATURAS = [
           }
         ],
         cards: [
-          { ty: "Seguridad", q: "¿Qué distancia libre de cargas se debe mantener junto al borde de una zanja?", a: "Una zona de unos 2 metros[cite: 57]." },
-          { ty: "Ejecución", q: "¿De qué espesor máximo deben ser las tongadas en un terraplenado?", a: "De 25 a 30 cm[cite: 54]." }
+          { ty: "Seguridad", q: "¿Qué distancia libre de cargas se debe mantener junto al borde de una zanja?", a: "Una zona de unos 2 metros[cite: 57]." }
         ],
         glo: [
-          ["Replanteo", "Operación de trasladar los planos al terreno marcando ejes[cite: 45].", "Uso de camillas y taquímetros[cite: 45, 49, 50, 51]."],
           ["Entibación", "Sistema de contención temporal de paredes en zanjas[cite: 57, 58].", "Necesaria si h ≥ 1,5 m[cite: 57]."]
         ]
       },
@@ -238,44 +165,17 @@ export const ASIGNATURAS = [
             t: "1 · Tipologías de Cimentaciones Directas",
             s: [
               "Definición: Elementos estructurales enterrados que transmiten cargas de la estructura al terreno (DB-SE-C)[cite: 64].",
-              "Cimentaciones directas (superficiales): Reparten cargas en un plano de apoyo horizontal (pilares, muros, sótanos)[cite: 64].",
               "Tipos principales (Tabla 4.1): Zapata aislada, combinada, corrida, pozo de cimentación, emparrillado y losa[cite: 65, 66]."
             ],
             c: "Se emplearán cimentaciones directas siempre que las condiciones del terreno y la capacidad portante lo permitan[cite: 64]."
           },
           {
-            t: "2 · Zapatas Aisladas, Combinadas y Corridas",
+            t: "2 · Rigidez y Control",
             s: [
-              "Zapatas aisladas: Planta cuadrada (interiores) o rectangular (medianeras y esquinas)[cite: 66].",
               "Rigidez estructural: Rígidas si el vuelo $v \le 2h$; flexibles si $v > 2h$[cite: 66].",
-              "Vigas de atado y centradoras: Las de atado evitan desplazamientos laterales; las centradoras equilibran zapatas excéntricas[cite: 67]."
-            ],
-            c: "No se aconseja el apoyo directo de las vigas de unión sobre terrenos expansivos o colapsables[cite: 67]."
-          },
-          {
-            t: "3 · Pozos, Emparrillados y Losas de Cimentación",
-            s: [
-              "Pozos de cimentación: Relleno de hormigón pobre bajo zapata o bajada de cota con plinto[cite: 69, 70].",
-              "Emparrillados y Losas: Ideales en terrenos heterogéneos o bajo nivel freático (evitan subpresiones)[cite: 70, 71, 72].",
-              "Cimentación compensada: El peso de las tierras excavadas iguala al peso del edificio, anulando asientos netos[cite: 72]."
-            ],
-            c: "Las losas integran las heterogeneidades del terreno a cambio de una distribución irregular de presiones[cite: 72]."
-          },
-          {
-            t: "4 · Estados Límite y Criterios Básicos (DB-SE-C)",
-            s: [
-              "Estados Límite Últimos (ELU): Hundimiento, deslizamiento, vuelco, estabilidad global y capacidad estructural[cite: 74, 75, 76].",
-              "Estados Límite de Servicio (ELS): Asientos admisibles y movimientos inducidos[cite: 76, 77]."
-            ],
-            c: "El hundimiento se alcanza cuando la presión total bruta supera la resistencia característica del terreno[cite: 75, 76]."
-          },
-          {
-            t: "5 · Condiciones Constructivas y Control",
-            s: [
-              "Solera de asiento / Hormigón de limpieza: Espesor mínimo de 10 cm[cite: 78].",
               "Nivelación obligatoria: En edificios C-3 y C-4 es obligatorio un sistema de nivelación (precisión 0,1 mm, mín. 4 referencias)[cite: 86]."
             ],
-            c: "Prohibido circular sobre hormigón fresco o realizar excavaciones posteriores que comprometan la cimentación[cite: 81, 83]."
+            c: "El espesor mínimo de la solera de asiento u hormigón de limpieza es de 10 cm[cite: 78, 82]."
           }
         ],
         casos: [
@@ -291,8 +191,7 @@ export const ASIGNATURAS = [
           { ty: "Hormigón de limpieza", q: "¿Cuál es el espesor mínimo reglamentario de la solera de asiento bajo zapatas?", a: "Un espesor mínimo de 10 cm[cite: 78, 82]." }
         ],
         glo: [
-          ["Zapata rígida", "Aquella cuyo vuelo es menor o igual que dos veces su canto ($v \le 2h$)[cite: 66].", "Prescripciones EHE[cite: 66]."],
-          ["Solera de asiento", "Capa de hormigón de limpieza (mín. 10 cm) que regulariza el fondo de excavación[cite: 78].", "Evita la pérdida de lechada[cite: 78]."]
+          ["Zapata rígida", "Aquella cuyo vuelo es menor o igual que dos veces su canto ($v \le 2h$)[cite: 66].", "Prescripciones EHE[cite: 66]."]
         ]
       },
       {
@@ -305,84 +204,124 @@ export const ASIGNATURAS = [
             t: "1 · Definición y Tipos de Cimentaciones Profundas",
             s: [
               "Definición: Cimentación cuyo extremo inferior en el terreno está a una profundidad superior a 8 veces su diámetro o ancho ($> 8D$)[cite: 88].",
-              "Tipos principales: Pilote aislado, grupo de pilotes, zonas pilotadas (para reducir asientos) y micropilotes[cite: 88].",
-              "Forma de trabajo: Pilotes por fuste ('flotantes', rozamiento en terrenos sin estrato firme) y pilotes por punta ('columna', apoyados en estrato resistente)[cite: 88]."
+              "Tipos de pilotes: Por fuste ('flotantes') y por punta ('columna')[cite: 88].",
+              "Designación comercial in situ (NTE-CPI): Desde CPI-2 hasta CPI-8, incluyendo pilotes de desplazamiento por rotación (Sistema Omega)[cite: 91, 92, 94, 96, 97]."
             ],
             c: "Se recurre a cimentaciones profundas cuando las superficiales no son técnicamente viables[cite: 88]."
           },
           {
-            t: "2 · Tipologías de Pilotes según Material y Ejecución",
+            t: "2 · Micropilotes y Control",
             s: [
-              "Materiales: Hormigón in situ, hormigón prefabricado (armado/pretensado), acero (tubular o perfiles H/U con azuche), madera o mixtos[cite: 89].",
-              "Procedimiento constructivo: Prefabricados hincados (por percusión o vibración) y pilotes hormigonados in situ[cite: 90].",
-              "Clasificación comercial in situ (NTE-CPI): CPI-2 (desplazamiento con azuche), CPI-3 (tapón de gravas), CPI-4 (extracción con entubación recuperable), CPI-5 (camisa perdida), CPI-6 (lodos tixotrópicos), CPI-7 (barrenados sin entubación), CPI-8 (barrenados hormigonados por tubo central) y pilotes de desplazamiento por rotación (Sistema Omega)[cite: 91, 92, 94, 96, 97]."
+              "Micropilotes: Elementos de menor diámetro (~150 mm) inyectados a presión; muy usados en recalces y anclajes[cite: 98, 99, 100].",
+              "Ensayos de integridad: Transparencia sónica, impedancia mecánica y sondeos mecánicos (mínimo 1 por cada 20 pilotes)[cite: 106]."
             ],
-            c: "Los pilotes hincados no son recomendables al atravesar bolos grandes, cimientos o gravas gruesas sin cementar[cite: 90]."
-          },
-          {
-            t: "3 · Micropilotes y Aplicaciones Especiales",
-            s: [
-              "Micropilote: Elemento de cimentación profunda de pequeño diámetro (~150 mm) con armadura tubular/barras y mortero u lechada inyectada a presión[cite: 98].",
-              "Ejecución: Introducción por rotación o rotopercusión de tubo de acero, inyección y posterior descabece para solidarizar con el encepado[cite: 98, 99].",
-              "Aplicaciones: Cimentación en nuevos edificios con accesos difíciles, recalce de cimentaciones existentes con problemas de hundimiento y anclajes al terreno para muros pantalla[cite: 98, 99, 100]."
-            ],
-            c: "Los micropilotes son idóneos para recalces de cimentaciones y obras con limitaciones espaciales[cite: 99]."
-          },
-          {
-            t: "4 · Condiciones Constructivas y Dosificaciones del Hormigón",
-            s: [
-              "Hormigonado in situ: Uso de tubo Tremie elevándolo unos 20 cm al comenzar; resguardo mínimo de 3 m de hormigón fresco en camisas recuperables[cite: 101, 105].",
-              "Dosificación mínima: Contenido de cemento $\ge 325\text{ kg/m}^3$ en seco y $\ge 375\text{ kg/m}^3$ sumergido; relación agua/cemento $< 0.6$[cite: 103].",
-              "Consistencia (Cono de Abrams): $130 \le H \le 180\text{ mm}$ en seco; $H \ge 160\text{ mm}$ bombeado/sumergido; $H \ge 180\text{ mm}$ bajo fluido estabilizador[cite: 104].",
-              "Áridos: Tamaño máximo $32\text{ mm}$ (o $1/4$ de la separación entre redondos); preferiblemente $25\text{ mm}$ (rodado) o $20\text{ mm}$ (machaqueo)[cite: 103]."
-            ],
-            c: "La consistencia del hormigón debe mantenerse con un cono de Abrams no inferior a 100 mm durante todo el proceso de hormigonado[cite: 104]."
-          },
-          {
-            t: "5 · Control de Ejecución y Ensayos",
-            s: [
-              "Control en ejecución: Confección de parte de incidencias, control de replanteo, excavación, lodos, armaduras y hormigón (norma UNE-EN 1536)[cite: 105].",
-              "Ensayos de integridad: Verifican la continuidad del fuste y resistencia mecánica (transparencia sónica, impedancia mecánica, sondeos mecánicos)[cite: 106].",
-              "Frecuencia de ensayos: Mínimo 1 por cada 20 pilotes; en pilotes aislados de diámetro $45-100\text{ cm}$ no menor de 2 por cada 20; y si el diámetro es $>100\text{ cm}$, no menor de 5 por cada 20[cite: 106]."
-            ],
-            c: "En suelos arcillosos y edificios C-3 y C-4, el rechazo de pilotes hincados debe comprobarse transcurrido un mínimo de 24 horas[cite: 107]."
+            c: "Los micropilotes son idóneos para recalces de cimentaciones y espacios reducidos[cite: 99]."
           }
         ],
         casos: [
           {
             k: "Definición de Cimentación Profunda",
-            q: "¿A partir de qué profundidad relativa se considera formalmente que una cimentación es profunda según los criterios del CTE y los apuntes?",
-            o: ["Cuando su profundidad es superior a 2 veces su diámetro", "Cuando su extremo inferior está a una profundidad superior a 8 veces su diámetro o ancho ($>8D$)", "Exclusivamente a partir de 15 metros de profundidad bajo rasante"],
+            q: "¿A partir de qué profundidad relativa se considera formalmente que una cimentación es profunda según el CTE?",
+            o: ["Cuando su profundidad es superior a 2 veces su diámetro", "Cuando su extremo inferior está a una profundidad superior a 8 veces su diámetro o ancho ($>8D$)", "Exclusivamente a partir de 15 metros"],
             a: 1,
             e: "Se considera cimentación profunda si su extremo inferior en el terreno se encuentra a una profundidad superior a 8 veces su diámetro o ancho ($>8D$)[cite: 88]."
-          },
-          {
-            k: "Tipología de Pilotes In Situ",
-            q: "¿Qué designación comercial y característica técnica corresponde a los pilotes ejecutados mediante barrena continua con hormigonado simultáneo a través del tubo central de la barrena?",
-            o: ["CPI-2 (desplazamiento con azuche)", "CPI-6 (lodos tixotrópicos)", "CPI-8 (barrenados hormigonados por el tubo central de la barrena)"],
-            a: 2,
-            e: "El pilote CPI-8 corresponde a los barrenados hormigonados por el tubo central de la barrena de forma simultánea a la extracción de esta[cite: 91, 96]."
-          },
-          {
-            k: "Control de Integridad",
-            q: "En un grupo de pilotes aislados de gran diámetro (superior a 100 cm), ¿cuál es el número mínimo orientativo de ensayos de integridad exigido por cada 20 pilotes?",
-            o: ["Al menos 1 ensayo por cada 20 pilotes", "No es obligatorio realizar ensayos de integridad", "No debe ser inferior a 5 ensayos por cada 20 pilotes"],
-            a: 2,
-            e: "En pilotes aislados de diámetro superior a 100 cm el número de ensayos de integridad no debe ser inferior a 5 por cada 20 pilotes[cite: 106]."
           }
         ],
         cards: [
-          { ty: "Definición", q: "¿Cuál es el límite geométrico que define una cimentación profunda frente a una superficial?", a: "Profundidad superior a 8 veces su diámetro o ancho ($>8D$)[cite: 88]." },
-          { ty: "Trabajo del Pilote", q: "¿Qué diferencia existe entre un pilote 'por fuste' y un pilote 'por punta'?", a: "El de fuste transmite la carga por rozamiento lateral (suelos sin estrato firme); el de punta transmite la carga a un estrato resistente profundo[cite: 88]." },
-          { ty: "Micropilotes", q: "¿Qué aplicaciones principales tienen los micropilotes en edificación además de cimentación nueva?", a: "El recalce de cimentaciones existentes y los anclajes de muros pantalla[cite: 99, 100]." },
-          { ty: "Hormigonado", q: "¿Qué cono de Abrams mínimo se requiere para hormigón sumergido con tubo Tremie bajo fluido estabilizador?", a: "Un asiento $H \ge 180\text{ mm}$[cite: 104]." }
+          { ty: "Definición", q: "¿Cuál es el límite geométrico que define una cimentación profunda frente a una superficial?", a: "Profundidad superior a 8 veces su diámetro o ancho ($>8D$)[cite: 88]." }
         ],
         glo: [
-          ["Pilote", "Elemento prismático de cimentación profunda cuya longitud es mucho mayor que su sección transversal[cite: 88, 89].", "Puede ser prefabricado o in situ[cite: 89, 90]."],
-          ["Micropilote", "Elemento de cimentación profunda de pequeño diámetro (~150 mm) inyectado a presión con mortero[cite: 98].", "Ideal para recalces y espacios reducidos[cite: 98, 99]."],
-          ["Tubo Tremie", "Tubo especial utilizado para el vertido de hormigón sumergido bajo agua o lodos[cite: 94, 95, 104].", "Evita la segregación del hormigón."],
-          ["Lodos tixotrópicos", "Fluidos estabilizadores utilizados para contener las paredes de perforación en pilotes in situ[cite: 94, 95, 101].", "Sustituyen a la entubación provisional."],
-          ["Prueba de rechazo", "Criterio de control en hinca de pilotes midiendo el número de golpes por penetración[cite: 106, 107].", "Garantiza el alcance de la resistencia proyectada."]
+          ["Pilote", "Elemento prismático de cimentación profunda cuya longitud es mucho mayor que su sección transversal[cite: 88, 89].", "Puede ser prefabricado o in situ[cite: 89, 90]."]
+        ]
+      },
+      {
+        id: "tema-6-muros",
+        ruta: "Tema 6 › Muros de Contención y Sótano (DB-SE-C)",
+        titulo: "Muros de Contención, Sótano y Pantallas",
+        fuente: "TEMA 6 MUROS.pdf",
+        proc: [
+          {
+            t: "1 · Definición y Tipologías de Muros",
+            s: [
+              "Definición: Elemento estructural destinado a contener tierras o rellenos artificiales; trabaja fundamentalmente a flexión (como un voladizo empotrado en el cimiento)[cite: 108].",
+              "Partes del muro: Coronación, cuerpo o alzado, trasdós, intradós, talón, puntera y tacón[cite: 108].",
+              "Muros de gravedad: Soportan empujes con su propio peso; sin armar, trabajan a compresión (ladrillo, mampostería, hormigón en masa)[cite: 109].",
+              "Muros en ménsula: De gran esbeltez, trabajan a flexión y requieren armadura importante; admiten alturas de hasta 10 metros[cite: 109].",
+              "Muros de sótano: Soportan empujes del terreno y transmiten cargas verticales de la estructura superior; sus desplazamientos horizontales están limitados por los forjados[cite: 110]."
+            ],
+            c: "El talón no debe invadir propiedades ajenas y el tacón se prescinde si no hay problemas de deslizamiento[cite: 108]."
+          },
+          {
+            t: "2 · Estados Límite y Empujes del Terreno",
+            s: [
+              "Estados límite principales: Giro, deslizamiento, deslizamiento profundo, rotura por flexión, esfuerzo cortante y esfuerzo rasante[cite: 111, 112].",
+              "Empuje activo ($E_r$): Presión que ejerce el terreno sobre el trasdós del muro[cite: 113].",
+              "Acciones exteriores: Cargas uniformemente repartidas, cargas en línea paralelas a la coronación y cargas en banda paralela[cite: 113, 114]."
+            ],
+            c: "El equilibrio del muro de sótano se logra mediante la reacción del forjado ($T_1$), la rozadura de la cimentación ($T_2$) y las tensiones del terreno bajo la base ($\sigma_t$)[cite: 111]."
+          },
+          {
+            t: "3 · Formas de Ejecución: Encofrados, Bataches y Pantallas",
+            s: [
+              "Encofrados corridos: A una cara (contra el terreno cohesivo) o a dos caras (si hay espacio para taludes)[cite: 114].",
+              "Bataches: Ejecución por tramos alternos cortos (2-3 m) al tresvolillo cuando no hay espacio para vaciar todo el solar; requiere superior cuantía de acero y viga de coronación[cite: 116].",
+              "Muros pantalla continua (paneles in situ): Se ejecutan antes de vaciar el solar empleando muretes guía, bivalva y lodos bentoníticos para estabilizar la zanja; trabajan como losas empotradas en el terreno[cite: 117, 118].",
+              "Otros tipos de pantallas: Pantallas de pilotes secantes/tangentes y pantallas de tablestacas metálicas o de hormigón hincadas[cite: 122]."
+            ],
+            c: "Las pantallas continuas de paneles in situ se usan especialmente bajo nivel freático o junto a estructuras colindantes delicadas[cite: 117]."
+          },
+          {
+            t: "4 · Juntas en Muros",
+            s: [
+              "Juntas de dilatación: Separación entre 2 y 4 cm; distancia máxima recomendada de 30 m (o máx. 3 veces la altura del muro); sin armaduras pasantes y con bandas de estanqueidad[cite: 126].",
+              "Juntas de retracción (falsas juntas): Se disponen para debilitar la sección y fijar el plano de rotura por retracción del hormigón; separación de 8 a 12 m[cite: 126]."
+            ],
+            c: "Es fundamental garantizar la estanqueidad y evitar filtraciones de agua a través de todas las juntas del sótano[cite: 126]."
+          },
+          {
+            t: "5 · Drenaje e Impermeabilización",
+            s: [
+              "Drenaje perimetral: Reglado por el DB-HS1; combinación de excavación en cuña, lámina impermeabilizante en trasdós, lámina drenante (ej. Danodren), grava de drenaje y tubo colector inferior[cite: 128].",
+              "Evita la aparición de presiones hidrostáticas descontroladas sobre el muro de sótano[cite: 128]."
+            ],
+            c: "El sistema de drenaje canaliza y evacúa el agua fuera del edificio, rompiendo la vía puntual de filtración[cite: 128]."
+          }
+        ],
+        casos: [
+          {
+            k: "Tipología de Muros",
+            q: "¿Cómo se denominan los muros de contención que no llevan armadura (sin ferralla), soportan los empujes exclusivamente con su propio peso y trabajan fundamentalmente a compresión?",
+            o: ["Muros en ménsula", "Muros de gravedad", "Muros pantalla de paneles"],
+            a: 1,
+            e: "Los muros de gravedad carecen de armadura y equilibran el empuje de las tierras mediante su propio peso, trabajando a compresión[cite: 109]."
+          },
+          {
+            k: "Ejecución por Bataches",
+            q: "¿En qué consiste fundamentalmente la ejecución de muros por el sistema de bataches?",
+            o: ["En vaciar todo el solar de una vez y hormigonar de abajo hacia arriba", "En realizar excavaciones y tramos cortos de muro alternos (al tresvolillo) cuando no es posible vaciar todo el perímetro por falta de espacio o seguridad", "En hincar tablestacas metálicas con maza vibratoria"],
+            a: 1,
+            e: "Los bataches se ejecutan por tramos cortos y no consecutivos para mantener la estabilidad del terreno perimetral[cite: 116]."
+          },
+          {
+            k: "Juntas de Dilatación",
+            q: "Según los criterios indicados en los apuntes para muros, ¿cuál es la separación máxima orientativa recomendada entre juntas de dilatación?",
+            o: ["De 2 a 4 metros", "No superior a 30 metros (o tres veces la altura del muro)", "Exactamente cada 100 metros"],
+            a: 1,
+            e: "La distancia entre juntas de dilatación no será superior a 30 m, recomendándose no superar tres veces la altura del muro[cite: 126]."
+          }
+        ],
+        cards: [
+          { ty: "Tipos de Muros", q: "¿Cuál es la diferencia principal de trabajo estructural entre un muro de gravedad y un muro en ménsula?", a: "El de gravedad trabaja a compresión por su propio peso (sin armar); el en ménsula trabaja a flexión y requiere armadura importante[cite: 109]." },
+          { ty: "Ejecución", q: "¿Qué función principal cumplen los lodos bentoníticos durante la ejecución de pantallas continuas de paneles in situ?", a: "Estabilizar las paredes de la zanja excavada evitando su desmoronamiento antes del hormigonado[cite: 118, 131]." },
+          { ty: "Juntas", q: "¿Qué separación habitual se recomienda entre falsas juntas de retracción en muros?", a: "Una separación de 8 a 12 metros[cite: 126]." },
+          { ty: "Drenaje", q: "Además de la lámina impermeabilizante, ¿qué elementos componen el sistema de drenaje por el trasdós de un muro según el detalle tipo?", a: "Una lámina drenante, grava de drenaje y un tubo de drenaje en la base[cite: 128]." }
+        ],
+        glo: [
+          ["Muro de contención", "Elemento estructural que sirve de contención a un terreno o relleno, trabajando a flexión como voladizo empotrado[cite: 108].", "Regulado por el CTE DB-SE-C[cite: 132]."],
+          ["Bataches", "Sistema de ejecución de muros por tramos cortos alternos (al tresvolillo)[cite: 116].", "Útil cuando no se puede vaciar todo el solar de golpe[cite: 116]."],
+          ["Muro Pantalla", "Elemento de contención ejecutado desde la superficie antes de la excavación general[cite: 117, 130].", "Ideal bajo nivel freático o medianeras[cite: 117]."],
+          ["Lodos bentoníticos", "Suspensiones acuosas de arcillas tixotrópicas que estabilizan zanjas de pantallas[cite: 131].", "Se van desplazando al hormigonar desde el fondo[cite: 119]."],
+          ["Junta de dilatación", "Corte estructural (2-4 cm) para absorber cambios térmicos, sin armaduras pasantes[cite: 126].", "Separación máx. de 30 m[cite: 126]."]
         ]
       }
     ]
