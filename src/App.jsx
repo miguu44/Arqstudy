@@ -23,62 +23,78 @@ const ELEM_ZAPATA = [
 ];
 
 // Componente Detalle para Cubiertas Inclinadas (Edificación II - Tema 1)
+// Componente Detalle para Cubiertas Inclinadas (Edificación II - Tema 1)
 function DetalleCubierta() {
   const [sel, setSel] = useState(1);
-  
-  const capas = [
-    { n: 1, s: "Estructura portante / Forjado", fn: "Soporta las cargas de la cubierta y da inclinación o sirve de techo de última planta.", mat: "Forjado de hormigón o losa inclinada.", ctl: "Pendiente adecuada y nivelación." },
-    { n: 2, s: "Aislamiento térmico y Barrera de vapor", fn: "Cumple exigencias de ahorro energético (DB-HE) y evita condensaciones.", mat: "Poliestireno extruido o lana de roca.", ctl: "Continuidad del aislamiento sin puentes térmicos." },
-    { n: 3, s: "Cámara de aire ventilada", fn: "Regula el comportamiento higrométrico (clave en cubierta fría).", mat: "Espacio de 3 a 10 cm con aberturas de ventilación.", ctl: "Superficie de aberturas reglamentaria ($3 < S_s/A_c < 30$)." },
-    { n: 4, s: "Tablero de formación de pendientes", fn: "Soporte continuo sobre tabiques palomeros o tableros ligeros.", mat: "Tablero cerámico machihembrado con capa de mortero.", ctl: "Planes estables y pendientes mínimas reglamentarias." },
-    { n: 5, s: "Material de cobertura (Teja)", fn: "Protección frente a la precipitación y evacuación del agua de lluvia.", mat: "Teja cerámica curva, mixta o plana; pizarra.", ctl: "Solapes correctos y fijación mecánica en zonas de fuerte viento." }
+
+  const ELEM_CUBIERTA = [
+    { n: 1, s: "Estructura portante", side: "L", ly: 90, ax: 160, ay: 200, fn: "Soporta las cargas de la cubierta y sirve de techo de la última planta.", mat: "Forjado de hormigón armado o losa inclinada.", ctl: "Pendiente adecuada y nivelación." },
+    { n: 2, s: "Aislamiento térmico", side: "L", ly: 130, ax: 200, ay: 175, fn: "Cumple las exigencias de ahorro energético (DB-HE) y confort.", mat: "Poliestireno extruido (XPS) o lana mineral.", ctl: "Continuidad del aislamiento sin puentes térmicos." },
+    { n: 3, s: "Cámara de aire ventilada", side: "R", ly: 90, ax: 240, ay: 150, fn: "Regula el comportamiento higrométrico y evita condensaciones (cubierta fría).", mat: "Espacio de 3 a 10 cm con aberturas reglamentarias.", ctl: "Superficie de aberturas efectiva ($3 < S_s/A_c < 30$)." },
+    { n: 4, s: "Tablero de pendientes", side: "R", ly: 130, ax: 280, ay: 125, fn: "Superficie de apoyo continua para la cobertura.", mat: "Tablero cerámico machihembrado con capa de mortero.", ctl: "Planeidad y estabilidad del soporte." },
+    { n: 5, s: "Cobertura de tejas", side: "R", ly: 170, ax: 320, ay: 100, fn: "Protección frente a la precipitación y evacuación del agua de lluvia.", mat: "Teja cerámica curva o mixta sobre rastreles/mortero.", ctl: "Solapes correctos y fijación mecánica en zonas de viento." }
   ];
 
-  const cAct = capas.find(c => c.n === sel);
+  const k = (n, d) => (sel === n ? "#22d3ee" : d);
+  const se = ELEM_CUBIERTA.find(e => e.n === sel);
+  const tx = { paintOrder: "stroke", stroke: "#0b0e14", strokeWidth: 3 };
 
   return (
     <div className="space-y-3">
       <div className="text-xs text-sky-400">Detalle Constructivo: Cubierta Inclinada Ventilada (Cubierta Fría)</div>
+      
       <svg viewBox="0 0 440 260" className="w-full rounded-xl border border-slate-800" style={{ background: "#0b0e14" }}>
-        {/* Estructura portante */}
+        {/* Capas de la cubierta inclinada */}
         <g onClick={() => setSel(1)} style={{ cursor: "pointer" }}>
-          <rect x="60" y="190" width="320" height="30" fill="#334155" stroke={sel === 1 ? "#22d3ee" : "#475569"} strokeWidth={sel === 1 ? 2 : 1} />
-          <text x="220" y="210" fontSize="10" fill="#e2e8f0" textAnchor="middle">1. Estructura portante</text>
+          <polygon points="100,210 340,170 340,195 100,235" fill="#334155" stroke={k(1, "#475569")} strokeWidth={sel === 1 ? 2 : 1} />
         </g>
-        {/* Aislamiento */}
         <g onClick={() => setSel(2)} style={{ cursor: "pointer" }}>
-          <rect x="60" y="170" width="320" height="15" fill="#f97316" stroke={sel === 2 ? "#22d3ee" : "#c2410c"} strokeWidth={sel === 2 ? 2 : 1} opacity="0.8" />
-          <text x="220" y="181" fontSize="9" fill="#fff" textAnchor="middle">2. Aislamiento térmico</text>
+          <polygon points="100,190 340,150 340,170 100,210" fill="#f97316" stroke={k(2, "#c2410c")} strokeWidth={sel === 2 ? 2 : 1} opacity="0.85" />
         </g>
-        {/* Cámara de aire */}
         <g onClick={() => setSel(3)} style={{ cursor: "pointer" }}>
-          <polygon points="60,130 380,85 380,115 60,160" fill="#1e293b" stroke={sel === 3 ? "#22d3ee" : "#334155"} strokeWidth={sel === 3 ? 2 : 1} strokeDasharray="4 2" />
-          <text x="220" y="130" fontSize="9" fill="#38bdf8" textAnchor="middle">3. Cámara de aire ventilada</text>
+          <polygon points="100,165 340,125 340,150 100,190" fill="#1e293b" stroke={k(3, "#334155")} strokeWidth={sel === 3 ? 2 : 1} strokeDasharray="4 2" />
         </g>
-        {/* Tablero de pendientes */}
         <g onClick={() => setSel(4)} style={{ cursor: "pointer" }}>
-          <polygon points="50,115 390,65 390,82 50,132" fill="#64748b" stroke={sel === 4 ? "#22d3ee" : "#475569"} strokeWidth={sel === 4 ? 2 : 1} />
-          <text x="220" y="103" fontSize="9" fill="#f1f5f9" textAnchor="middle">4. Tablero soporte de pendientes</text>
+          <polygon points="100,145 340,105 340,125 100,165" fill="#64748b" stroke={k(4, "#475569")} strokeWidth={sel === 4 ? 2 : 1} />
         </g>
-        {/* Material de cobertura (Tejas) */}
         <g onClick={() => setSel(5)} style={{ cursor: "pointer" }}>
-          <path d="M45 105 Q 60 90, 75 105 T 105 105 T 135 105 T 165 105 T 195 105 T 225 105 T 255 105 T 285 105 T 315 105 T 345 105 T 375 105" fill="none" stroke={sel === 5 ? "#22d3ee" : "#ef4444"} strokeWidth="6" />
-          <text x="220" y="75" fontSize="10" fill="#fca5a5" textAnchor="middle">5. Cobertura de tejas cerámicas</text>
+          <path d="M95 138 L345 98" stroke={k(5, "#ef4444")} strokeWidth="8" strokeLinecap="round" />
         </g>
+
+        {/* Líneas de llamada y etiquetas laterales (estilo Zapata) */}
+        {ELEM_CUBIERTA.map((e) => {
+          const L = e.side === "L";
+          return (
+            <g key={e.n} onClick={() => setSel(e.n)} style={{ cursor: "pointer" }}>
+              <line x1={L ? 100 : 340} y1={e.ly - 3} x2={e.ax} y2={e.ay} stroke="#64748b" strokeWidth="0.7" />
+              <text x={L ? 10 : 430} y={e.ly} textAnchor={L ? "start" : "end"} fontSize="10" fill={sel === e.n ? "#22d3ee" : "#cbd5e1"} style={tx}>
+                {e.n}. {e.s}
+              </text>
+              <circle cx={e.ax} cy={e.ay} r="7" fill="#0b0e14" stroke={k(e.n, "#94a3b8")} />
+              <text x={e.ax} y={e.ay + 3} textAnchor="middle" fontSize="9" fill="#e2e8f0">
+                {e.n}
+              </text>
+            </g>
+          );
+        })}
       </svg>
+
+      {/* Botones de selección rápida */}
       <div className="flex flex-wrap gap-1">
-        {capas.map(c => (
+        {ELEM_CUBIERTA.map(c => (
           <button key={c.n} onClick={() => setSel(c.n)} className={"text-xs rounded-full px-3 py-1 border " + (sel === c.n ? "border-sky-400 text-sky-300 bg-sky-500/10" : "border-slate-700 text-slate-300")}>
             {c.n}. {c.s}
           </button>
         ))}
       </div>
-      {cAct && (
+
+      {/* Ficha técnica del elemento seleccionado */}
+      {se && (
         <div className="rounded-xl border border-sky-500/40 bg-slate-900 p-3 text-sm space-y-1">
-          <b className="text-sky-300">{cAct.n}. {cAct.s}</b>
-          <p><span className="text-slate-400">Función: </span>{cAct.fn}</p>
-          <p><span className="text-slate-400">Material / Solución: </span>{cAct.mat}</p>
-          <p className="text-amber-200">⚠ Control en obra: {cAct.ctl}</p>
+          <b className="text-sky-300">{se.n}. {se.s}</b>
+          <p><span className="text-slate-400">Función: </span>{se.fn}</p>
+          <p><span className="text-slate-400">Material / Solución: </span>{se.mat}</p>
+          <p className="text-amber-200">⚠ Control en obra: {se.ctl}</p>
         </div>
       )}
     </div>
