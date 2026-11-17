@@ -561,6 +561,69 @@ export const ASIGNATURAS = [
           ["Restregón", "Técnica de colocación de piezas de fábrica presionando el material sobre lecho de mortero hasta rebosar las juntas.", "Garantiza el correcto macizado[cite: 254]."],
           ["Llaves o conectores", "Elementos metálicos o piezas cerámicas destinados a enlazar las hojas de un muro capuchino o doblado.", "Mínimo 2 unidades por metro cuadrado[cite: 256, 257]."]
         ]
+      },
+      {
+        id: "tema-14-fachadas-fabrica-ladrillo",
+        ruta: "Tema 14 › Fachadas de Fábrica de Ladrillo (CTE DB-HS-1)",
+        titulo: "Fachadas de Fábrica de Ladrillo: Salubridad, Materiales y Puntos Singulares",
+        fuente: "TEMA 14  FACHADAS DE FABRICA DE LADRILLO.pdf",
+        proc: [
+          {
+            t: "1 · Impermeabilidad y Soluciones de Fachada (CTE DB-HS-1)",
+            s: [
+              "Grado de impermeabilidad: Exigido a las fachadas frente a precipitaciones en función de la zona pluviométrica de promedios (I a V) y el grado de exposición al viento (V1 a V3)[cite: 247].",
+              "Clases de entorno: E0 (terrenos I, II y III, abiertos y sin obstáculos) y E1 (demás casos, zonas urbanas o protegidas)[cite: 247].",
+              "Condiciones constructivas: Combinación de requisitos en función de la existencia o no de revestimiento exterior y el grado de impermeabilidad (bloques R, B, C, H, J, N)[cite: 249]."
+            ],
+            c: "Las exigencias de estanqueidad aumentan progresivamente desde el grado 1 hasta el grado 5[cite: 249]."
+          },
+          {
+            t: "2 · Materiales: Ladrillos Cara Vista y Morteros",
+            s: [
+              "Ladrillos cara vista: Clasificados en macizos (volumen de huecos $<25\%$) y perforados (volumen de huecos $<45\%$)[cite: 265]. Tipos especiales: baja succión ($\le 4,5\text{ kg/m}^2\cdot\text{min}$), hidrofugados, klinker/gresificados y resistentes a heladicidad (F1 y F2)[cite: 266].",
+              "Morteros de albañilería (UNE 83-800-94): Clasificados por su resistencia característica (M-2.5, M-5, M-7.5, M-15)[cite: 261].",
+              "Propiedades del mortero: Buena plasticidad (aportada por la cal o plastificantes), retención de agua y adecuada adherencia ladrillo-mortero[cite: 261, 262]. En ladrillos de baja succión se recomienda limitar la relación agua/cemento a $\le 0,50$[cite: 263]."
+            ],
+            c: "La resistencia a compresión del mortero para fachadas de cara vista no resistentes no debe superar los $75\text{ daN/cm}^2$[cite: 262]."
+          },
+          {
+            t: "3 · Puntos Singulares y Detalles Constructivos",
+            s: [
+              "Arranque desde la cimentación: Barrera impermeable continua a más de 15 cm sobre el suelo exterior y zócalo protector impermeable de más de 30 cm de altura con coeficiente de succión $<3\%$[cite: 254].",
+              "Encuentros con forjados y pilares: Junta de desolidarización de 2 cm bajo los forjados con perfil goterón, o refuerzo del revestimiento con mallas solapadas 15 cm[cite: 254, 255].",
+              "Cámara de aire ventilada: Espesor entre 3 y 10 cm, con aberturas de ventilación mínimas de $120\text{ cm}^2$ por cada $10\text{ m}^2$ de paño y sistema de recogida/evacuación de agua en la base (separación máx. 1,5 m)[cite: 251, 257].",
+              "Carpinterías, vierteaguas y albardillas: Vierteaguas con pendiente $\ge 10^\circ$, goterón separado $\ge 2\text{ cm}$ de la fachada y entrega lateral de 2 cm[cite: 258]. Albardillas inclinadas $\ge 10^\circ$ con goterones y juntas selladas[cite: 259]."
+            ],
+            c: "Las juntas de dilatación en la hoja principal deben coincidir con las juntas estructurales del edificio[cite: 253]."
+          }
+        ],
+        casos: [
+          {
+            k: "Arranque de Fachada",
+            q: "Según el DB-HS-1, ¿a qué altura mínima sobre el nivel del suelo exterior debe disponerse la barrera impermeable horizontal en el arranque de la fachada para evitar el ascenso por capilaridad?",
+            o: ["A más de 5 cm", "A más de 15 cm", "Exactamente a 50 cm"],
+            a: 1,
+            e: "Debe disponerse una barrera impermeable que cubra todo el espesor de la fachada a más de 15 cm por encima del nivel del suelo exterior[cite: 254]."
+          },
+          {
+            k: "Ventilación de Cámaras",
+            q: "En una cámara de aire ventilada, ¿cuál es el área efectiva total mínima de aberturas de ventilación exigida por el DB-HS-1?",
+            o: ["50 cm² por cada 10 m² de paño", "120 cm² por cada 10 m² de paño repartidas al 50% arriba y abajo", "1 m² por cada planta de edificio"],
+            a: 1,
+            e: "Deben disponerse aberturas de ventilación cuya área efectiva total sea como mínimo igual a $120\text{ cm}^2$ por cada $10\text{ m}^2$ de paño de fachada entre forjados, repartidas al 50% entre la parte superior e inferior[cite: 251]."
+          }
+        ],
+        cards: [
+          { ty: "Zócalo de Protección", q: "¿Qué altura mínima y qué coeficiente máximo de succión debe tener el zócalo de protección frente a salpicaduras en cimentación?", a: "Más de 30 cm de altura y coeficiente de succión inferior al 3%[cite: 254]." },
+          { ty: "Pendiente de Vierteaguas", q: "¿Cuál es la inclinación mínima exigida para los vierteaguas y albardillas para evacuar el agua de lluvia?", a: "Una pendiente de $10^\circ$ como mínimo[cite: 258, 259]." },
+          { ty: "Espesor de Cámara", q: "¿Entre qué valores debe estar comprendido el espesor de la cámara de aire ventilada según el DB-HS-1?", a: "Entre 3 cm y 10 cm[cite: 251]." },
+          { ty: "Relación Agua/Cemento", q: "¿Cuál es el valor máximo recomendado para la relación agua/cemento al amasar morteros para ladrillos de baja succión?", a: "No superior a 0,50[cite: 263]." }
+        ],
+        glo: [
+          ["DB-HS-1", "Documento Básico de Salubridad: Protección frente a la humedad del Código Técnico de la Edificación.", "Establece las reglas de estanqueidad y diseño de fachadas."],
+          ["Ladrillo hidrofugado", "Ladrillo sometido a un proceso con productos hidrofugantes que repele el agua líquida manteniendo la permeabilidad al vapor.", "No debe humedecerse antes de su colocación[cite: 266]."],
+          ["Gotero o goterón", "Pequeña acanaladura en la cara inferior de elementos salientes para evitar que el agua escurra hacia el paramento vertical de la fachada.", "Debe estar separado al menos 2 cm del muro[cite: 258, 259]."]
+        ]
       }
     ]
   },
