@@ -461,38 +461,18 @@ export const ASIGNATURAS = [
             t: "1 · Ámbito de Aplicación y Materiales (DB-SE-M)",
             s: [
               "Ámbito: Verificación de la seguridad estructural de elementos de madera maciza (aserrada y rollizo), madera laminada encolada, microlaminada y tableros estructurales.",
-              "Clases resistentes (madera maciza): Para coníferas y chopo: C14, C16, C18, C20, C22, C24, C27, C30, C35, C40, C45 y C50; para frondosas: D30, D35, D40, D50, D60 y D70 (el número indica $f_{m,k}$ en $\text{N/mm}^2$).",
-              "Clases resistentes (madera laminada encolada): Homogénea (GL24h, GL28h, GL32h, GL36h) y combinada (GL24c, GL28c, GL32c, GL36c).",
-              "Aditivos y adhesivos: Clasificados según su idoneidad para clases de servicio 1, 2 o 3 (ej. resorcinoles, fenoles y poliuretanos aptos para exterior/clase 3; urea-formaldehído no apta para clase 3)."
+              "Clases resistentes (madera maciza): Para coníferas y chopo: C14 a C50; para frondosas: D30 a D70 (el número indica $f_{m,k}$ en $\text{N/mm}^2$).",
+              "Clases resistentes (madera laminada encolada): Homogénea (GL24h a GL36h) y combinada (GL24c a GL36c)."
             ],
-            c: "El encolado de piezas de madera de especies diferentes requiere conocimiento específico debido a sus distintos coeficientes de contracción."
+            c: "El contenido de humedad de la madera aserrada a su recepción en obra debe ser $\le 20\%$ salvo especificación en contra."
           },
           {
-            t: "2 · Uniones: Tradicionales y Mecánicas",
+            t: "2 · Ejecución y Detalles Constructivos",
             s: [
-              "Uniones tradicionales: Transmiten fuerzas mediante tensiones de compresión localizada y cortante (ej. embarbillados simples o dobles, con profundidad $t \le h/4$ o $h/6$).",
-              "Elementos mecánicos de fijación (tipo clavija): Clavos con/sin pretaladro, tirafondos, pernos sin holgura, pasadores y grapas.",
-              "Conectores: De anillo, de placa, dentados de una o doble cara (norma UNE EN 912)."
+              "Protección y durabilidad: Evitar contacto directo con el terreno (distancia mínima de 20 cm con barrera antihumedad) y ventilar los encuentros en muros manteniendo $\ge 15\text{ mm}$ de separación.",
+              "Restricción de movimientos: En piezas de canto superior a 80 cm no deben utilizarse empalmes ni nudos rígidos con placas de acero y pernos que coarten el movimiento higrotérmico."
             ],
-            c: "En embarbillados simples con $\beta \le 50^\circ$, la profundidad de la barbilla será $t \le h/4$; si $\beta \ge 60^\circ$, $t \le h/6$."
-          },
-          {
-            t: "3 · Ejecución y Detalles Constructivos",
-            s: [
-              "Variaciones dimensionales higrotérmicas (coníferas): $0,01\%$ en dirección longitudinal y $0,2\%$ en dirección transversal (tangencial; radial $0,1\%$) por cada $1\%$ de variación de humedad.",
-              "Protección y durabilidad: Evitar contacto directo con el terreno (distancia mínima de 20 cm con barrera antihumedad), no embeber arranques de soportes en hormigón, y ventilar los encuentros en muros manteniendo $\ge 15\text{ mm}$ de separación.",
-              "Restricción de movimientos: En piezas de canto superior a 80 cm no deben utilizarse empalmes ni nudos rígidos con placas de acero y pernos que coarten el movimiento de la madera por contracción/hinchazón."
-            ],
-            c: "Las testas de los elementos estructurales expuestas al agua de lluvia deben ocultarse o protegerse con piezas de remate que permitan la aireación."
-          },
-          {
-            t: "4 · Control: Suministro, Recepción y No-Aceptación",
-            s: [
-              "Identificación en albarán: Empresa suministradora, especie botánica, clase resistente, dimensiones nominales y marcado (ej. UNE EN 386 para laminada).",
-              "Humedad en recepción: Salvo especificación en contra, el contenido de humedad de la madera aserrada debe ser $\le 20\%$ (normas UNE 56529 / UNE 56530).",
-              "Criterio de no-aceptación: El incumplimiento de cualquier especificación (resistencias o durabilidad) es condición suficiente para el rechazo del producto o partida."
-            ],
-            c: "La identificación anatómica de la especie botánica en madera aserrada se realizará en laboratorio especializado cuando sea necesario."
+            c: "Las testas expuestas al agua de lluvia deben ocultarse o protegerse con piezas de remate que permitan la aireación."
           }
         ],
         casos: [
@@ -502,26 +482,84 @@ export const ASIGNATURAS = [
             o: ["El módulo de elasticidad medio en kN/mm²", "El valor de la resistencia característica a flexión ($f_{m,k}$) expresada en N/mm²", "La densidad característica en g/cm³"],
             a: 1,
             e: "En las clases resistentes de madera aserrada (como C24), los números indican el valor de la resistencia característica a flexión ($f_{m,k}$) expresada en $\text{N/mm}^2$."
-          },
-          {
-            k: "Detalles Constructivos y Humedad",
-            q: "Según el DB-SE-M, al apoyar una viga de madera en un hueco practicado en un muro de fábrica, ¿qué separación mínima debe mantenerse entre la superficie de la madera y el material del muro para asegurar una correcta ventilación?",
-            o: ["Al menos 5 mm", "Al menos 15 mm", "Al menos 50 mm"],
-            a: 1,
-            e: "Se deben ventilar los encuentros de vigas en muros, manteniendo una separación mínima de 15 mm entre la superficie de la madera y el material del muro."
           }
         ],
         cards: [
-          { ty: "Clases Resistentes", q: "¿Qué letras designan las clases resistentes de madera maciza para coníferas y frondosas respectivamente?", a: "Letra 'C' para coníferas/chopo (ej. C24) y letra 'D' para frondosas (ej. D30)." },
-          { ty: "Durabilidad", q: "¿Cuál es la distancia vertical mínima recomendada para evitar el contacto directo de la madera con el terreno?", a: "Una distancia mínima de 20 cm disponiendo una barrera antihumedad." },
-          { ty: "Humedad en Obra", q: "¿Cuál es el contenido máximo de humedad exigido por defecto para la madera aserrada a su recepción en obra?", a: "Menor o igual al 20% ($\le 20\%$). Muestreo según normas UNE 56529 / UNE 56530." },
-          { ty: "Uniones Rígidas", q: "¿A partir de qué canto de pieza se desaconseja el uso de nudos rígidos con placas metálicas y pernos que coarten el movimiento?", a: "En piezas de canto superior a 80 cm." }
+          { ty: "Humedad en Obra", q: "¿Cuál es el contenido máximo de humedad exigido por defecto para la madera aserrada a su recepción en obra?", a: "Menor o igual al 20% ($\le 20\%$). Muestreo según normas UNE 56529 / UNE 56530." }
         ],
         glo: [
-          ["Clase resistente", "Designación normalizada que agrupa a la madera según sus propiedades mecánicas (resistencia, rigidez y densidad).", "Ej: C24 para aserrada, GL24h para laminada."],
-          ["Embarbillado", "Unión tradicional de carpintería para estructuras de madera inclinadas (como cerchas) donde un elemento se entalla en otro.", "Puede ser simple o doble."],
-          ["Clase de servicio", "Categoría que define las condiciones ambientales (temperatura y humedad relativa) a las que estará expuesta la estructura durante su vida útil.", "Existen 3 clases de servicio en el DB-SE-M."],
-          ["Humedad de equilibrio", "Contenido de humedad que alcanza la madera en el aire del entorno bajo unas condiciones constantes de temperatura y humedad relativa."]
+          ["Clase resistente", "Designación normalizada que agrupa a la madera según sus propiedades mecánicas (resistencia, rigidez y densidad).", "Ej: C24 para aserrada."]
+        ]
+      },
+      {
+        id: "tema-13-estructuras-fabrica",
+        ruta: "Tema 13 › Estructuras de Fábrica (CTE DB-SE-F)",
+        titulo: "Estructuras de Fábrica: Materiales, Juntas, Ejecución y Control (DB-SE-F)",
+        fuente: "TEMA 13  ESTRUCTURAS DE FABRICA.pdf",
+        proc: [
+          {
+            t: "1 · Ámbito de Aplicación y Juntas de Movimiento (DB-SE-F)",
+            s: [
+              "Ámbito: Verificación de seguridad estructural de muros resistentes realizados con piezas pequeñas unidas con mortero (ladrillo, bloques de hormigón/cerámica aligerada, piedra) con o sin armaduras[cite: 240].",
+              "Exclusiones: Fábricas en seco, piedra irregular (mampuestos), rellenos amorfos entre hojas o muros sin elementos de continuidad (encadenados) con forjados[cite: 240].",
+              "Juntas de movimiento: Se disponen para absorber dilataciones térmicas, humedad, fluencia y retracción[cite: 241]. Distancias máximas orientativas en fábricas sustentadas: piedra natural (30 m), hormigón celular (22 m), hormigón ordinario/piedra artificial (20 m), ladrillo cerámico (entre 8 y 30 m según expansión por humedad y retracción del mortero)[cite: 241]."
+            ],
+            c: "En plantas con forma asimétrica (L, U) con alas mayores que la mitad de la distancia límite, se dispondrán juntas cerca de los puntos de encuentro[cite: 241]."
+          },
+          {
+            t: "2 · Materiales: Piezas, Morteros y Propiedades Resistentes",
+            s: [
+              "Clasificación de piezas: Según volumen de huecos y espesor combinado en macizas, perforadas, aligeradas y huecas[cite: 245]. Resistencia normalizada mínima $f_b \ge 5\text{ N/mm}^2$ (admisible hasta 4 en sustentantes y 3 en sustentadas con limitaciones)[cite: 245].",
+              "Morteros: Ordinarios (M1 mínimo para convencionales, M4 mínimo para armadas/pretensadas/junta delgada/ligeros)[cite: 245]. La resistencia a compresión del mortero no superará el 0,75 de la resistencia de las piezas[cite: 245].",
+              "Resistencia característica a compresión ($f_k$): Depende de $f_b$ y $f_m$ (Tabla 13.9)[cite: 249]. Módulos y deformabilidad: fluencia, expansión por humedad y coeficiente de dilatación térmica[cite: 251]."
+            ],
+            c: "El espesor de tendeles y llagas en mortero ordinario o ligero será de 8 a 15 mm; en junta delgada, de 1 a 3 mm[cite: 255]."
+          },
+          {
+            t: "3 · Ejecución, Detalles Constructivos y Armaduras",
+            s: [
+              "Humedecimiento y colocación: Las piezas cerámicas se humedecen antes de su empleo; la colocación se realiza a restregón asegurando el rebose de mortero[cite: 254].",
+              "Traba y solape: Las hiladas deben solaparse al menos $0,4$ veces el grueso de la pieza y no menos de 40 mm ($0,4 U_m \ge 40\text{ mm}$)[cite: 254].",
+              "Apoyos y enlaces: La longitud de apoyo de los forjados sobre muros será $\ge 65\text{ mm}$[cite: 256]. En muros capuchinos o doblados se disponen llaves o conectores (mínimo 2 por $\text{m}^2$)[cite: 256, 257]."
+            ],
+            c: "En muros de espesor menor que 200 mm, las juntas no se rehundirán más de 5 mm sin autorización[cite: 254]."
+          },
+          {
+            t: "4 · Control de Calidad, Categorías y Tolerancias",
+            s: [
+              "Categorías de ejecución: A (control riguroso con ensayos previos de probetas), B (control estándar con especificaciones de piezas y mortero) y C (resto de casos o mezcla manual de mortero)[cite: 263].",
+              "Tolerancias en muros verticales: Desplome en altura de piso $\le 20\text{ mm}$ (total $\le 50\text{ mm}$), axialidad $\le 20\text{ mm}$, planeidad en 1 m $\le 5\text{ mm}$[cite: 264].",
+              "Protección durante la ejecución: Cubrir coronaciones para evitar lavado de juntas, proteger frente a heladas y acodalar provisionalmente muros sin arriostrar[cite: 265]."
+            ],
+            c: "Si alguna prueba de recepción de piezas falla o no se alcanza la categoría prevista, es obligatorio un recálculo estructural[cite: 262]."
+          }
+        ],
+        casos: [
+          {
+            k: "Solape de Piezas en Fábrica",
+            q: "Durante la ejecución de un muro de fábrica de ladrillo, ¿cuál es el solape mínimo exigido entre piezas en hiladas consecutivas según el CTE DB-SE-F?",
+            o: ["Al menos 10 mm", "Al menos 0,4 veces el grueso de la pieza y no menor de 40 mm", "Exactamente la mitad de la soga en todos los casos"],
+            a: 1,
+            e: "En hiladas consecutivas, las piezas se solaparán al menos 0,4 veces el grueso de la pieza ($U_m$) y no menos de 40 mm[cite: 254]."
+          },
+          {
+            k: "Categorías de Ejecución",
+            q: "Para especificar una fábrica armada o pretensada, ¿qué categorías de ejecución se permiten obligatoriamente según el DB-SE-F?",
+            o: ["Únicamente clases A o B para armada, y clase A para pretensada", "Cualquier categoría, incluida la C", "Exclusivamente la categoría C"],
+            a: 0,
+            e: "En elementos de fábrica armada se especificará sólo clases A o B, y en elementos de fábrica pretensada se especificará obligatoriamente clase A[cite: 261]."
+          }
+        ],
+        cards: [
+          { ty: "Juntas de Movimiento", q: "¿Cuál es la distancia máxima orientativa entre juntas de movimiento para fábricas sustentadas de hormigón ordinario?", a: "20 metros[cite: 241]." },
+          { ty: "Apoyo de Forjados", q: "¿Cuál es la longitud mínima de apoyo de un forjado sobre un muro de fábrica según el DB-SE-F?", a: "Nunca menor de 65 mm[cite: 256]." },
+          { ty: "Espesor de Tendeles", q: "¿Qué espesor reglamentario deben tener los tendeles y llagas con mortero ordinario o ligero?", a: "Entre 8 mm y 15 mm[cite: 255]." },
+          { ty: "Tolerancia de Desplome", q: "¿Cuál es la tolerancia máxima de desplome permitida en la altura de un piso para muros verticales?", a: "20 mm[cite: 264]." }
+        ],
+        glo: [
+          ["DB-SE-F", "Documento Básico de Seguridad Estructural: Fábrica del Código Técnico de la Edificación.", "Regula el cálculo, materiales y ejecución de estructuras de fábrica."],
+          ["Restregón", "Técnica de colocación de piezas de fábrica presionando el material sobre lecho de mortero hasta rebosar las juntas.", "Garantiza el correcto macizado[cite: 254]."],
+          ["Llaves o conectores", "Elementos metálicos o piezas cerámicas destinados a enlazar las hojas de un muro capuchino o doblado.", "Mínimo 2 unidades por metro cuadrado[cite: 256, 257]."]
         ]
       }
     ]
