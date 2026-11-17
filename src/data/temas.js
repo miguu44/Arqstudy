@@ -628,24 +628,79 @@ export const ASIGNATURAS = [
     ]
   },
   {
-    id: "construccion-2",
-    nombre: "Construcción II",
+    id: "edificacion-2",
+    nombre: "Edificación II",
     temas: [
       {
-        id: "tema-ejemplo-c2",
-        ruta: "Bloque 1 › Tema 1",
-        titulo: "Próximo tema de Construcción II",
-        fuente: "apuntes.pdf",
+        id: "tema-1-cubiertas-inclinadas",
+        ruta: "Tema 1 › Cubiertas Inclinadas (Tejados) (CTE DB-HS-1)",
+        titulo: "Cubiertas Inclinadas: Elementos, Puntos Singulares y Comportamiento Higrotérmico",
+        fuente: "TEMA 1  CUBIERTAS INCLINADAS (Rev sept. 2016).pdf",
         proc: [
           {
-            t: "1 · Introducción",
-            s: ["Tema preparado para recibir nuevos apuntes."],
-            c: null
+            t: "1 · Geometría y Tipologías de Cubiertas Inclinadas",
+            s: [
+              "Definición y elementos geométricos: Faldón (plano inclinado), línea de máxima pendiente, alero (voladizo inferior), limahoya (encuentrocóncavo), limatesa (encuentro convexo), cumbrera (horizontal superior) y hastial (muro testero)[cite: 265, 266].",
+              "Tipos de cubiertas: A un agua, a dos aguas (simétrica o con cumbrera desplazada), a tres aguas, a cuatro aguas de pabellón y de tipo mansarda[cite: 263].",
+              "Soporte y base estructural: Tableros continuos (rasillones cerámicos con capa de mortero, fibrocemento, paneles) o soportes discontinuos con rastreles y correas[cite: 265, 266]."
+            ],
+            c: "El alero debe sobresalir como mínimo 5 cm y como máximo media pieza del soporte para evitar filtraciones y proteger el paramento[cite: 267]."
+          },
+          {
+            t: "2 · Comportamiento Higrotérmico y Ventilación (DB-HS-1 / DB-HE)",
+            s: [
+              "Cubiertas calientes (no ventiladas): El aislamiento térmico forma parte de la hoja principal sin cámara intermedia; se emplea microventilación bajo teja para evitar condensaciones[cite: 272].",
+              "Cubiertas frías (ventiladas): La estructura portante está separada del sistema de formación de pendientes, quedando una cámara de aire ventilada intermedia que regula el comportamiento higrométrico[cite: 273].",
+              "Condición de ventilación: El cociente entre el área efectiva total de aberturas ($S_s$ en $\text{cm}^2$) y la superficie de cubierta ($A_c$ en $\text{m}^2$) debe cumplir $3 < S_s / A_c < 30$[cite: 278]."
+            ],
+            c: "Las cubiertas frías son habituales cuando no existe aprovechamiento bajo cubierta y ofrecen un excelente control frente a condensaciones[cite: 273]."
+          },
+          {
+            t: "3 · Puntos Singulares y Exigencias Normativas",
+            s: [
+              "Encuentros con paramentos verticales: Elementos de protección que cubren una banda de $\ge 25\text{ cm}$ por encima del tejado y se prolongan $\ge 10\text{ cm}$ sobre las piezas[cite: 267].",
+              "Limahoyas y cumbreras: Las piezas del tejado deben sobresalir $\ge 5\text{ cm}$ sobre la limahoya, manteniendo una separación mínima entre faldones de 20 cm[cite: 268]. Las cumbreras solapan $\ge 5\text{ cm}$[cite: 268].",
+              "Canalones: Pendiente hacia el desagüe $\ge 1\%$, con las tejas vertiendo $\ge 5\text{ cm}$ sobre ellos[cite: 270]."
+            ],
+            c: "Los elementos pasantes (chimeneas, conductos) nunca deben disponerse en las limahoyas para evitar retenciones de agua[cite: 269]."
+          },
+          {
+            t: "4 · Pendientes Mínimas y Sistemas de Fijación",
+            s: [
+              "Pendientes mínimas según cobertura (Tabla 1.16): Teja curva ($32\%$), teja mixta y plana monocanal ($30\%$), teja plana marsellesa ($40\%$), pizarra ($60\%$), paneles y chapas metálicas desde $5\%$[cite: 275].",
+              "Fijación de tejas: Teja curva recibida con mortero en tejas canal y 1 de cada 5 cobijas (o ganchos en fuerte pendiente)[cite: 278, 279]. Tejas mixtas y planas apoyadas en rastreles (fijadas mecánicamente con tornillos o ganchos en alta pendiente)[cite: 279, 280].",
+              "Pizarra y chapas metálicas: Colocación mediante ganchos clavados al soporte o tornillos autorroscantes con arandelas estancas sobre correas[cite: 280, 281]."
+            ],
+            c: "La capa de impermeabilización bajo las tejas solo es obligatoria por normativa cuando la pendiente del faldón es inferior a los mínimos establecidos en el DB-HS-1[cite: 278]."
           }
         ],
-        casos: [],
-        cards: [],
-        glo: []
+        casos: [
+          {
+            k: "Pendiente Mínima en Teja Curva",
+            q: "Según el CTE recogido en los apuntes, ¿cuál es la pendiente mínima exigida por defecto para cubiertas inclinadas con teja curva?",
+            o: ["10%", "20%", "32%"],
+            a: 2,
+            e: "La pendiente mínima exigida para la teja curva es del 32% (pudiendo variar según zona climática y longitud de faldón)[cite: 275]."
+          },
+          {
+            k: "Ventilación de Cubiertas",
+            q: "En una cubierta inclinada ventilada, ¿qué condición debe cumplir el cociente entre el área efectiva de aberturas de ventilación ($S_s$) y la superficie de la cubierta ($A_c$)?",
+            o: ["$3 < S_s / A_c < 30$", "Menor de 1", "Exactamente 50"],
+            a: 0,
+            e: "El cociente de ventilación debe cumplir estrictamente la condición $3 < S_s / A_c < 30$[cite: 278]."
+          }
+        ],
+        cards: [
+          { ty: "Pendiente Mínima Pizarra", q: "¿Cuál es la pendiente mínima exigida para cubiertas de pizarra según la tabla del DB-HS-1?", a: "60%[cite: 275]." },
+          { ty: "Separación en Limahoyas", q: "¿Cuál es la separación mínima exigida entre las piezas del tejado de dos faldones concurrentes en una limahoya?", a: "20 cm como mínimo[cite: 268]." },
+          { ty: "Altura de Protección Vertical", q: "¿Qué altura mínima debe cubrir el elemento de protección en el encuentro de la cubierta con un paramento vertical?", a: "25 cm por encima del tejado[cite: 267]." },
+          { ty: "Pendiente de Canalones", q: "¿Qué pendiente mínima deben tener los canalones hacia los puntos de desagüe?", a: "1% como mínimo[cite: 270]." }
+        ],
+        glo: [
+          ["Cubierta fría", "Sistema de cubierta ventilada donde la estructura portante y el aislamiento están separados del plano de formación de pendientes por una cámara de aire[cite: 273].", "Excelente control higrométrico."],
+          ["Limahoya", "Línea de encuentro cóncava entre dos faldones de cubierta hacia donde concurre y es evacuada el agua de lluvia[cite: 265, 268].", "No se permiten elementos pasantes en ella[cite: 269]."],
+          ["Teja cobija", "En teja árabe, la teja superior colocada con la parte convexa hacia arriba que cubre la junta entre las tejas canal[cite: 268, 278]."]
+        ]
       }
     ]
   }
